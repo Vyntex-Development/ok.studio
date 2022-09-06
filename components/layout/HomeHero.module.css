@@ -15,7 +15,6 @@
 .HeroImageWrapper {
   overflow: hidden;
   width: 40rem;
-  background-color: red;
   height: 25rem;
   display: flex;
   justify-content: center;
