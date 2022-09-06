@@ -1,0 +1,28 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--black);
+}
+
+.NavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.NavLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+
+.NavLinkWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}

@@ -1,0 +1,43 @@
+.Link {
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Link a {
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav:hover {
+  color: var(--yellow);
+}
+
+.NavButton {
+  padding-top: 0.4375rem;
+  padding-bottom: 0.5625rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-radius: 6.25rem;
+  background-color: var(--primary-white);
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.NavButton a {
+  color: var(--black);
+}
+
+.NavButton:hover {
+  background-color: var(--black);
+  border: 1px solid var(--primary-white);
+}
+.NavButton:hover a {
+  color: var(--primary-white);
+}
