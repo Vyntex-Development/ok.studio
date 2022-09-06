@@ -78,7 +78,6 @@
 }
 
 .Active {
-  padding-top: 1rem;
   max-height: 400px;
   transition: all 0.3s ease-in-out;
 }
