@@ -61,3 +61,10 @@
   color: var(--primary-white);
   text-transform: uppercase;
 }
+.Dark:hover {
+  background-color: var(--primary-white);
+}
+
+.Dark:hover a {
+  color: var(--black);
+}
