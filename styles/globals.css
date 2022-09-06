@@ -1,26 +1,75 @@
+* {
+  box-sizing: border-box;
+  font-family: "PPNeue-Medium";
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "PPNeue-Medium";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("PPMedium"), url("/fonts/PPMedium.otf") format("otf");
+}
+
+:root {
+  --white: #ffffff;
+  --primary-white: #fffdfb;
+  --text-light: #b1b1b1;
+  --black: #27201c;
+  --light-gray: #f8f8f8;
+  --red: #c8413e;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  background-color: var(--primary-white);
+  line-height: 150%;
+  letter-spacing: -0.02em;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  min-height: 0vw;
+  font-size: calc(0.6122848200312989vw + 0.3092723004694837em);
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  max-width: 97.5em;
+  margin: 0 auto;
+  padding-left: 3.88em;
+  padding-right: 3.88em;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--black);
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4.44em;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2.77em;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.11em;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.03em;
 }
