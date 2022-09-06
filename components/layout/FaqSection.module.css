@@ -1,0 +1,113 @@
+.FaqWrapper {
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+  border-top: 1px solid var(--gray);
+}
+.FaqWrapper span {
+  color: var(--primary-white);
+  font-family: "PPNeue-Book";
+}
+.ContentWrapper {
+  margin-bottom: 5rem;
+}
+.ContentWrapper p:nth-of-type(1) {
+  text-indent: 6.875rem;
+  margin-bottom: 2rem;
+}
+
+/*faq*/
+
+.Faq {
+  width: 100%;
+  cursor: pointer;
+}
+
+.FaqRight {
+  border-top: 1px solid var(--gray);
+}
+
+.FaqQuestionWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.FaqQuestionWrapper p:nth-of-type(1) {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--gray);
+  text-transform: uppercase;
+  width: 7rem;
+}
+
+.FaqQuestionWrapper p:nth-of-type(2) {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+.FaqAnswerWrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  padding-left: 7rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.FaqAnswerWrapper p {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  max-width: 20rem;
+  padding-bottom: 1.5rem;
+}
+
+.Active {
+  padding-top: 1rem;
+  max-height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ActiveQuestion p {
+  color: var(--primary-white);
+}
+
+.FaqIcon {
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+}
+.ActiveQuestion .FaqIcon {
+  transform: rotate(135deg);
+}
+
+.ProgressWrapper {
+  width: 100%;
+  background-color: var(--gray);
+  height: 1px;
+}
+
+.Progress {
+  height: 100%;
+  background-color: var(--primary-white);
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.Faq:hover .Progress {
+  width: 100%;
+}

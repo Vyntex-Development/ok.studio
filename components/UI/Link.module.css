@@ -41,3 +41,23 @@
 .NavButton:hover a {
   color: var(--primary-white);
 }
+
+.Dark {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid var(--primary-white);
+  border-radius: 6.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.Dark a {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 100%;
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
