@@ -7,7 +7,6 @@
   position: sticky;
   height: 100vh;
   top: 4rem;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,12 +14,11 @@
 
 .HeroImageWrapper {
   overflow: hidden;
-  width: 42.5rem;
+  width: 40rem;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
 }
 
 .Image {
