@@ -88,3 +88,7 @@
   color: var(--black);
   justify-content: flex-start;
 }
+
+.Footer:hover a {
+  opacity: 0.6;
+}
