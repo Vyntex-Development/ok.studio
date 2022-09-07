@@ -18,6 +18,10 @@ const Link = ({ children, href, type, onClick }) => {
     className = classes.Nav;
   }
 
+  if (type === "footer") {
+    className = classes.Footer;
+  }
+
   if (type === "navButton") {
     className = classes.NavButton;
   }

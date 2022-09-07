@@ -1,0 +1,140 @@
+.Footer {
+  background-color: var(--white);
+}
+
+.FooterWrapper {
+  padding-top: 5rem;
+}
+
+.FooterTop {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.LinksWrapper {
+  width: 59.73%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.LinkWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.LinkWrapper:nth-of-type(1) {
+  width: 29.14%;
+}
+.LinkWrapper:nth-of-type(2) {
+  width: 43.719%;
+}
+.LinkWrapper:nth-of-type(3) {
+  width: 29.14%;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.LinkWrapper p {
+  color: #d9d9d9;
+  text-transform: uppercase;
+}
+
+.FooterFormWrapper {
+  max-width: 40.27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 2.5rem;
+}
+
+.FooterFormWrapper h2 {
+  max-width: 23.75rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  font-family: "PPNeue-Medium";
+  font-weight: 500;
+}
+
+.InputWrapper {
+  position: relative;
+  max-width: 20.75rem;
+}
+
+.InputWrapper input {
+  background-color: transparent;
+  border-bottom: 1px solid var(--black) !important;
+  border: none;
+  padding-bottom: 1.125rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--black);
+  transition: all 0.3s ease;
+}
+
+.InputWrapper input:focus-visible {
+  outline: none;
+}
+
+.InputWrapper input:focus {
+  border-bottom: 1px solid rgba(6, 8, 15, 0.3) !important;
+}
+
+.InputWrapper input::placeholder {
+  color: #d9d9d9;
+}
+
+.Submit {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.FooterBottom {
+  border-top: 1px solid var(--primary-white);
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.Dot {
+  width: 40.27%;
+}
+
+.Dot div {
+  background-color: var(--gray);
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+}
+
+.CopyRight {
+  width: 42.73%;
+}
+
+.Privacy {
+  width: 15%;
+}
+@media screen and (max-width: 1279px) {
+  .FooterFormWrapper {
+    max-width: 35%;
+  }
+  .Dot {
+    margin-right: 5.27%;
+    max-width: 35%;
+  }
+}

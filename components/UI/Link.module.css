@@ -15,6 +15,10 @@
   justify-content: center;
 }
 
+.Logo {
+  width: 4.625rem;
+}
+
 .Nav:hover {
   color: var(--yellow);
 }
@@ -74,4 +78,13 @@
 
 .Blog a {
   width: 100%;
+}
+.Footer a {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--black);
+  justify-content: flex-start;
 }

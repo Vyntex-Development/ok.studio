@@ -111,4 +111,10 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1279px) {
+  .FaqAnswerWrapper p {
+    margin-right: 5em;
+  }
+}
+
 /* faq end */

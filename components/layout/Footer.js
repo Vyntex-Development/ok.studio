@@ -1,5 +1,114 @@
+import classes from "./Footer.module.css";
+import Link from "../UI/Link";
+import Image from "next/image";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <div className={classes.Footer}>
+      <div className="container">
+        <div className={classes.FooterWrapper}>
+          <div className={classes.FooterTop}>
+            <div className={classes.FooterFormWrapper}>
+              <Link type="logo" href="/">
+                <Image
+                  layout="fixed"
+                  objectFit="contain"
+                  alt="logo"
+                  width={74}
+                  height={16}
+                  src="/images/logo_dark.png"
+                ></Image>
+              </Link>
+              <h2>
+                Subscribe to our newsletter to stay in touch with the latest.
+              </h2>
+              <form method="get">
+                <div className={classes.InputWrapper}>
+                  <input type="email" placeholder="Email Address*" required />
+                  <button type="submit" className={classes.Submit}>
+                    <Image
+                      layout="fixed"
+                      objectFit="fill"
+                      alt="icon"
+                      width={16}
+                      height={5}
+                      src="/images/arrow_input.png"
+                    ></Image>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div className={classes.LinksWrapper}>
+              <div className={classes.LinkWrapper}>
+                <p>Menu</p>
+                <div className={classes.Links}>
+                  <Link type="footer" href="/">
+                    Work
+                  </Link>
+                  <Link type="footer" href="/">
+                    About
+                  </Link>
+                  <Link type="footer" href="/">
+                    Insights
+                  </Link>
+                  <Link type="footer" href="/">
+                    Careers
+                  </Link>
+                  <Link type="footer" href="/">
+                    Contact
+                  </Link>
+                </div>
+              </div>
+              <div className={classes.LinkWrapper}>
+                <p>SERVICES</p>
+                <div className={classes.Links}>
+                  <Link type="footer" href="/">
+                    Branded E-commerce
+                  </Link>
+                  <Link type="footer" href="/">
+                    Website + Platforms
+                  </Link>
+                  <Link type="footer" href="/">
+                    Digital Products + Services
+                  </Link>
+                  <Link type="footer" href="/">
+                    Branding and Advertising
+                  </Link>
+                </div>
+              </div>
+              <div className={classes.LinkWrapper}>
+                <p>SOCIAL</p>
+                <div className={classes.Links}>
+                  <Link type="footer" href="/">
+                    Dribbble
+                  </Link>
+                  <Link type="footer" href="/">
+                    Behance
+                  </Link>
+                  <Link type="footer" href="/">
+                    Twitter
+                  </Link>
+                  <Link type="footer" href="/">
+                    LinkedIn
+                  </Link>
+                  <Link type="footer" href="/">
+                    Instagram
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.FooterBottom}>
+            <div className={classes.Dot}>
+              <div></div>
+            </div>
+            <div className={classes.CopyRight}>copy</div>
+            <div className={classes.Privacy}>links</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
