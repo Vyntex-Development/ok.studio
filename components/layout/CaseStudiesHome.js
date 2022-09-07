@@ -10,17 +10,19 @@ const CaseStudiesHome = () => {
           <div className="dot"></div>
           <p>Works we proud of</p>
         </div>
-        <div className="coll-8">
-          <div className={classes.CaseContent}>
-            <h1>Case Studies</h1>
-            <p className="p-large">
-              Here are some of our projects we are proud of, or to be direct —
-              list of projects that we can display without getting sued.{" "}
-              <span>(you know, NDAs)</span>
-            </p>
-            <Link type="dark" href="/">
-              OUR PORTFOLIO
-            </Link>
+        <div className="grid">
+          <div className="coll-8">
+            <div className={classes.CaseContent}>
+              <h1>Case Studies</h1>
+              <p className="p-large">
+                Here are some of our projects we are proud of, or to be direct —
+                list of projects that we can display without getting sued.{" "}
+                <span>(you know, NDAs)</span>
+              </p>
+              <Link type="dark" href="/">
+                OUR PORTFOLIO
+              </Link>
+            </div>
           </div>
         </div>
         <div className={classes.CaseItemsWrapper}>
