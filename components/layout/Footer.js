@@ -102,8 +102,20 @@ const Footer = () => {
             <div className={classes.Dot}>
               <div></div>
             </div>
-            <div className={classes.CopyRight}>copy</div>
-            <div className={classes.Privacy}>links</div>
+            <div className={classes.CopyRight}>
+              <p className={classes.FooterText}> Copyright OK STUDIO LLC</p>
+            </div>
+            <div className={classes.Privacy}>
+              <Link type="footer" href="/">
+                Privacy
+              </Link>
+              <Link type="footer" href="/">
+                Terms
+              </Link>
+              <Link type="footer" href="/">
+                Cookies
+              </Link>
+            </div>
           </div>
         </div>
       </div>

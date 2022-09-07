@@ -129,6 +129,27 @@
 .Privacy {
   width: 15%;
 }
+
+.FooterText {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 100%;
+  color: var(--gray);
+}
+
+.Privacy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Privacy a {
+  font-size: 0.875rem;
+  color: var(--gray);
+  margin-right: 1.5rem;
+}
 @media screen and (max-width: 1279px) {
   .FooterFormWrapper {
     max-width: 35%;
@@ -136,5 +157,9 @@
   .Dot {
     margin-right: 5.27%;
     max-width: 35%;
+  }
+
+  .Privacy a {
+    margin-right: 1rem;
   }
 }
