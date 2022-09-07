@@ -15,7 +15,7 @@
   margin-bottom: 2rem;
 }
 
-/*faq*/
+/* faq start */
 
 .Faq {
   width: 100%;
@@ -62,7 +62,7 @@
   padding-left: 7rem;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .FaqAnswerWrapper p {
@@ -75,6 +75,7 @@
   color: var(--gray);
   max-width: 20rem;
   padding-bottom: 1.5rem;
+  margin-right: 8rem;
 }
 
 .Active {
@@ -110,3 +111,5 @@
 .Faq:hover .Progress {
   width: 100%;
 }
+
+/* faq end */
