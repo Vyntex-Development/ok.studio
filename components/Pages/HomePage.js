@@ -2,6 +2,7 @@ import FaqSection from "../layout/FaqSection";
 import HomeHero from "../layout/HomeHero";
 import { useState } from "react";
 import CaseStudiesHome from "../layout/CaseStudiesHome";
+import InsightsSection from "../layout/InsightsSection";
 
 const HomePage = () => {
   const [activeFaq, setActiveFaq] = useState("1");
@@ -15,6 +16,7 @@ const HomePage = () => {
         }}
       ></FaqSection>
       <CaseStudiesHome></CaseStudiesHome>
+      <InsightsSection></InsightsSection>
     </div>
   );
 };

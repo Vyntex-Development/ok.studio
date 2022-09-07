@@ -1,3 +1,6 @@
+.CaseWrapper {
+  padding-bottom: 5rem;
+}
 .CaseWrapper h1 {
   font-size: 6.875rem;
   font-family: "PPNeueBit-Bold";

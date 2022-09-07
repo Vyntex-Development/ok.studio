@@ -1,0 +1,41 @@
+.InsightsWrapper {
+  padding-bottom: 5rem;
+}
+
+.InsightsItemsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  align-items: end;
+}
+
+.InsightsItemsWrapper div div a {
+  width: 100%;
+}
+
+/* image height start first */
+.InsightsItemsWrapper div:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.InsightsItemsWrapper div:nth-of-type(1) div a div div div {
+  height: 15rem;
+}
+
+/* image height start second */
+.InsightsItemsWrapper div:nth-of-type(2) {
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.InsightsItemsWrapper div:nth-of-type(2) div a div div div {
+  height: 20rem;
+}
+
+/* image height start third */
+.InsightsItemsWrapper div:nth-of-type(3) {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.InsightsItemsWrapper div:nth-of-type(3) div a div div div {
+  height: 25rem;
+}

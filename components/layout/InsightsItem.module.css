@@ -1,0 +1,47 @@
+.CaseItemWrapper {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.CaseItem {
+  width: 100%;
+}
+
+.CaseImageWrapper {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.CaseImage {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.CaseContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.CaseContent h2 {
+  font-family: "PPNeue-Medium";
+  font-weight: 500;
+  font-size: 1.635rem;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  max-width: 23rem;
+}
+
+.CaseContent p {
+  color: var(--gray);
+}
+.CaseItemWrapper:hover .CaseImage {
+  transform: scale(1.02);
+}
+
+.CaseItemWrapper:hover {
+  opacity: 0.6;
+}
