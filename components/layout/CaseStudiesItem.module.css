@@ -1,5 +1,6 @@
 .CaseItemWrapper {
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .CaseItem {
@@ -8,10 +9,13 @@
 
 .CaseImageWrapper {
   margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .CaseImage {
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .CaseContent {
@@ -31,4 +35,11 @@
 
 .CaseContent p {
   color: var(--gray);
+}
+.CaseItemWrapper:hover .CaseImage {
+  transform: scale(1.02);
+}
+
+.CaseItemWrapper:hover {
+  opacity: 0.6;
 }
