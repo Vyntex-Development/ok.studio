@@ -68,3 +68,10 @@
 .Dark:hover a {
   color: var(--black);
 }
+.Blog {
+  width: 100%;
+}
+
+.Blog a {
+  width: 100%;
+}

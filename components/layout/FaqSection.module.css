@@ -1,7 +1,5 @@
 .FaqWrapper {
-  padding-top: 1rem;
   padding-bottom: 10rem;
-  border-top: 1px solid var(--gray);
 }
 .FaqWrapper span {
   color: var(--primary-white);
@@ -24,6 +22,7 @@
 
 .FaqRight {
   border-top: 1px solid var(--gray);
+  width: 100%;
 }
 
 .FaqQuestionWrapper {

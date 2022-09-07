@@ -1,0 +1,80 @@
+.CaseWrapper h1 {
+  font-size: 6.875rem;
+  font-family: "PPNeueBit-Bold";
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.CaseWrapper span {
+  font-family: "PPNeue-Medium";
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+.CaseContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.CaseContent p {
+  margin-bottom: 2.5rem;
+}
+
+.CaseItemsWrapper {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  align-items: end;
+}
+
+.CaseItemsWrapper div div a {
+  width: 100%;
+}
+
+/* image height start first */
+.CaseItemsWrapper div:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+.CaseItemsWrapper div:nth-of-type(1) div a div div div {
+  height: 35rem;
+}
+
+/* image height start second */
+.CaseItemsWrapper div:nth-of-type(2) {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.CaseItemsWrapper div:nth-of-type(2) div a div div div {
+  height: 20rem;
+}
+
+/* image height start third */
+.CaseItemsWrapper div:nth-of-type(3) {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.CaseItemsWrapper div:nth-of-type(3) div a div div div {
+  height: 25rem;
+}
+
+/* image height start fourth */
+.CaseItemsWrapper div:nth-of-type(4) {
+  grid-column-start: 5;
+  grid-column-end: 9;
+}
+.CaseItemsWrapper div:nth-of-type(4) div a div div div {
+  height: 20rem;
+}
+
+/* image height start fifth */
+.CaseItemsWrapper div:nth-of-type(5) {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.CaseItemsWrapper div:nth-of-type(5) div a div div div {
+  height: 25rem;
+}

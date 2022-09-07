@@ -22,6 +22,10 @@ const Link = ({ children, href, type, onClick }) => {
     className = classes.NavButton;
   }
 
+  if (type === "blog") {
+    className = classes.Blog;
+  }
+
   return (
     <div onClick={onClick} className={`${classes.Link} ${className}`}>
       <NextLink passHref href={href}>

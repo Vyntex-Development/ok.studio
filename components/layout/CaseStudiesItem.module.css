@@ -1,0 +1,34 @@
+.CaseItemWrapper {
+  width: 100%;
+}
+
+.CaseItem {
+  width: 100%;
+}
+
+.CaseImageWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.CaseImage {
+  position: relative;
+}
+
+.CaseContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.CaseContent h2 {
+  font-family: "PPNeue-Medium";
+  font-weight: 500;
+  font-size: 1.635rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  width: 50%;
+}
+
+.CaseContent p {
+  color: var(--gray);
+}
