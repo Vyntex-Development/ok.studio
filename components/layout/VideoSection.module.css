@@ -1,0 +1,12 @@
+.Container {
+  padding-bottom: 5rem;
+}
+
+.DotWrapper p {
+  color: var(--gray);
+}
+.Image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}

@@ -26,12 +26,12 @@ const HomeHero = () => {
     tl.fromTo(
       target,
       {
-        width: "52em",
+        width: "42rem",
         height: "25rem",
         duration: 1,
       },
       {
-        width: "100em",
+        width: "100vw",
         height: "100vh",
         duration: 1,
       }
@@ -63,9 +63,23 @@ const HomeHero = () => {
             </div>
             <div className={classes.TitleWrapper}>
               <h1>
-                Elevating <span>brands</span> through digital{" "}
+                Elevating <span>brands</span> through digital
                 <span>experiences</span>
               </h1>
+            </div>
+            <div className={classes.DateWrapper}>
+              <p>2019 - 22</p>
+            </div>
+          </div>
+          <div className={classes.HeroMobile}>
+            <div className={classes.TitleWrapperMobile}>
+              <h1>
+                Elevating <span>brands</span> through digital
+                <span>experiences</span>
+              </h1>
+            </div>
+            <div className={classes.DateWrapper}>
+              <p>2019 - 22</p>
             </div>
           </div>
         </div>

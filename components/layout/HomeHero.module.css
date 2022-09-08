@@ -1,3 +1,7 @@
+.HeroMobile {
+  display: none;
+}
+
 .HeroWrapper {
   height: 300vh;
   width: 100%;
@@ -15,7 +19,7 @@
 
 .HeroImageWrapper {
   overflow: hidden;
-  width: 52em;
+  width: 42rem;
   background-color: transparent;
   height: 25rem;
   display: flex;
@@ -44,7 +48,22 @@
   font-size: 6.875rem;
   color: var(--yellow);
 }
+.DateWrapper {
+  position: absolute;
+  width: 49.74rem;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.DateWrapper p {
+  font-family: "PPNeue-Medium";
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--gray);
+  margin-top: 27.7rem;
+}
 @media screen and (max-width: 991px) {
   .HeroImageWrapper {
     width: 40em;
@@ -59,7 +78,51 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .HeroWrapper {
+    padding-top: 136px;
+  }
   .TitleWrapper span {
     font-size: 68px;
+  }
+
+  .TitleWrapperMobile h1 {
+    text-align: left;
+  }
+
+  .TitleWrapperMobile span {
+    font-size: 68px;
+    font-family: "PPNeueBit-Bold";
+    color: var(--yellow);
+  }
+  .HeroWrapper {
+    height: auto;
+  }
+  .HeroSticky {
+    position: static;
+    height: auto;
+  }
+  .HeroMobile {
+    display: block;
+  }
+  .HeroImageWrapper {
+    display: none;
+  }
+
+  .TitleWrapper {
+    position: static;
+    transform: none;
+    width: auto;
+    align-items: flex-start;
+  }
+  .TitleWrapper h1 {
+    text-align: left;
+  }
+  .DateWrapper {
+    position: static;
+    transform: translate(0%, 0%);
+    display: none;
+  }
+  .DateWrapper p {
+    margin-top: 0;
   }
 }
