@@ -37,6 +37,10 @@ const Header = () => {
             <Link type="navButton" href="/">
               Contact
             </Link>
+            <div className={classes.MenuButton}>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

@@ -160,4 +160,27 @@ a {
   body {
     font-size: calc(0.20181634712411706vw + 0.625em);
   }
+  .container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  h1 {
+    font-size: 64px;
+  }
+
+  .dotWrapper {
+    margin-bottom: 5rem;
+  }
+
+  .coll-8 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 44px;
+    line-height: 120%;
+  }
 }

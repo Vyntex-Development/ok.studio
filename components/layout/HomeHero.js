@@ -26,12 +26,12 @@ const HomeHero = () => {
     tl.fromTo(
       target,
       {
-        width: "42rem",
+        width: "52em",
         height: "25rem",
         duration: 1,
       },
       {
-        width: "100vw",
+        width: "100em",
         height: "100vh",
         duration: 1,
       }

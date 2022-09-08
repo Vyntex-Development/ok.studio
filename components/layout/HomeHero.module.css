@@ -15,7 +15,7 @@
 
 .HeroImageWrapper {
   overflow: hidden;
-  width: 42rem;
+  width: 52em;
   background-color: transparent;
   height: 25rem;
   display: flex;
@@ -43,4 +43,23 @@
   font-family: "PPNeueBit-Bold";
   font-size: 6.875rem;
   color: var(--yellow);
+}
+
+@media screen and (max-width: 991px) {
+  .HeroImageWrapper {
+    width: 40em;
+  }
+
+  .TitleWrapper {
+    width: 752px;
+  }
+
+  .TitleWrapper span {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .TitleWrapper span {
+    font-size: 68px;
+  }
 }

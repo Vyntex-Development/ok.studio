@@ -1,7 +1,7 @@
 .Navigation {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   background-color: var(--black);
 }
@@ -25,4 +25,38 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 2rem;
+}
+.NavRight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.875rem;
+}
+.MenuButton {
+  display: none;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.MenuButton div {
+  width: 2.5rem;
+  height: 2px;
+  background-color: var(--primary-white);
+}
+
+@media screen and (max-width: 991px) {
+  .MenuButton {
+    display: flex;
+  }
+
+  .NavLinkWrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .MenuButton div {
+    width: 32px;
+    height: 2px;
+  }
 }

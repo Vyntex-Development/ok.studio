@@ -23,6 +23,7 @@
 .FaqRight {
   border-top: 1px solid var(--gray);
   width: 100%;
+  height: 20rem;
 }
 
 .FaqQuestionWrapper {
