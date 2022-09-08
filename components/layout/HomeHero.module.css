@@ -81,15 +81,12 @@
   .HeroWrapper {
     padding-top: 136px;
   }
-  .TitleWrapper span {
-    font-size: 68px;
-  }
 
   .TitleWrapperMobile h1 {
     text-align: left;
   }
 
-  .TitleWrapperMobile span {
+  .HeroMobile span {
     font-size: 68px;
     font-family: "PPNeueBit-Bold";
     color: var(--yellow);
@@ -114,7 +111,7 @@
     width: auto;
     align-items: flex-start;
   }
-  .TitleWrapper h1 {
+  .HeroMobile h1 {
     text-align: left;
   }
   .DateWrapper {

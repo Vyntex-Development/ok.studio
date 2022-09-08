@@ -72,12 +72,11 @@ const HomeHero = () => {
             </div>
           </div>
           <div className={classes.HeroMobile}>
-            <div className={classes.TitleWrapperMobile}>
-              <h1>
-                Elevating <span>brands</span> through digital
-                <span>experiences</span>
-              </h1>
-            </div>
+            <h1>
+              Elevating <span>brands</span> through digital
+              <span> experiences</span>
+            </h1>
+            <div className={classes.TitleWrapperMobile}></div>
             <div className={classes.DateWrapper}>
               <p>2019 - 22</p>
             </div>
