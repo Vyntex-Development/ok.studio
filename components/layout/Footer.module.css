@@ -219,6 +219,7 @@
   .FooterFormWrapper h2 {
     margin-top: 40px;
     margin-bottom: 24px;
+    max-width: 336px;
   }
   .LinksWrapper {
     width: auto;

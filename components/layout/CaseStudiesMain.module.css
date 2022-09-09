@@ -1,0 +1,76 @@
+.CaseMainTop {
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+.CaseMainTop div {
+  width: auto;
+}
+.CaseMainTop div a {
+  width: auto;
+  font-family: "PPNeue-Medium";
+  font-size: 1.625rem;
+  line-height: 100%;
+  color: var(--primary-white);
+  display: inline-block;
+}
+
+.CaseMainTop div a span {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -2px;
+}
+.CaseLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.CaseLinks div a {
+  color: var(--gray);
+}
+
+.ContentLeft {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 8.06rem;
+}
+.ContentLeft h2 {
+  font-family: "PPNeue-Medium";
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+  margin-bottom: 1.5rem;
+}
+
+.ContentLeft p {
+  font-family: "PPNeue-Medium";
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin-bottom: 2.5rem;
+  max-width: 20.75rem;
+}
+
+.ItemsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 5rem;
+}
+.Grid {
+  /* border-bottom: 1px solid var(--gray); */
+  padding-bottom: 2.5rem;
+}
