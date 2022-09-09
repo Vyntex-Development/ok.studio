@@ -97,4 +97,14 @@
   .NavButton {
     display: none;
   }
+
+  .Dark {
+    padding: 4px 8px;
+  }
+  .Dark a {
+    font-size: 1rem;
+  }
+  .Footer a {
+    font-size: 14px;
+  }
 }

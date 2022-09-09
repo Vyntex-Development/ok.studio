@@ -54,3 +54,20 @@
     width: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .CaseImageWrapper {
+    margin-bottom: 16px;
+  }
+  .CaseContent {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .CaseContent h2 {
+    font-size: 1rem;
+  }
+  .CaseContent p {
+    font-size: 14px;
+  }
+}

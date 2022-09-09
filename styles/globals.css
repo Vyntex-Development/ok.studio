@@ -183,4 +183,13 @@ a {
     font-size: 44px;
     line-height: 120%;
   }
+  .dotWrapper {
+    margin-bottom: 40px;
+  }
+  .dotWrapper p {
+    font-size: 14px;
+  }
+  .p-large {
+    font-size: 24px;
+  }
 }

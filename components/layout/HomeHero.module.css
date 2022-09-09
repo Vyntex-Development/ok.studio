@@ -19,7 +19,7 @@
 
 .HeroImageWrapper {
   overflow: hidden;
-  width: 42rem;
+  width: 40rem;
   background-color: transparent;
   height: 25rem;
   display: flex;
@@ -33,7 +33,7 @@
   height: 100vh;
 }
 
-.TitleWrapper {
+.TitleWrapperDesktop {
   position: absolute;
   top: 50%; /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
@@ -43,7 +43,7 @@
   margin-top: 4rem;
 }
 
-.TitleWrapper span {
+.TitleWrapperDesktop span {
   font-family: "PPNeueBit-Bold";
   font-size: 6.875rem;
   color: var(--yellow);
@@ -69,11 +69,11 @@
     width: 40em;
   }
 
-  .TitleWrapper {
+  .TitleWrapperDesktop {
     width: 752px;
   }
 
-  .TitleWrapper span {
+  .TitleWrapperDesktop span {
     font-size: 90px;
   }
 }
@@ -105,11 +105,12 @@
     display: none;
   }
 
-  .TitleWrapper {
+  .TitleWrapperDesktop {
     position: static;
     transform: none;
     width: auto;
     align-items: flex-start;
+    display: none;
   }
   .HeroMobile h1 {
     text-align: left;
