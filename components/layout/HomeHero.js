@@ -28,11 +28,13 @@ const HomeHero = () => {
       {
         width: "42rem",
         height: "25rem",
+        opacity: 0.2,
         duration: 1,
       },
       {
         width: "100vw",
         height: "100vh",
+        opacity: 1,
         duration: 1,
       }
     );
@@ -51,6 +53,15 @@ const HomeHero = () => {
   return (
     <div className="container">
       <div className={classes.HeroWrapper} ref={imgRef}>
+        <div className={classes.TitleWrapper}>
+          <h1>
+            Elevating <span>brands</span> through digital
+            <span> experiences</span>
+          </h1>
+        </div>
+        <div className={classes.DateWrapper}>
+          <p>2019 - 22</p>
+        </div>
         <div className={classes.HeroSticky}>
           <div className={classes.HeroImageWrapper} id="moving">
             <div className={classes.Image}>
@@ -60,15 +71,6 @@ const HomeHero = () => {
                 alt="hero"
                 src="/images/hero_img.png"
               ></Image>
-            </div>
-            <div className={classes.TitleWrapper}>
-              <h1>
-                Elevating <span>brands</span> through digital
-                <span>experiences</span>
-              </h1>
-            </div>
-            <div className={classes.DateWrapper}>
-              <p>2019 - 22</p>
             </div>
           </div>
           <div className={classes.HeroMobile}>
