@@ -74,6 +74,22 @@
   /* border-bottom: 1px solid var(--gray); */
   padding-bottom: 2.5rem;
 }
+
+.ContentFirst {
+  border-bottom: 1px solid var(--gray);
+  scroll-margin-top: 9.5rem;
+}
+
+.ContentSecond {
+  padding-top: 2.5rem;
+  border-bottom: 1px solid var(--gray);
+  scroll-margin-top: 4.3rem;
+}
+
+.ContentThird {
+  padding-top: 2.5rem;
+  scroll-margin-top: 4.3rem;
+}
 /*gsap animation*/
 /* .WrapperAnimate {
   display: flex;
