@@ -2,7 +2,6 @@ import Image from "next/image";
 import classes from "./HomeHero.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 import { useRef } from "react";
 import { useEffect } from "react";
