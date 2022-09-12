@@ -12,7 +12,11 @@
     "gsap": "^3.11.1",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-scroll": "^1.8.7",
+    "react-smooth-scrollbar": "^8.0.6",
+    "smooth-scrollbar": "^8.7.5",
+    "smooth-scrollbar-react": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "8.23.0",

@@ -5,6 +5,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useEffect } from "react";
+import { scroll } from "react-scroll";
 
 const CaseStudiesMain = () => {
   //   useEffect(() => {
@@ -33,7 +34,14 @@ const CaseStudiesMain = () => {
           <Link type="blog" href="#platforms">
             Websites + Platforms <span> (8)</span>
           </Link>
-          <Link type="blog" href="#ecommerces">
+          <Link
+            type="blog"
+            href="#ecommerces"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+          >
             Branded Ecommerces <span> (3)</span>
           </Link>
           <Link type="blog" href="#advertising">

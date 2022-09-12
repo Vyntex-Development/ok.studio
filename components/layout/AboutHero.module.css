@@ -1,0 +1,29 @@
+.HeroWrapper {
+  padding-top: 19rem;
+  padding-bottom: 15rem;
+}
+.HeroItem {
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.HeroItem {
+  max-width: 49.75rem;
+}
+.HeroItem p:nth-of-type(2) {
+  line-height: 130%;
+  color: var(--gray);
+  margin-left: auto;
+  margin-right: 3rem;
+}
+.HeroItem p span {
+  color: var(--yellow);
+}
+
+.HeroItem h1 span {
+  font-family: "PPNeueBit-Bold";
+  font-size: 6.875rem;
+  color: var(--yellow);
+}
