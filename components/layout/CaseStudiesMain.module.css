@@ -74,3 +74,24 @@
   /* border-bottom: 1px solid var(--gray); */
   padding-bottom: 2.5rem;
 }
+/*gsap animation*/
+/* .WrapperAnimate {
+  display: flex;
+  width: 189em;
+  column-gap: 1rem;
+  overflow-x: hidden;
+}
+
+.ItemsWrapper {
+  width: 63em;
+  height: 100vh;
+}
+.Height {
+  height: 290vh;
+}
+
+.Sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+} */

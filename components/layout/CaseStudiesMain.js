@@ -1,7 +1,28 @@
 import classes from "./CaseStudiesMain.module.css";
 import Link from "../UI/Link";
 import CaseStudiesArticle from "./CaseStudiesArticle";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+import { useEffect } from "react";
+
 const CaseStudiesMain = () => {
+  //   useEffect(() => {
+  //     const container = "#wrapper";
+  //     const components = "#component";
+  //     gsap.to(components, {
+  //       xPercent: -100 * (components.length - 1),
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: container,
+  //         pin: true,
+  //         scrub: 1,
+  //         snap: 1 / (components.length - 1),
+  //         end: () => "+=" + document.querySelector("#wrapper").offsetWidth,
+  //       },
+  //     });
+  //   }, []);
+
   return (
     <div className="container">
       <div className={classes.CaseMainTop}>
@@ -20,6 +41,7 @@ const CaseStudiesMain = () => {
           </Link>
         </div>
       </div>
+
       <div className={`${classes.Grid} grid`}>
         <div className="coll-4">
           <div className={classes.ContentLeft}>
@@ -34,11 +56,29 @@ const CaseStudiesMain = () => {
           </div>
         </div>
         <div className="coll-8">
-          <div className={classes.ItemsWrapper}>
-            <CaseStudiesArticle></CaseStudiesArticle>
-            <CaseStudiesArticle></CaseStudiesArticle>
-            <CaseStudiesArticle></CaseStudiesArticle>
-            <CaseStudiesArticle></CaseStudiesArticle>
+          <div className={classes.Height}>
+            <div className={classes.Sticky}>
+              <div className={classes.WrapperAnimate} id="wrapper">
+                <div className={classes.ItemsWrapper} id="component">
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                </div>
+                {/* <div className={classes.ItemsWrapper} id="component">
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                </div>
+                <div className={classes.ItemsWrapper} id="component">
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                  <CaseStudiesArticle></CaseStudiesArticle>
+                </div> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>
