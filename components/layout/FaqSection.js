@@ -1,8 +1,11 @@
 import classes from "./FaqSection.module.css";
 import Image from "next/image";
 import Link from "../UI/Link";
+import { ABOUT_PAGE } from "../../utils/utils";
+import { useRouter } from "next/router";
 
 const FaqSection = ({ setActiveFaq, activeFaq }) => {
+  const { pathname } = useRouter();
   return (
     <div>
       <div className="container">
@@ -12,8 +15,27 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
             <p>We are what we do</p>
           </div>
           <div className="grid">
+            <div
+              className={`${classes.CollFour} ${
+                pathname === ABOUT_PAGE ? classes.CollAbout : ""
+              }`}
+            >
+              <p>THE STORY</p>
+              <div className={classes.Image}>
+                <Image
+                  layout="fill"
+                  objectFit="cover"
+                  alt="hero"
+                  src="/images/hero_img.png"
+                ></Image>
+              </div>
+            </div>
             <div className="coll-8">
-              <div className={classes.ContentWrapper}>
+              <div
+                className={`${classes.ContentWrapper} ${
+                  pathname === ABOUT_PAGE ? classes.ContentWrapperAbout : ""
+                }`}
+              >
                 <p className="p-large">
                   We focus on digital design, strategic marketing, and all
                   things technology to ■ <span>better businesses</span> and
@@ -24,6 +46,26 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                   We are clear on every step we take, and you will always be
                   involved in all ▲ business decisions.
                 </p>
+                <div className={classes.ContentAbout}>
+                  <p>
+                    Nulla varius urna sagittis nunc aliquam porttitor. Maecenas
+                    ut diam eu sapien ornare aliquet non finibus eros. Phasellus
+                    ut varius augue. Phasellus posuere eros nec risus vulputate,
+                    non luctus orci dapibus. Integer sodales, arcu sit amet
+                    laoreet egestas, orci justo sagittis velit, sit amet
+                    eleifend lorem risus eu nisi. Nunc pharetra, erat a
+                    consectetur rutrum, lectus eros ultricies nibh, vel interdum
+                    dolor nibh.
+                  </p>
+                  <p>
+                    Integer sodales, arcu sit amet laoreet egestas, orci justo
+                    sagittis velit, sit amet eleifend lorem risus eu nisi. Nunc
+                    pharetra, erat a consectetur rutrum, lectus eros ultricies
+                    nibh, vel interdum dolor nibh eget odio. Nunc pharetra, erat
+                    a consectetur rutrum, lectus eros ultricies nibh, vel
+                    interdum dolor nibh eget odio.
+                  </p>
+                </div>
               </div>
               <div className={classes.FaqRight}>
                 <div className={classes.Faq}>
