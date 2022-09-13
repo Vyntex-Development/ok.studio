@@ -17,17 +17,27 @@ const Founders = () => {
           <div className="coll-8">
             <div className={classes.FoundersWrapper}>
               <Link type="blog" href="/">
+                <div className={classes.ImageHoverOne}>
+                  <div className={classes.ImageFounders}>
+                    <Image
+                      layout="fill"
+                      objectFit="cover"
+                      alt="hero"
+                      src="/images/hero_img.png"
+                    ></Image>
+                  </div>
+                </div>
                 <div className={classes.NameHover}>
                   <div className={classes.ticker_track}>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
                   </div>
                 </div>
                 <div className={classes.NameWrapper}>
@@ -52,15 +62,15 @@ const Founders = () => {
               <Link type="blog" href="/">
                 <div className={classes.NameHover}>
                   <div className={classes.ticker_track}>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
-                    <p className={classes.ticker_group}>
-                      Ilia co-founded Ok.studio and oversees operations.
-                    </p>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
+                    <div className={classes.ticker_group}>
+                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                    </div>
                   </div>
                 </div>
                 <div className={classes.NameWrapper}>

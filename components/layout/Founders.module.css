@@ -4,6 +4,7 @@
 
 .FoundersWrapper {
   width: 100%;
+  position: relative;
 }
 
 .FoundersWrapper div a {
@@ -70,7 +71,7 @@
   overflow: hidden;
   border-top: 1px solid var(--black);
 }
-.NameHover p {
+.NameHover .ticker_group p {
   transition: all 0.2s ease-in-out;
   font-size: 80px;
   color: var(--black);
@@ -107,4 +108,30 @@
   display: flex;
   justify-content: space-between;
   width: auto;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.ImageFounders {
+  position: relative;
+  width: 18rem;
+  height: 25rem;
+  transition: all 1s ease-in-out;
+}
+.ImageHoverOne,
+.ImageHoverTwo {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: -5.5rem;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+  width: 0%;
+}
+
+.FoundersWrapper div:hover .ImageHoverOne {
+  width: 100%;
 }
