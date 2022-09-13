@@ -103,6 +103,75 @@ const Skills = () => {
             <div className="dot-black"></div>
             <p className="black">OK.Studio in numbers</p>
           </div>
+          <div className="grid">
+            <div className="coll-4">
+              <div className={classes.SkillsWrapperLeft}>
+                <h2 className={classes.AboutTitle}>THE SKILLS</h2>
+                <div className={classes.SmallContent}>
+                  <p className={classes.AboutP}>
+                    We are carefully documenting our progress, so in case you
+                    like studies — we ve got some cases.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="coll-8">
+              <div className={classes.Numbers}>
+                <div className={classes.SkillsItemWrapper}>
+                  <div className={classes.NumberItem}>
+                    <h1 className={classes.h1}>01</h1>
+                    <h1 className={classes.h1}>STUDIO</h1>
+                    <p className={classes.AboutP}>
+                      We are carefully documenting our progress, so in case you
+                      like.
+                    </p>
+                  </div>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
+                </div>
+                <div className={classes.SkillsItemWrapper}>
+                  <div className={classes.NumberItem}>
+                    <h1 className={classes.h1}>02</h1>
+                    <h1 className={classes.h1}>PRODUCTS</h1>
+                    <p className={classes.AboutP}>
+                      We are carefully documenting our progress, so in case you
+                      like.
+                    </p>
+                  </div>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
+                </div>
+                <div className={classes.SkillsItemWrapper}>
+                  <div className={classes.NumberItem}>
+                    <h1 className={classes.h1}>03</h1>
+                    <h1 className={classes.h1}>SERVICES</h1>
+                    <p className={classes.AboutP}>
+                      We are carefully documenting our progress, so in case you
+                      like.
+                    </p>
+                  </div>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
+                </div>
+                <div className={classes.SkillsItemWrapper}>
+                  <div className={classes.NumberItem}>
+                    <h1 className={classes.h1}>04</h1>
+                    <h1 className={classes.h1}>PROJECTS</h1>
+                    <p className={classes.AboutP}>
+                      We are carefully documenting our progress, so in case you
+                      like.
+                    </p>
+                  </div>
+                  <div className={classes.ProgressWrapper}>
+                    <div className={classes.Progress}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
