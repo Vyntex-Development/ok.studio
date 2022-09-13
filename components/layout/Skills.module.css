@@ -119,3 +119,28 @@
 .SkillsItemWrapper:nth-of-type(1) {
   border-top: 1px solid #d9d9d9;
 }
+.WorkWrapper {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #dddddd;
+}
+.Margin {
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #dddddd;
+}
+.WorkItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.WorkItem p:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-indent: 7rem;
+}
+
+.WorkItem p:nth-child(2) {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}

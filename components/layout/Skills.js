@@ -173,6 +173,45 @@ const Skills = () => {
             </div>
           </div>
         </div>
+        <div className={classes.WorkWrapper}>
+          <div className={`${classes.Margin} dotWrapper-black`}>
+            <div className="dot-black"></div>
+            <p className="black">Work + Dework</p>
+          </div>
+          <div className="grid">
+            <div className="coll-4">
+              <div className={classes.SkillsWrapperLeft}>
+                <h2 className={classes.AboutTitle}>DIGITAL CULTURE 3.0</h2>
+                <div className={classes.SmallContent}>
+                  <Link href="/" type="transparent">
+                    CAREERS
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="coll-8">
+              <div className={classes.WorkItem}>
+                <p className={classes.AboutP}>
+                  Nulla varius urna sagittis nunc aliquam porttitor. Maecenas ut
+                  diam eu sapien ornare aliquet non finibus eros. Phasellus ut
+                  varius augue. Phasellus posuere eros nec risus vulputate, non
+                  luctus orci dapibus. Integer sodales, arcu sit amet laoreet
+                  egestas, orci justo sagittis velit, sit amet eleifend lorem
+                  risus eu nisi. Nunc pharetra, erat a consectetur rutrum,
+                  lectus eros ultricies nibh, vel interdum dolor nibh.
+                </p>
+                <p className={classes.AboutP}>
+                  Integer sodales, arcu sit amet laoreet egestas, orci justo
+                  sagittis velit, sit amet eleifend lorem risus eu nisi. Nunc
+                  pharetra, erat a consectetur rutrum, lectus eros ultricies
+                  nibh, vel interdum dolor nibh eget odio. Nunc pharetra, erat a
+                  consectetur rutrum, lectus eros ultricies nibh, vel interdum
+                  dolor nibh eget odio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
