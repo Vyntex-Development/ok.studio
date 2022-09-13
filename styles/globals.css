@@ -131,6 +131,17 @@ a {
   padding-top: 1rem;
   border-top: 1px solid var(--gray);
 }
+.gray {
+  color: var(--gray);
+}
+
+.p-about {
+  font-family: "PPNeue-Medium";
+  font-size: 1.625rem;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
 
 /*.coll-8 {
   width: 64em;

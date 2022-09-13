@@ -1,6 +1,7 @@
 import AboutHero from "../layout/AboutHero";
 import FaqSection from "../layout/FaqSection";
 import { useState } from "react";
+import Founders from "../layout/Founders";
 
 const AboutPage = () => {
   const [activeFaq, setActiveFaq] = useState("1");
@@ -13,6 +14,7 @@ const AboutPage = () => {
           setActiveFaq(id);
         }}
       ></FaqSection>
+      <Founders></Founders>
     </div>
   );
 };

@@ -1,0 +1,47 @@
+.Grid {
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.FoundersWrapper {
+  width: 100%;
+}
+
+.FoundersWrapper div a {
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--gray);
+}
+.NameWrapper {
+  width: 19.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Name {
+  font-family: "PPNeueBit-Bold";
+  letter-spacing: -0.02em;
+}
+
+.NameWrapper p {
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+}
+
+.Description {
+  width: 13.5rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  margin-left: 1rem;
+}
+.Description span {
+  color: var(--primary-white);
+}
+
+.FoundersWrapper div:nth-child(2) a {
+  border-bottom: none;
+  padding-bottom: 0;
+  padding-top: 2.5rem;
+}
