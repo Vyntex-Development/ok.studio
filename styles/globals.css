@@ -130,7 +130,12 @@ a {
   border-radius: 100%;
   background-color: var(--primary-white);
 }
-
+.dot-black {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  background-color: var(--black);
+}
 .dotWrapper {
   display: flex;
   justify-content: flex-start;
@@ -140,8 +145,21 @@ a {
   padding-top: 1rem;
   border-top: 1px solid var(--gray);
 }
+
+.dotWrapper-black {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray);
+}
 .gray {
   color: var(--gray);
+}
+.black {
+  color: var(--black);
 }
 
 .p-about {
@@ -172,6 +190,11 @@ a {
 .coll-7 {
   grid-column-start: 5;
   grid-column-end: 12;
+}
+
+.coll-6 {
+  grid-column-start: 5;
+  grid-column-end: 11;
 }
 .coll-4 {
   grid-column-start: 1;

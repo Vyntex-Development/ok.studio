@@ -14,6 +14,10 @@ const Link = ({ children, href, type, onClick }) => {
     className = classes.White;
   }
 
+  if (type === "transparent") {
+    className = classes.Transparent;
+  }
+
   if (type === "nav") {
     className = classes.Nav;
   }
