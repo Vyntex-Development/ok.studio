@@ -17,6 +17,19 @@ const Founders = () => {
           <div className="coll-8">
             <div className={classes.FoundersWrapper}>
               <Link type="blog" href="/">
+                <div className={classes.NameHover}>
+                  <div className={classes.ticker_track}>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                  </div>
+                </div>
                 <div className={classes.NameWrapper}>
                   <h1 className={classes.Name}>ILIA BORTNIKOV</h1>
                   <p>Co-Founder and President</p>
@@ -37,6 +50,19 @@ const Founders = () => {
                 </div>
               </Link>
               <Link type="blog" href="/">
+                <div className={classes.NameHover}>
+                  <div className={classes.ticker_track}>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                    <p className={classes.ticker_group}>
+                      Ilia co-founded Ok.studio and oversees operations.
+                    </p>
+                  </div>
+                </div>
                 <div className={classes.NameWrapper}>
                   <h1 className={classes.Name}>MARINA LU</h1>
                   <p>Co-Founder and CEO</p>
@@ -56,7 +82,7 @@ const Founders = () => {
                   ></Image>
                 </div>
               </Link>
-              <p className="p-large-white">
+              <p className={`${classes.Large} p-large-white`}>
                 We focus on digital design, strategic marketing, and all things
                 technology to better businesses and brand experiences. We pride
                 ourselves in being fully transparent. We are clear on every step

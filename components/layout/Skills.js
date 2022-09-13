@@ -106,7 +106,7 @@ const Skills = () => {
           <div className="grid">
             <div className="coll-4">
               <div className={classes.SkillsWrapperLeft}>
-                <h2 className={classes.AboutTitle}>THE SKILLS</h2>
+                <h2 className={classes.AboutTitle}>THE NUMBERS</h2>
                 <div className={classes.SmallContent}>
                   <p className={classes.AboutP}>
                     We are carefully documenting our progress, so in case you
