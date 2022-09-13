@@ -12,7 +12,20 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
         <div className={classes.FaqWrapper}>
           <div className="dotWrapper">
             <div className="dot"></div>
-            <p>We are what we do</p>
+            <p
+              className={`${classes.Pnone} ${
+                pathname === ABOUT_PAGE ? classes.AboutP : ""
+              }`}
+            >
+              What makes us totally ok
+            </p>
+            <p
+              className={`${classes.P} ${
+                pathname === ABOUT_PAGE ? classes.AboutHome : ""
+              }`}
+            >
+              We are what we do
+            </p>
           </div>
           <div className="grid">
             <div
