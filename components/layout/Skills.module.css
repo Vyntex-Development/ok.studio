@@ -220,4 +220,9 @@
   .WorkItem p:nth-child(2) {
     width: 332px;
   }
+  .NumberItem p {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    width: 272px;
+  }
 }
