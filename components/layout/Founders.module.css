@@ -126,7 +126,7 @@
   z-index: 2;
   left: 10%;
   top: -5.5rem;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.45, 0, 0.55, 1);
   overflow: hidden;
   width: 0%;
 }
@@ -135,7 +135,7 @@
   z-index: 2;
   left: 10%;
   top: -12.9rem;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.45, 0, 0.55, 1);
   overflow: hidden;
   width: 0%;
 }
