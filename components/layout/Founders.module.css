@@ -121,8 +121,7 @@
   height: 25rem;
   transition: all 1s ease-in-out;
 }
-.ImageHoverOne,
-.ImageHoverTwo {
+.ImageHoverOne {
   position: absolute;
   z-index: 2;
   left: 10%;
@@ -131,7 +130,20 @@
   overflow: hidden;
   width: 0%;
 }
+.ImageHoverTwo {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: -12.9rem;
+  transition: all 0.8s ease-in-out;
+  overflow: hidden;
+  width: 0%;
+}
 
-.FoundersWrapper div:hover .ImageHoverOne {
-  width: 100%;
+.FoundersWrapper div:nth-child(1):hover .ImageHoverOne {
+  width: 18rem;
+}
+
+.FoundersWrapper div:nth-child(2):hover .ImageHoverTwo {
+  width: 18rem;
 }

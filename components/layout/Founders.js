@@ -60,6 +60,16 @@ const Founders = () => {
                 </div>
               </Link>
               <Link type="blog" href="/">
+                <div className={classes.ImageHoverTwo}>
+                  <div className={classes.ImageFounders}>
+                    <Image
+                      layout="fill"
+                      objectFit="cover"
+                      alt="hero"
+                      src="/images/insights_item.png"
+                    ></Image>
+                  </div>
+                </div>
                 <div className={classes.NameHover}>
                   <div className={classes.ticker_track}>
                     <div className={classes.ticker_group}>
