@@ -222,6 +222,9 @@
   .DotWrapper {
     padding-bottom: 40px;
   }
+  .DotWrapper p {
+    font-size: 14px;
+  }
 
   .FaqQuestionWrapper p:nth-of-type(2) {
     font-size: 1rem;
@@ -256,5 +259,30 @@
   }
   .FaqWrapper {
     padding-bottom: 115px;
+  }
+  .FaqP {
+    font-size: 1rem !important;
+  }
+  .CollAbout {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    width: 100%;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    width: 100%;
+  }
+  .ContentWrapperAbout {
+    padding-top: 16px;
+    row-gap: 24px;
+  }
+  .ContentWrapperAbout .ContentAbout {
+    grid-template-rows: 1fr 1fr;
+    row-gap: 24px;
   }
 }

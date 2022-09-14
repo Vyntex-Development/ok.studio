@@ -259,10 +259,24 @@ a {
   .dotWrapper p {
     font-size: 14px;
   }
+  .dotWrapper-black p {
+    font-size: 14px;
+  }
   .p-large {
     font-size: 24px;
   }
   .p-large-white {
     font-size: 24px;
+  }
+  .p-about {
+    font-size: 1rem;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  .dot-black {
+    width: 10px;
+    height: 10px;
   }
 }

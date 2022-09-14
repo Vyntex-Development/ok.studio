@@ -130,6 +130,10 @@ const Skills = () => {
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>01</h1>
                     <h1 className={classes.h1}>STUDIO</h1>
+                    <div className={classes.MobileTitle}>
+                      <h1 className={classes.h1}>01</h1>
+                      <h1 className={classes.h1}>STUDIO</h1>
+                    </div>
                     <p className={classes.AboutP}>
                       We are carefully documenting our progress, so in case you
                       like.
@@ -143,6 +147,10 @@ const Skills = () => {
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>02</h1>
                     <h1 className={classes.h1}>PRODUCTS</h1>
+                    <div className={classes.MobileTitle}>
+                      <h1 className={classes.h1}>02</h1>
+                      <h1 className={classes.h1}>PRODUCTS</h1>
+                    </div>
                     <p className={classes.AboutP}>
                       We are carefully documenting our progress, so in case you
                       like.
@@ -156,6 +164,10 @@ const Skills = () => {
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>03</h1>
                     <h1 className={classes.h1}>SERVICES</h1>
+                    <div className={classes.MobileTitle}>
+                      <h1 className={classes.h1}>03</h1>
+                      <h1 className={classes.h1}>SERVICES</h1>
+                    </div>
                     <p className={classes.AboutP}>
                       We are carefully documenting our progress, so in case you
                       like.
@@ -169,6 +181,10 @@ const Skills = () => {
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>04</h1>
                     <h1 className={classes.h1}>PROJECTS</h1>
+                    <div className={classes.MobileTitle}>
+                      <h1 className={classes.h1}>04</h1>
+                      <h1 className={classes.h1}>PROJECTS</h1>
+                    </div>
                     <p className={classes.AboutP}>
                       We are carefully documenting our progress, so in case you
                       like.

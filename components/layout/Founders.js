@@ -51,19 +51,21 @@ const Founders = () => {
                     <h1 className={classes.Name}>ILIA BORTNIKOV</h1>
                     <p>Co-Founder and President</p>
                   </div>
-                  <p className={classes.Description}>
-                    If you are intrested hiring us or ask anything related to
-                    your next project, <span>email Ilia.</span>
-                  </p>
-                  <div className={classes.FounderIcon}>
-                    <Image
-                      layout="fixed"
-                      objectFit="fill"
-                      alt="icon"
-                      width={100}
-                      height={52}
-                      src="/images/founder_icon.png"
-                    ></Image>
+                  <div className={classes.DescriptionWrapper}>
+                    <p className={classes.Description}>
+                      If you are intrested hiring us or ask anything related to
+                      your next project, <span>email Ilia.</span>
+                    </p>
+                    <div className={classes.FounderIcon}>
+                      <Image
+                        layout="fixed"
+                        objectFit="fill"
+                        alt="icon"
+                        width={100}
+                        height={52}
+                        src="/images/founder_icon.png"
+                      ></Image>
+                    </div>
                   </div>
                 </Link>
                 <Link type="blog" href="/">
@@ -100,19 +102,21 @@ const Founders = () => {
                     <h1 className={classes.Name}>MARINA LU</h1>
                     <p>Co-Founder and CEO</p>
                   </div>
-                  <p className={classes.Description}>
-                    If you are intrested hiring us or ask anything related to
-                    your next project, <span>email Marina.</span>
-                  </p>
-                  <div className={classes.FounderIcon}>
-                    <Image
-                      layout="fixed"
-                      objectFit="fill"
-                      alt="icon"
-                      width={100}
-                      height={52}
-                      src="/images/founder_icon.png"
-                    ></Image>
+                  <div className={classes.DescriptionWrapper}>
+                    <p className={classes.Description}>
+                      If you are intrested hiring us or ask anything related to
+                      your next project, <span>email Ilia.</span>
+                    </p>
+                    <div className={classes.FounderIcon}>
+                      <Image
+                        layout="fixed"
+                        objectFit="fill"
+                        alt="icon"
+                        width={100}
+                        height={52}
+                        src="/images/founder_icon.png"
+                      ></Image>
+                    </div>
                   </div>
                 </Link>
               </div>

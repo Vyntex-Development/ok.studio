@@ -37,7 +37,7 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                 pathname === ABOUT_PAGE ? classes.CollAbout : ""
               }`}
             >
-              <p>THE STORY</p>
+              <p className={classes.FaqP}>THE STORY</p>
               <div className={classes.Image}>
                 <Image
                   layout="fill"

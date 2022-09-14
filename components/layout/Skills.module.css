@@ -128,9 +128,6 @@
   width: 14.5rem;
 }
 
-.SkillsItemWrapper:nth-of-type(1) {
-  border-top: 1px solid #d9d9d9;
-}
 .WorkWrapper {
   padding-top: 5rem;
   padding-bottom: 2.5rem;
@@ -139,6 +136,10 @@
 .Margin {
   padding-bottom: 2.5rem;
   border-top: 1px solid #dddddd;
+}
+
+.MobileTitle {
+  display: none;
 }
 .WorkItem {
   display: grid;
@@ -169,6 +170,9 @@
 }
 .SmallContentAbout p {
   max-width: 14.5rem;
+}
+.Numbers .SkillsItemWrapper:nth-of-type(1) {
+  border-top: 1px solid #d9d9d9;
 }
 
 @media screen and (max-width: 991px) {
@@ -224,5 +228,105 @@
     grid-column-start: 6;
     grid-column-end: 9;
     width: 272px;
+  }
+  .h1 {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .AboutTitle {
+    font-size: 1rem;
+  }
+  .h1 {
+    font-size: 42px;
+    line-height: 80%;
+  }
+  .SkillsItem {
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+  .Skills .ProgressWrapper {
+    display: none;
+  }
+  .AboutP {
+    font-size: 14px;
+  }
+  .Skills {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .SkillsItem p {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .Skills .SkillsItemWrapper:nth-of-type(6) .SkillsItem p:nth-of-type(2) {
+    border-bottom: none;
+  }
+
+  .SmallContentMobile {
+    width: 100%;
+    align-items: flex-start;
+    row-gap: 1rem;
+    margin-bottom: 40px;
+  }
+  .SmallContentMobile .AboutP {
+    font-size: 16px;
+  }
+  .CaseItemWrapper {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .CaseItemWrapper div:nth-of-type(1) div a div div div {
+    height: 65vw;
+  }
+  .CaseItemWrapper div:nth-of-type(2) div a div div div {
+    height: 65vw;
+  }
+  .AboutTitleMargin {
+    font-size: 1rem;
+  }
+  .SmallContentAbout {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .SmallContentAbout p {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .NumberItem .h1 {
+    display: none;
+  }
+  .MobileTitle {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .NumberItem .MobileTitle .h1 {
+    display: block;
+    margin-top: 0;
+  }
+  .NumberItem p {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    width: 100%;
+  }
+  .NumberItem {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .SkillsWrapperLeftLast {
+    padding-bottom: 16px;
+  }
+  .WorkItem {
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
