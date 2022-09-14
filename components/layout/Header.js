@@ -19,10 +19,10 @@ const Header = () => {
               ></Image>
             </Link>
             <div className={classes.NavLinkWrapper}>
-              <Link type="nav" href="/">
+              <Link type="nav" href="/caseStudies">
                 Work
               </Link>
-              <Link type="nav" href="/">
+              <Link type="nav" href="/about">
                 About
               </Link>
               <Link type="nav" href="/">
