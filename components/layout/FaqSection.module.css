@@ -282,7 +282,8 @@
     row-gap: 24px;
   }
   .ContentWrapperAbout .ContentAbout {
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     row-gap: 24px;
   }
 }
