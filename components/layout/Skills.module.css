@@ -10,8 +10,20 @@
   align-items: flex-start;
   height: 100%;
 }
+.SkillsWrapperLeftLast {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
 
 .AboutTitle {
+  color: var(--black);
+  line-height: 100%;
+  letter-spacing: -0.02em;
+}
+.AboutTitleMargin {
   color: var(--black);
   line-height: 100%;
   letter-spacing: -0.02em;
@@ -143,4 +155,69 @@
 .WorkItem p:nth-child(2) {
   grid-column-start: 5;
   grid-column-end: 8;
+}
+.SmallContentMobile {
+  display: none;
+}
+.SmallContentAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: auto;
+  row-gap: 1.5rem;
+}
+.SmallContentAbout p {
+  max-width: 14.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .SkillsSection {
+    padding-top: 2.5rem;
+  }
+  .AboutTitle {
+    margin-bottom: 2.5rem;
+  }
+  .SmallContent {
+    display: none;
+  }
+  .SmallContentMobile {
+    display: flex;
+    width: 240px;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 64px;
+  }
+  .SmallContentAbout {
+    margin-bottom: 5rem;
+  }
+  .AboutTitleMargin {
+    margin-bottom: 1rem;
+  }
+  .SmallContentAbout p {
+    max-width: 272px;
+  }
+  .SkillsWrapperLeftLast {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .SkillsWrapperLeftLast .AboutTitle {
+    margin-bottom: 0;
+  }
+  .SkillsWrapperLeftLast .SmallContentAbout {
+    margin-bottom: 0;
+  }
+  .WorkItem {
+    display: flex;
+    justify-content: space-between;
+  }
+  .WorkItem p:nth-child(1) {
+    width: 332px;
+  }
+
+  .WorkItem p:nth-child(2) {
+    width: 332px;
+  }
 }

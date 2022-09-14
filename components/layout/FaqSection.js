@@ -10,7 +10,11 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
     <div>
       <div className="container">
         <div className={classes.FaqWrapper}>
-          <div className="dotWrapper">
+          <div
+            className={`${classes.DotWrapper} ${
+              pathname === ABOUT_PAGE ? classes.DotWrapperAbout : ""
+            }`}
+          >
             <div className="dot"></div>
             <p
               className={`${classes.Pnone} ${

@@ -145,6 +145,15 @@ a {
   padding-top: 1rem;
   border-top: 1px solid var(--gray);
 }
+.dotWrapperAbout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray);
+}
 
 .dotWrapper-black {
   display: flex;
@@ -226,6 +235,16 @@ a {
   .coll-8 {
     grid-column-start: 1;
     grid-column-end: 13;
+  }
+  .coll-4 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .p-about {
+    margin-bottom: 40px;
+  }
+  .dotWrapper-black {
+    padding-bottom: 2.5rem;
   }
 }
 

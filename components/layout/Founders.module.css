@@ -77,7 +77,7 @@
   color: var(--black);
 }
 
-.FoundersWrapper div:hover .NameHover {
+.FoundersLinks div:hover .NameHover {
   width: 100%;
   opacity: 1;
 }
@@ -140,10 +140,68 @@
   width: 0%;
 }
 
-.FoundersWrapper div:nth-child(1):hover .ImageHoverOne {
+.FoundersLinks div:nth-child(1):hover .ImageHoverOne {
   width: 18rem;
 }
 
-.FoundersWrapper div:nth-child(2):hover .ImageHoverTwo {
+.FoundersLinks div:nth-child(2):hover .ImageHoverTwo {
   width: 18rem;
+}
+@media screen and (max-width: 991px) {
+  .Grid {
+    margin-top: 0;
+  }
+  .Large {
+    margin-top: 5rem;
+  }
+  .FoundersLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #first {
+    width: 318px;
+  }
+  .NameHover {
+    display: none;
+  }
+  .FoundersLinks div:first-child {
+    width: 318px;
+  }
+  .FoundersLinks div:nth-of-type(2) {
+    width: 288px;
+  }
+  .FoundersLinks div a {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    flex-direction: column;
+  }
+  .FoundersWrapper div:nth-child(2) a {
+    padding-top: 0;
+  }
+  .ImageHoverOne,
+  .ImageHoverTwo {
+    display: none;
+  }
+
+  .NameWrapper {
+    row-gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  .Description {
+    margin-right: auto;
+    margin-left: 0;
+    width: 288px;
+    margin-bottom: 24px;
+  }
+  .FounderIcon {
+    margin-right: auto;
+  }
+  .FounderIcon span {
+    width: 80px !important;
+    height: 40px !important;
+  }
 }

@@ -91,6 +91,15 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+              <div className={classes.SmallContentMobile}>
+                <p className={classes.AboutP}>
+                  We are carefully documenting our progress, so in case you like
+                  studies — we ve got some cases.
+                </p>
+                <Link href="/" type="transparent">
+                  OUR PORTFOLIO
+                </Link>
+              </div>
               <div className={classes.CaseItemWrapper}>
                 <CaseStudiesItem></CaseStudiesItem>
                 <CaseStudiesItem></CaseStudiesItem>
@@ -106,8 +115,8 @@ const Skills = () => {
           <div className="grid">
             <div className="coll-4">
               <div className={classes.SkillsWrapperLeft}>
-                <h2 className={classes.AboutTitle}>THE NUMBERS</h2>
-                <div className={classes.SmallContent}>
+                <h2 className={classes.AboutTitleMargin}>THE NUMBERS</h2>
+                <div className={classes.SmallContentAbout}>
                   <p className={classes.AboutP}>
                     We are carefully documenting our progress, so in case you
                     like studies — we ve got some cases.
@@ -180,9 +189,9 @@ const Skills = () => {
           </div>
           <div className="grid">
             <div className="coll-4">
-              <div className={classes.SkillsWrapperLeft}>
+              <div className={classes.SkillsWrapperLeftLast}>
                 <h2 className={classes.AboutTitle}>DIGITAL CULTURE 3.0</h2>
-                <div className={classes.SmallContent}>
+                <div className={classes.SmallContentAbout}>
                   <Link href="/" type="transparent">
                     CAREERS
                   </Link>

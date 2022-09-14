@@ -6,7 +6,7 @@ const Founders = () => {
   return (
     <div>
       <div className="container">
-        <div className="dotWrapper">
+        <div className="dotWrapperAbout">
           <div className="dot"></div>
           <p className="gray">Those who always stay invovled</p>
         </div>
@@ -16,92 +16,106 @@ const Founders = () => {
           </div>
           <div className="coll-8">
             <div className={classes.FoundersWrapper}>
-              <Link type="blog" href="/">
-                <div className={classes.ImageHoverOne}>
-                  <div className={classes.ImageFounders}>
+              <div className={classes.FoundersLinks}>
+                <Link type="blog" href="/">
+                  <div className={classes.ImageHoverOne}>
+                    <div className={classes.ImageFounders}>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        alt="hero"
+                        src="/images/hero_img.png"
+                      ></Image>
+                    </div>
+                  </div>
+                  <div className={classes.NameHover}>
+                    <div className={classes.ticker_track}>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.NameWrapper}>
+                    <h1 className={classes.Name}>ILIA BORTNIKOV</h1>
+                    <p>Co-Founder and President</p>
+                  </div>
+                  <p className={classes.Description}>
+                    If you are intrested hiring us or ask anything related to
+                    your next project, <span>email Ilia.</span>
+                  </p>
+                  <div className={classes.FounderIcon}>
                     <Image
-                      layout="fill"
-                      objectFit="cover"
-                      alt="hero"
-                      src="/images/hero_img.png"
+                      layout="fixed"
+                      objectFit="fill"
+                      alt="icon"
+                      width={100}
+                      height={52}
+                      src="/images/founder_icon.png"
                     ></Image>
                   </div>
-                </div>
-                <div className={classes.NameHover}>
-                  <div className={classes.ticker_track}>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
-                    </div>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
-                    </div>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
+                </Link>
+                <Link type="blog" href="/">
+                  <div className={classes.ImageHoverTwo}>
+                    <div className={classes.ImageFounders}>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        alt="hero"
+                        src="/images/insights_item.png"
+                      ></Image>
                     </div>
                   </div>
-                </div>
-                <div className={classes.NameWrapper}>
-                  <h1 className={classes.Name}>ILIA BORTNIKOV</h1>
-                  <p>Co-Founder and President</p>
-                </div>
-                <p className={classes.Description}>
-                  If you are intrested hiring us or ask anything related to your
-                  next project, <span>email Ilia.</span>
-                </p>
-                <div className={classes.FounderIcon}>
-                  <Image
-                    layout="fixed"
-                    objectFit="fill"
-                    alt="icon"
-                    width={100}
-                    height={52}
-                    src="/images/founder_icon.png"
-                  ></Image>
-                </div>
-              </Link>
-              <Link type="blog" href="/">
-                <div className={classes.ImageHoverTwo}>
-                  <div className={classes.ImageFounders}>
+                  <div className={classes.NameHover}>
+                    <div className={classes.ticker_track}>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                      <div className={classes.ticker_group}>
+                        <p>
+                          Ilia co-founded Ok.studio and oversees operations.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={classes.NameWrapper}>
+                    <h1 className={classes.Name}>MARINA LU</h1>
+                    <p>Co-Founder and CEO</p>
+                  </div>
+                  <p className={classes.Description}>
+                    If you are intrested hiring us or ask anything related to
+                    your next project, <span>email Marina.</span>
+                  </p>
+                  <div className={classes.FounderIcon}>
                     <Image
-                      layout="fill"
-                      objectFit="cover"
-                      alt="hero"
-                      src="/images/insights_item.png"
+                      layout="fixed"
+                      objectFit="fill"
+                      alt="icon"
+                      width={100}
+                      height={52}
+                      src="/images/founder_icon.png"
                     ></Image>
                   </div>
-                </div>
-                <div className={classes.NameHover}>
-                  <div className={classes.ticker_track}>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
-                    </div>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
-                    </div>
-                    <div className={classes.ticker_group}>
-                      <p>Ilia co-founded Ok.studio and oversees operations.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className={classes.NameWrapper}>
-                  <h1 className={classes.Name}>MARINA LU</h1>
-                  <p>Co-Founder and CEO</p>
-                </div>
-                <p className={classes.Description}>
-                  If you are intrested hiring us or ask anything related to your
-                  next project, <span>email Marina.</span>
-                </p>
-                <div className={classes.FounderIcon}>
-                  <Image
-                    layout="fixed"
-                    objectFit="fill"
-                    alt="icon"
-                    width={100}
-                    height={52}
-                    src="/images/founder_icon.png"
-                  ></Image>
-                </div>
-              </Link>
+                </Link>
+              </div>
               <p className={`${classes.Large} p-large-white`}>
                 We focus on digital design, strategic marketing, and all things
                 technology to better businesses and brand experiences. We pride
