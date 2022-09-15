@@ -1,4 +1,3 @@
-import Link from "../UI/Link";
 import classes from "./InsightsMainSection.module.css";
 import InsightsItem from "./InsightsItem";
 import { useState } from "react";

@@ -339,6 +339,28 @@ a {
 
 /*yellow card end*/
 
+/* progress bar*/
+progress {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 13rem;
+  height: 0.5rem;
+  z-index: 10000;
+  position: absolute;
+  border-radius: 1.25rem;
+  z-index: 10;
+}
+
+::-webkit-progress-bar {
+  background-color: #11131a;
+}
+
+::-webkit-progress-value {
+  background-color: var(--yellow);
+}
+
 @media screen and (min-width: 1440px) {
   body {
     font-size: 0.90625em;

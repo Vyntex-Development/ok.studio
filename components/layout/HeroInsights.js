@@ -1,6 +1,5 @@
 import Image from "next/image";
 import classes from "./HeroInsights.module.css";
-import Link from "../UI/Link";
 
 const HeroInsights = () => {
   return (
