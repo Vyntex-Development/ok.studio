@@ -57,6 +57,7 @@
 .HeroSection progress {
   position: fixed;
   top: 64px;
-  width: 100vw;
+  width: 100%;
+  left: 0;
   z-index: 1000;
 }

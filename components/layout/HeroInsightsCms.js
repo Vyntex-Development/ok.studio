@@ -30,14 +30,13 @@ const HeroInsights = () => {
   }, []);
 
   return (
-    <div ref={progressNav} className={classes.HeroSection}>
-      <progress ref={progressbarRef} min="0" max="100" value="1">
-        <div className="progress-bar">
-          <span></span>
-        </div>
-      </progress>
-
-      <div className="container">
+    <div className="container">
+      <div ref={progressNav} className={classes.HeroSection}>
+        <progress ref={progressbarRef} min="0" max="100" value="1">
+          <div className="progress-bar">
+            <span></span>
+          </div>
+        </progress>
         <div className={classes.HeroWrapper}>
           <div className="grid">
             <div className="coll-4">
