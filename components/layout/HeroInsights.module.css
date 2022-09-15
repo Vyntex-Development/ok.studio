@@ -1,0 +1,27 @@
+.HeroWrapper {
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+}
+
+.HeroContent p {
+  font-family: "PPNeueBit-Bold";
+  font-size: 1.5rem;
+  line-height: 100%;
+  color: var(--yellow);
+  margin-bottom: 0.5rem;
+}
+.HeroContent h1 {
+  font-family: "PPNeueBit-Bold";
+  font-size: 4.25rem;
+  line-height: 80%;
+  color: var(--white);
+}
+
+.HeroContent {
+  margin-bottom: 5rem;
+}
+.Image {
+  position: relative;
+  width: 100%;
+  height: 55rem;
+}
