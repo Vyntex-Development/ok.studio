@@ -26,8 +26,14 @@
 .ItemWrapperStatic div:nth-of-type(2) div a div div div {
   height: 20rem;
 }
-.ItemWrapperStatic div:nth-of-type(3) {
-  height: 31.8rem;
-  width: 100%;
-  background-color: var(--yellow);
+
+.ButtonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.ButtonWrapper div {
+  margin-bottom: 0;
 }
