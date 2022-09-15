@@ -33,7 +33,7 @@ const InsightsMainSection = () => {
             </div>
           </form>
           <p className="p-card-last">
-            By clicking 'Subscribe' above, you agree to our Privacy Policy.
+            By clicking Subscribe above, you agree to our Privacy Policy.
           </p>
         </div>
       </div>
