@@ -151,6 +151,9 @@
   .Grid {
     padding-bottom: 5rem;
   }
+  .ContentFirst {
+    scroll-margin-top: 7rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -202,5 +205,15 @@
   }
   .Grid {
     padding-bottom: 40px;
+  }
+
+  .ContentFirst {
+    scroll-margin-top: 5.5rem;
+  }
+  .ContentSecond {
+    scroll-margin-top: 3.5rem;
+  }
+  .ContentThird {
+    scroll-margin-top: 3.5rem;
   }
 }
