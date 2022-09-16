@@ -42,13 +42,13 @@ const Footer = () => {
               <div className={classes.LinkWrapper}>
                 <p>Menu</p>
                 <div className={classes.Links}>
-                  <Link type="footer" href="/">
+                  <Link type="footer" href="/services">
                     Work
                   </Link>
-                  <Link type="footer" href="/">
+                  <Link type="footer" href="/about">
                     About
                   </Link>
-                  <Link type="footer" href="/">
+                  <Link type="footer" href="/insights">
                     Insights
                   </Link>
                   <Link type="footer" href="/">
