@@ -401,6 +401,33 @@ progress {
     grid-column-start: 1;
     grid-column-end: 13;
   }
+
+  .yellow-card {
+    height: auto;
+    padding: 6.7vw 1.88vw;
+  }
+  .h1-card {
+    font-size: 68px;
+  }
+  .p-card {
+    font-size: 1.67vw;
+    margin-bottom: 24px;
+    max-width: none;
+  }
+  .input-wrapper {
+    max-width: none;
+  }
+  .input-wrapper input {
+    padding-bottom: 8px;
+  }
+  .p-card-last {
+    font-size: 1.67vw;
+    max-width: 23vw;
+    margin-top: 16px;
+  }
+  .button-wrapper {
+    justify-content: flex-start;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -433,5 +460,33 @@ progress {
   .dot-black {
     width: 10px;
     height: 10px;
+  }
+
+  .yellow-card {
+    padding-top: 56px;
+    padding-bottom: 40px;
+    height: auto;
+  }
+  .p-card {
+    font-size: 14px;
+    max-width: 208px;
+  }
+  .p-card-last {
+    font-size: 14px;
+    max-width: 189px;
+    margin-top: 32px;
+  }
+  .input-wrapper {
+    width: 208px;
+  }
+  .button-wrapper {
+    margin-top: 40px;
+  }
+  .load-button {
+    padding: 4px 8px;
+    font-size: 16px;
+  }
+  .load-more {
+    padding-bottom: 40px;
   }
 }
