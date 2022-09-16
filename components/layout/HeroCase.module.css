@@ -16,3 +16,29 @@
   font-size: 6.875rem;
   color: var(--yellow);
 }
+
+@media screen and (max-width: 991px) {
+  .HeroWrapper {
+    padding-top: 304px;
+    padding-bottom: 248px;
+  }
+
+  .HeroItem h1 {
+    font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .HeroWrapper {
+    padding-top: 128px;
+    padding-bottom: 80px;
+  }
+
+  .HeroItem h1 {
+    font-size: 44px;
+  }
+
+  .HeroItem h1 span {
+    font-size: 68px;
+  }
+}

@@ -49,3 +49,31 @@
 .CaseItemWrapper:hover {
   opacity: 0.6;
 }
+
+@media screen and (max-width: 991px) {
+  .CaseImage {
+    height: 43vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .CaseImage {
+    height: 329px;
+  }
+  .CaseContent p {
+    font-size: 14px;
+  }
+  .CaseContent {
+    row-gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .CaseContent h2 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .CaseImage {
+    height: 87vw;
+  }
+}
