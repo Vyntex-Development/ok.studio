@@ -219,6 +219,7 @@
   }
   .WorkItem p:nth-child(1) {
     width: 332px;
+    text-indent: 13vw;
   }
 
   .WorkItem p:nth-child(2) {
@@ -328,5 +329,8 @@
   .WorkItem {
     flex-direction: column;
     row-gap: 1rem;
+  }
+  .WorkItem p:nth-child(1) {
+    text-indent: 22vw;
   }
 }

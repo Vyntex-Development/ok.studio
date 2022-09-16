@@ -155,6 +155,9 @@
   align-items: center;
 }
 @media screen and (max-width: 991px) {
+  .Large {
+    text-indent: 14vw;
+  }
   .Grid {
     margin-top: 0;
   }
@@ -261,5 +264,6 @@
   .Large {
     margin-top: 40px;
     margin-bottom: 80px;
+    text-indent: 21vw;
   }
 }

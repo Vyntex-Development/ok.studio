@@ -22,7 +22,7 @@ const HeroInsights = () => {
                 progressNav.current.getBoundingClientRect().top) /
                 progressNav.current.offsetHeight) *
                 100) *
-            0.09;
+            0.29;
           isScrolling = false;
         }
       });
