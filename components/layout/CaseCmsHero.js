@@ -137,7 +137,11 @@ const CaseCmsHero = () => {
                         ></Image>
                       </div>
                     </div>
-                    <p>Some paraghraph</p>
+                    <p className={classes.DescriptionPanel}>
+                      The plan included detailed service pages that served as
+                      landing pages with an appointment scheduling element, a
+                      modern blog, and a stable marketing infrastructure.
+                    </p>
                   </div>
                 </div>
                 <div

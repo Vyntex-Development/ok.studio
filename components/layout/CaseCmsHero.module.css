@@ -117,17 +117,18 @@
 .NotePanelContain {
   position: relative;
   display: flex;
-  width: 25em;
+  width: 20.75rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 .NotePanelImg {
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 1rem;
 }
 .NotePanelImageHeight {
   position: relative;
+  height: 24rem;
   width: 100%;
   padding-top: 100%;
 }
@@ -251,6 +252,13 @@
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
+}
+
+/*horisontal scroll end*/
+
+.DescriptionPanel {
+  line-height: 140%;
+  color: var(--gray);
 }
 
 @media screen and (max-width: 1439px) {
