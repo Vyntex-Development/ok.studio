@@ -1,0 +1,259 @@
+.CaseSection {
+  background-color: var(--white);
+}
+.HeroWrapper {
+  padding-top: 19rem;
+  padding-bottom: 7.5rem;
+}
+.Grid {
+  align-items: center;
+}
+.HeroTitle h1 {
+  font-family: "PPNeueBit-Bold";
+  color: var(--black);
+  font-size: 6.875rem;
+  line-height: 100%;
+}
+.HeroDescription {
+  font-size: 1.625rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  font-family: "PPNeue-Book";
+}
+
+.Coll6 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  width: 100%;
+  padding-left: 16.66%;
+}
+.Image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* horisontal scroll*/
+.SectionHeight {
+  height: 200vh;
+}
+.StickyElement {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  align-items: stretch;
+}
+.Track {
+  transform: translate(0px, 0px);
+  position: relative;
+  height: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.TrackFlex {
+  display: flex;
+  height: 100%;
+  margin-right: -100vw;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.HeroPanel {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.HeroPanelImage {
+  transform: scale(1, 1);
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.NotePanel {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 6vw;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.NotePanelContain {
+  position: relative;
+  display: flex;
+  width: 25em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.NotePanelImg {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.NotePanelImageHeight {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.ThanksPanelWrapp {
+  position: relative;
+  z-index: 3;
+  width: 200vw;
+  height: 100vh;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.ThanksPanel {
+  transform: translate(0px, 0px);
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #fff;
+  -webkit-transform: translate(0%, 0px);
+  -ms-transform: translate(0%, 0px);
+  transform: translate(0%, 0px);
+}
+
+.ThanksPanelContain {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ThanksPanelContainTwo {
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 2;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ThanksPanelImageOne {
+  margin-top: -20.3em;
+  margin-left: -46.5em;
+  -webkit-transform: rotate(14deg);
+  -ms-transform: rotate(14deg);
+  transform: rotate(14deg);
+  position: absolute;
+  width: 11em;
+}
+
+.ThanksPanelImageTwo {
+  margin-top: 18.9em;
+  margin-left: 4.5em;
+  -webkit-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  position: absolute;
+  width: 11em;
+}
+
+.ThanksPanelImageThree {
+  margin-top: -22.3em;
+  margin-left: 59em;
+  -webkit-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  position: absolute;
+  width: 11em;
+}
+
+.ThanksPanelImageHeight {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 120%;
+}
+
+.ThanksPanelPhoto {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 1439px) {
+  .Coll6 {
+    padding-left: 9.5%;
+  }
+}
