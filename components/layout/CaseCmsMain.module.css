@@ -1,8 +1,82 @@
 .Grid {
-  margin-top: 5rem;
+  padding-top: 2.5rem;
 }
 .Image {
   position: relative;
   width: 100%;
   height: 40rem;
+}
+
+.ContentWrapper {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.ContentWrapper h2 {
+  font-family: "PPNeue-Medium";
+  font-weight: 500;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+
+.ContentWrapper p {
+  line-height: 130%;
+  color: var(--gray);
+}
+
+.DescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.TechSection {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.TechItem {
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.NumberWrapper {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.TechContent {
+  display: flex;
+  width: 50%;
+}
+.Tech {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.Number {
+  color: var(--gray);
+  width: 25%;
+}
+.Description {
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+}
+
+.TechDescription {
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--primary-white);
+}
+.TechItem:nth-of-type(6) {
+  border-bottom: none;
+  padding-bottom: 0;
 }
