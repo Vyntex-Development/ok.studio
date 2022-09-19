@@ -35,7 +35,7 @@
 }
 /* horisontal scroll*/
 .SectionHeight {
-  height: 300vh;
+  height: 600vh;
 }
 .StickyElement {
   position: sticky;
@@ -112,6 +112,7 @@
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  background-color: var(--white);
 }
 .NotePanelContain {
   position: relative;
