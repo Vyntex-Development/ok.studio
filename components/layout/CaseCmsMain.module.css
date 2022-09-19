@@ -20,6 +20,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--primary-white);
+  margin-bottom: 1rem;
 }
 
 .ContentWrapper p {
@@ -79,4 +80,58 @@
 .TechItem:nth-of-type(6) {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.ChallengeSection {
+  padding-bottom: 5rem;
+}
+
+.ImageChallenge {
+  position: relative;
+  width: 100%;
+}
+
+.ChallengeGrid div:nth-of-type(1) {
+  height: 35rem;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.ChallengeGrid div:nth-of-type(2) {
+  height: 25rem;
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+.ChallengeGrid div:nth-of-type(3) {
+  height: 52rem;
+  grid-column-start: 8;
+  grid-column-end: 13;
+}
+.ContentWrapperChallenge {
+  width: 33.33%;
+  margin-top: -15rem;
+}
+
+.SolutionGrid {
+  justify-content: start;
+  padding-top: 2.5rem;
+}
+.SolutionCollFour {
+  grid-column-start: 9;
+  grid-column-end: 13;
+}
+.SolutionCollEight {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.SolutionSection {
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .ContentWrapperChallenge {
+    width: 36%;
+  }
 }
