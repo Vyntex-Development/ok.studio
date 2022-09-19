@@ -205,25 +205,28 @@
 }
 
 .ThanksPanelImageOne {
-  margin-top: -20.3em;
-  margin-left: -46.5em;
+  margin-top: 7.7em;
+  margin-left: -60.5em;
   position: absolute;
+  z-index: -1;
   width: 13.5rem;
   height: 18.5rem;
 }
 
 .ThanksPanelImageTwo {
-  margin-top: 18.9em;
-  margin-left: 4.5em;
+  margin-top: 22.3em;
+  margin-left: -6em;
   position: absolute;
+  z-index: -1;
   width: 20.75rem;
   height: 18.5rem;
 }
 
 .ThanksPanelImageThree {
-  margin-top: -22.3em;
-  margin-left: 59em;
+  margin-top: -15.3em;
+  margin-left: 52em;
   position: absolute;
+  z-index: -1;
   width: 20.75rem;
   height: 14.5rem;
 }
@@ -232,7 +235,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 120%;
+  height: 100%;
 }
 
 .ThanksPanelPhoto {
@@ -260,16 +263,31 @@
   font-size: 13.75rem;
   line-height: 100%;
   color: var(--black);
+  letter-spacing: 0.02em;
 }
 .TitleWhite {
   font-family: "PPNeueBit-Bold";
   font-size: 13.75rem;
   line-height: 100%;
   color: var(--white);
+  letter-spacing: 0.02em;
 }
 
 @media screen and (max-width: 1439px) {
   .Coll6 {
     padding-left: 9.5%;
+  }
+
+  .ThanksPanelImageOne {
+    margin-left: -68.5em;
+  }
+  .ThanksPanelImageTwo {
+    margin-top: 25em;
+    margin-left: -7em;
+  }
+
+  .ThanksPanelImageThree {
+    margin-top: -17.3em;
+    margin-left: 59em;
   }
 }
