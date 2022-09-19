@@ -195,6 +195,10 @@ a {
   grid-column-start: 3;
   grid-column-end: 13;
 }
+.coll-9 {
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
 
 .coll-8 {
   grid-column-start: 5;
@@ -216,6 +220,11 @@ a {
 .coll-4 {
   grid-column-start: 1;
   grid-column-end: 5;
+}
+
+.coll-3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .coll-2 {
