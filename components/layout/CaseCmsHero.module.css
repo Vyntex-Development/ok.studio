@@ -189,7 +189,7 @@
 .ThanksPanelContainTwo {
   clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
   position: absolute;
-  left: -0.5vw;
+  left: -0.05vw;
   top: 0%;
   right: 0%;
   bottom: 0%;
@@ -197,7 +197,7 @@
   background-color: var(--black);
   color: #fff;
   display: flex;
-  width: 100vw;
+  width: 101vw;
   height: 100%;
   -webkit-box-pack: center;
   justify-content: center;
