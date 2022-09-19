@@ -39,7 +39,7 @@
 }
 .StickyElement {
   position: sticky;
-  top: 0;
+  top: 4rem;
   z-index: 2;
   display: flex;
   overflow: hidden;

@@ -215,7 +215,7 @@ const CaseCmsHero = () => {
                                 layout="fill"
                                 objectFit="cover"
                                 alt="hero"
-                                src="/images/case_hero.png"
+                                src="/images/case_03.png"
                               ></Image>
                             </div>
                           </div>
@@ -232,7 +232,7 @@ const CaseCmsHero = () => {
                                 layout="fill"
                                 objectFit="cover"
                                 alt="hero"
-                                src="/images/case_hero.png"
+                                src="/images/case_01.png"
                               ></Image>
                             </div>
                           </div>
@@ -249,7 +249,7 @@ const CaseCmsHero = () => {
                                 layout="fill"
                                 objectFit="cover"
                                 alt="hero"
-                                src="/images/case_hero.png"
+                                src="/images/case_02.png"
                               ></Image>
                             </div>
                           </div>
