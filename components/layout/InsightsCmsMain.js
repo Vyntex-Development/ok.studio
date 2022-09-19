@@ -1,11 +1,22 @@
 import Image from "next/image";
 import classes from "./InsightsCmsMain.module.css";
+import Link from "../UI/Link";
 
 const InsightsCmsMain = () => {
   return (
     <div className="container">
       <div className={classes.MainWrapper}>
         <div className="grid">
+          <div className="coll-2">
+            <div className={classes.StickyWrapper}>
+              <Link href="/" type="nav">
+                Share this post
+              </Link>
+              <Link href="/" type="nav">
+                Subscribe
+              </Link>
+            </div>
+          </div>
           <div className="coll-10">
             <div className={classes.RichWrapper}>
               <h3>

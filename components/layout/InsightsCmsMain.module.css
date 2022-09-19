@@ -87,3 +87,18 @@
   padding-top: 1.5rem;
   border-top: 4px solid var(--yellow);
 }
+
+.StickyWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-top: 5rem;
+  position: sticky;
+  top: 9.5rem;
+}
+.StickyWrapper a {
+  line-height: 130%;
+  display: inline-block;
+  width: auto;
+  text-decoration: underline;
+}
