@@ -150,7 +150,7 @@ const CaseCmsHero = () => {
                 >
                   <div className={classes.ThanksPanel} id="thanks-panel">
                     <div className={classes.ThanksPanelContain}>
-                      <h1>title</h1>
+                      <h1 className={classes.Title}>Case study</h1>
                       <div className={classes.ThanksPanelImageOne}>
                         <div className={classes.ThanksPanelImageHeight}>
                           <div
@@ -207,7 +207,7 @@ const CaseCmsHero = () => {
                       className={classes.ThanksPanelContainTwo}
                       id="thanks-panel-contain-two"
                     >
-                      <h1>title</h1>
+                      <h1 className={classes.TitleWhite}>Case study</h1>
                       <div className={classes.ThanksPanelImageOne}>
                         <div className={classes.ThanksPanelImageHeight}>
                           <div

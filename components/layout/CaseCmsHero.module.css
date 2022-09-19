@@ -261,6 +261,19 @@
   color: var(--gray);
 }
 
+.Title {
+  font-family: "PPNeueBit-Bold";
+  font-size: 13.75rem;
+  line-height: 100%;
+  color: var(--black);
+}
+.TitleWhite {
+  font-family: "PPNeueBit-Bold";
+  font-size: 13.75rem;
+  line-height: 100%;
+  color: var(--white);
+}
+
 @media screen and (max-width: 1439px) {
   .Coll6 {
     padding-left: 9.5%;
