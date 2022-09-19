@@ -207,31 +207,25 @@
 .ThanksPanelImageOne {
   margin-top: -20.3em;
   margin-left: -46.5em;
-  -webkit-transform: rotate(14deg);
-  -ms-transform: rotate(14deg);
-  transform: rotate(14deg);
   position: absolute;
-  width: 11em;
+  width: 13.5rem;
+  height: 18.5rem;
 }
 
 .ThanksPanelImageTwo {
   margin-top: 18.9em;
   margin-left: 4.5em;
-  -webkit-transform: rotate(-1deg);
-  -ms-transform: rotate(-1deg);
-  transform: rotate(-1deg);
   position: absolute;
-  width: 11em;
+  width: 20.75rem;
+  height: 18.5rem;
 }
 
 .ThanksPanelImageThree {
   margin-top: -22.3em;
   margin-left: 59em;
-  -webkit-transform: rotate(-7deg);
-  -ms-transform: rotate(-7deg);
-  transform: rotate(-7deg);
   position: absolute;
-  width: 11em;
+  width: 20.75rem;
+  height: 14.5rem;
 }
 
 .ThanksPanelImageHeight {
