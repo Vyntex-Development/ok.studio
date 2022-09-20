@@ -12,6 +12,7 @@ const CaseProject = () => {
   useEffect(() => {
     const el = imgRef.current;
     const target = "#moving";
+    const percentBox = "number";
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -20,6 +21,10 @@ const CaseProject = () => {
         start: "top top",
         end: "bottom bottom",
         scrub: 1,
+        onUpdate: () => {
+          let percent = Math.round(tl.progress() * 100);
+          document.getElementById(percentBox).textContent = percent;
+        },
       },
     });
 
@@ -75,7 +80,7 @@ const CaseProject = () => {
             <h1>Hideo Ventures</h1>
             <div className={classes.ProjectWrapper}>
               <div className={classes.NumberWrapper}>
-                <p>22</p>
+                <p id="number">22</p>
                 <div className={classes.ProjectLine}>
                   <div></div>
                 </div>
