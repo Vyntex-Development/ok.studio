@@ -91,6 +91,10 @@
   width: 100%;
 }
 
+.ChallengeGrid {
+  padding-top: 2.5rem;
+}
+
 .ChallengeGrid div:nth-of-type(1) {
   height: 35rem;
   grid-column-start: 1;
