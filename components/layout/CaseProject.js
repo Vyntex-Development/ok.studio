@@ -13,6 +13,7 @@ const CaseProject = () => {
     const el = imgRef.current;
     const target = "#moving";
     const percentBox = "number";
+    const line = "#line";
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -54,6 +55,28 @@ const CaseProject = () => {
     //     scrollTrigger: { trigger: el },
     //   }
     // );
+
+    const tlTwo = gsap.timeline({
+      scrollTrigger: {
+        trigger: el,
+        // trigger element - viewport
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+      },
+    });
+
+    tlTwo.fromTo(
+      line,
+      {
+        width: "0%",
+        duration: 1,
+      },
+      {
+        width: "100%",
+        duration: 1,
+      }
+    );
   }, []);
 
   return (
@@ -82,7 +105,7 @@ const CaseProject = () => {
               <div className={classes.NumberWrapper}>
                 <p id="number">0</p>
                 <div className={classes.ProjectLine}>
-                  <div></div>
+                  <div id="line"></div>
                 </div>
                 <p>/100</p>
               </div>
