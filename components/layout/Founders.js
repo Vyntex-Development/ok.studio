@@ -8,7 +8,7 @@ const Founders = () => {
       <div className="container">
         <div className="dotWrapperAbout">
           <div className="dot"></div>
-          <p className="gray">Those who always stay invovled</p>
+          <p>Those who always stay invovled</p>
         </div>
         <div className={`${classes.Grid} grid`}>
           <div className="coll-4">

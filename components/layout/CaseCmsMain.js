@@ -45,7 +45,7 @@ const CaseCmsMain = () => {
         <div className={classes.TechSection}>
           <div className="dotWrapper">
             <div className="dot"></div>
-            <p className="gray">Which technology did we use?</p>
+            <p>Which technology did we use?</p>
           </div>
           <div className={`${classes.Grid} grid`}>
             <div className="coll-4">
@@ -295,21 +295,26 @@ const CaseCmsMain = () => {
             <p>What makes us totally ok</p>
           </div>
           <div className={`${classes.Grid} grid`}>
-            <div className="coll-3">
+            <div className="coll-4">
               <div className={classes.ContentWrapper}>
-                <h2>OVERVIEW</h2>
+                <h2>THE OUTCOME</h2>
                 <div className={classes.DescriptionWrapper}>
                   <p>
-                    We were very excited to work with Minespider. This
-                    innovative company has received funds from the European
-                    Union and has worked with industry giants such as Google,
-                    Volkswagen, and more.
+                    With the full cooperation of Minespider, our design and
+                    development team were able to overcome the challenges and
+                    give the brand its necessary "facelift".
                   </p>
                   <p>
-                    Minespider contacted us to create a new digital identity and
-                    website for their company. We love what they do and align
-                    with their brand values which are transparency and
-                    responsibility.
+                    Aside from creating a digital experience that met the
+                    clients standards, we were also able to optimize search
+                    engine rankings and brand exposure. We believe Minespider is
+                    new digital identity will be able to build long-term trust
+                    with their customers and increase conversion rates.
+                  </p>
+                  <p>
+                    We are pleased to take part in such a significant project
+                    which creates advanced technology and fights for human
+                    rights in developing countries.
                   </p>
                 </div>
               </div>
@@ -320,7 +325,7 @@ const CaseCmsMain = () => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/case_02.png"
+                  src="/images/case_03.png"
                 ></Image>
               </div>
             </div>
