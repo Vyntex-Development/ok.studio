@@ -80,7 +80,7 @@ const CaseProject = () => {
             <h1>Hideo Ventures</h1>
             <div className={classes.ProjectWrapper}>
               <div className={classes.NumberWrapper}>
-                <p id="number">22</p>
+                <p id="number">0</p>
                 <div className={classes.ProjectLine}>
                   <div></div>
                 </div>
