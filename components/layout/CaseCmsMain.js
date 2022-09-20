@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CaseCmsMain = () => {
   return (
-    <div>
+    <div className={classes.CaseMain}>
       <div className="container">
         <div className={classes.OverviewSection}>
           <div className="dotWrapper">
@@ -284,6 +284,43 @@ const CaseCmsMain = () => {
                   objectFit="cover"
                   alt="hero"
                   src="/images/case_03.png"
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={classes.OutcoemSection}>
+          <div className="dotWrapper">
+            <div className="dot"></div>
+            <p>What makes us totally ok</p>
+          </div>
+          <div className={`${classes.Grid} grid`}>
+            <div className="coll-3">
+              <div className={classes.ContentWrapper}>
+                <h2>OVERVIEW</h2>
+                <div className={classes.DescriptionWrapper}>
+                  <p>
+                    We were very excited to work with Minespider. This
+                    innovative company has received funds from the European
+                    Union and has worked with industry giants such as Google,
+                    Volkswagen, and more.
+                  </p>
+                  <p>
+                    Minespider contacted us to create a new digital identity and
+                    website for their company. We love what they do and align
+                    with their brand values which are transparency and
+                    responsibility.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="coll-8">
+              <div className={classes.Image}>
+                <Image
+                  layout="fill"
+                  objectFit="cover"
+                  alt="hero"
+                  src="/images/case_02.png"
                 ></Image>
               </div>
             </div>

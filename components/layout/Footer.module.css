@@ -1,6 +1,9 @@
 .Footer {
   background-color: var(--white);
 }
+.FooterNone {
+  display: none;
+}
 
 .FooterWrapper {
   padding-top: 5rem;

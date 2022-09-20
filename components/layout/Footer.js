@@ -1,10 +1,17 @@
 import classes from "./Footer.module.css";
 import Link from "../UI/Link";
 import Image from "next/image";
+import { CASE_PAGE } from "../../utils/utils";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const { pathname } = useRouter();
   return (
-    <div className={classes.Footer}>
+    <div
+      className={`${classes.Footer} ${
+        pathname === CASE_PAGE ? classes.FooterNone : ""
+      }`}
+    >
       <div className="container">
         <div className={classes.FooterWrapper}>
           <div className={classes.FooterTop}>

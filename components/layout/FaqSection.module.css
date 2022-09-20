@@ -187,10 +187,13 @@
   display: flex;
   justify-content: flex-start;
   column-gap: 0.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
   align-items: center;
   padding-top: 1rem;
   border-top: 1px solid var(--gray);
+}
+.DotWrapperAbout {
+  padding-bottom: 5rem;
 }
 
 @media screen and (max-width: 1279px) {
@@ -201,6 +204,9 @@
 
 /* faq end */
 @media screen and (max-width: 991px) {
+  .DotWrapper {
+    padding-bottom: 5rem;
+  }
   .DotWrapperAbout {
     padding-bottom: 40px;
   }
