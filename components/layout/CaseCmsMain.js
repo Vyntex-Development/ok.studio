@@ -302,7 +302,7 @@ const CaseCmsMain = () => {
                   <p>
                     With the full cooperation of Minespider, our design and
                     development team were able to overcome the challenges and
-                    give the brand its necessary "facelift".
+                    give the brand its necessary facelift.
                   </p>
                   <p>
                     Aside from creating a digital experience that met the
