@@ -289,6 +289,79 @@ const CaseCmsMain = () => {
             </div>
           </div>
         </div>
+        <div className={classes.MiddleSection}>
+          <div className="dotWrapper">
+            <div className="dot"></div>
+            <p>What makes us totally ok</p>
+          </div>
+          <div className={classes.GridMiddle}>
+            <div className={classes.CollFourMiddle}>
+              <div className={classes.ContentWrapper}>
+                <h2>THE OUTCOME</h2>
+                <div className={classes.DescriptionWrapper}>
+                  <p>
+                    In order to achieve and go beyond our clients expectations,
+                    we started by characterizing the work. We learned about the
+                    target audience and researched the market and their
+                    competitors.
+                  </p>
+                  <p>
+                    Once the characterization was stable and met customer
+                    expectations, we started building the initial impression of
+                    the company. The first impression is the most critical step
+                    in creating the brand image. We went through potential color
+                    palettes that work well with minerals and the world of
+                    advanced technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={classes.CollTwelveMiddle}>
+              <div className={classes.ImageLarge}>
+                <Image
+                  layout="fill"
+                  objectFit="cover"
+                  alt="hero"
+                  src="/images/solution.png"
+                ></Image>
+              </div>
+            </div>
+            <div className={classes.CollEightMiddle}>
+              <div className={classes.ContentWrapper}>
+                <div className={classes.DescriptionWrapper}>
+                  <p>
+                    Thanks to open communication, we were able to reach a final
+                    prototype that combines customer needs and market standards.
+                    The web design and branding included custom UI creation,
+                    icon design for the brand, illustrations, and animations
+                    that will support the brand message that the site needs to
+                    convey to the target audience.
+                  </p>
+                  <p>
+                    For Minespider, it was important to incorporate modern
+                    animations in all parts of the site in order to emphasize
+                    the technological aspect and the world standard. We chose to
+                    work with Webflow s development software to create an
+                    advanced digital experience. We wanted a website that was
+                    not online exceptional for its visitors but also a CMS that
+                    is easy to manage and update for the Minespider marketing
+                    team.
+                  </p>
+                  <p>
+                    Thanks to the detailed prototype we created in Figma, the
+                    development team had no room for imagination and the
+                    transition between the planned design and the final product
+                    was simple and quick. We have created an advanced content
+                    management system in Webflow for the client that does not
+                    require any prior knowledge in programming. We built an
+                    integration between the site systems and the customer
+                    management systems for their marketing team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={classes.OutcoemSection}>
           <div className="dotWrapper">
             <div className="dot"></div>
