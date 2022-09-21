@@ -80,7 +80,7 @@ const Contact = () => {
                       name="button"
                       value="WEBSITE / PLATFORM"
                     ></input>
-                    <label className={classes.Label} for="1">
+                    <label className={classes.Label} htmlFor="1">
                       WEBSITE / PLATFORM
                     </label>
                   </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                       name="button"
                       value="E-COMMERCE"
                     ></input>
-                    <label className={classes.Label} for="2">
+                    <label className={classes.Label} htmlFor="2">
                       E-COMMERCE
                     </label>
                   </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                       name="button"
                       value="BRANDING"
                     ></input>
-                    <label className={classes.Label} for="3">
+                    <label className={classes.Label} htmlFor="3">
                       BRANDING
                     </label>
                   </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                       name="button"
                       value="COLLABORATION"
                     ></input>
-                    <label className={classes.Label} for="4">
+                    <label className={classes.Label} htmlFor="4">
                       COLLABORATION
                     </label>
                   </div>
@@ -130,7 +130,7 @@ const Contact = () => {
                       name="button"
                       value="OTHER"
                     ></input>
-                    <label className={classes.Label} for="5">
+                    <label className={classes.Label} htmlFor="5">
                       OTHER
                     </label>
                   </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                       name="price"
                       value="$10k - $25K"
                     ></input>
-                    <label className={classes.Label} for="1">
+                    <label className={classes.Label} htmlFor="1">
                       10k - 25K
                     </label>
                   </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                       name="price"
                       value="$25k - $50K"
                     ></input>
-                    <label className={classes.Label} for="2">
+                    <label className={classes.Label} htmlFor="2">
                       25k - 50K
                     </label>
                   </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                       name="price"
                       value="$50k - $100k"
                     ></input>
-                    <label className={classes.Label} for="3">
+                    <label className={classes.Label} htmlFor="3">
                       50k - 100k
                     </label>
                   </div>
@@ -193,7 +193,7 @@ const Contact = () => {
                       name="price"
                       value="$100K+"
                     ></input>
-                    <label className={classes.Label} for="4">
+                    <label className={classes.Label} htmlFor="4">
                       100K
                     </label>
                   </div>
