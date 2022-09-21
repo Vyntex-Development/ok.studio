@@ -1,0 +1,217 @@
+.HeroWrapper {
+  padding-top: 14rem;
+  padding-bottom: 5rem;
+  width: 100%;
+}
+.HeroContent {
+  width: 58.33%;
+  margin-left: auto;
+}
+
+.HeroContent h1 {
+  font-family: "PPNeueBit-Bold";
+  font-size: 8.875rem;
+  line-height: 80%;
+  max-width: 46.25rem;
+  margin-bottom: 1.5rem;
+}
+.HeroContent p {
+  font-size: 1.625rem;
+  line-height: 130%;
+  color: var(--gray);
+}
+.DotWrapper {
+  align-items: flex-start;
+}
+.Dot {
+  margin-top: 0.1875rem;
+}
+.Gray {
+  max-width: 212px;
+}
+.Gray span {
+  color: var(--primary-white);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ContactWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 15.125rem;
+}
+
+.ContactLeft {
+  max-width: 221px;
+  margin-top: auto;
+}
+
+.ContactLeft p {
+  line-height: 130%;
+  color: var(--gray);
+}
+
+.ContactRight {
+  width: 58.33%;
+}
+.TitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.TitleWrapper h2 {
+  font-family: "PPNeueBit-Bold";
+  font-size: 4.25rem;
+  line-height: 80%;
+  letter-spacing: -0.02em;
+}
+.TitleWrapper span {
+  margin-bottom: 0.33rem !important;
+}
+.ContactWrapper form {
+  width: 100%;
+  position: relative;
+}
+
+.ContactWrapper form .InputWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.InputWrapper input {
+  width: 37.5%;
+  padding-bottom: 1rem;
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 100%;
+  color: var(--white);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  transition: all 0.3s ease;
+}
+
+.InputWrapper input::placeholder {
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.InputWrapper input:focus-visible {
+  outline: none;
+}
+
+.InputWrapper input:focus {
+  border-bottom: 1px solid var(--yellow);
+}
+
+.RadioButtons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.RadioButtons:nth-of-type(6) {
+  margin-bottom: 0;
+}
+
+.InputWrapperRadio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+  position: relative;
+}
+
+.RadioWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.RadioWrapper label {
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 6.25rem;
+  border: 1px solid var(--gray);
+  font-size: 1.625rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--gray);
+  transform: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.RadioWrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Radio:checked + .Label {
+  background-color: var(--primary-white);
+  color: var(--black);
+  transform: translateY(-2px);
+}
+
+.InputWrapperButton {
+  position: absolute;
+  bottom: -7.625rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.InputWrapperButton p {
+  line-height: 120%;
+  text-align: right;
+  color: var(--gray);
+  max-width: 13.5rem;
+}
+
+.InputWrapperButton span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Submit {
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13.5rem;
+  border-radius: 6.25rem;
+  color: var(--black);
+  font-size: 1.625rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "PPNeue-Medium";
+  cursor: pointer;
+  height: 2.625rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .HeroContent {
+    width: 66%;
+  }
+
+  .ContactRight {
+    width: 66%;
+  }
+}
