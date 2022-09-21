@@ -74,18 +74,18 @@ const CaseCmsHero = () => {
       );
 
     // stagger photos
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".stagger-panel",
-          containerAnimation: tlMain,
-          start: "left right",
-          end: "right left",
-          scrub: true,
-        },
-      })
-      .from(".stagger-panel_img", { x: "100vw", stagger: { each: 0.05 } })
-      .to(".stagger-panel_img", { scale: 0.5, stagger: { each: 0.05 } });
+    // gsap
+    //   .timeline({
+    //     scrollTrigger: {
+    //       trigger: ".stagger-panel",
+    //       containerAnimation: tlMain,
+    //       start: "left right",
+    //       end: "right left",
+    //       scrub: true,
+    //     },
+    //   })
+    //   .from(".stagger-panel_img", { x: "100vw", stagger: { each: 0.05 } })
+    //   .to(".stagger-panel_img", { scale: 0.5, stagger: { each: 0.05 } });
   }, []);
 
   return (

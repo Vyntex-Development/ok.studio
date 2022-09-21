@@ -3,7 +3,7 @@
 }
 
 .HeroWrapper {
-  height: 300vh;
+  height: 400vh;
   width: 100%;
 }
 
@@ -97,7 +97,7 @@
 .ProjectLine div {
   background-color: var(--white);
   height: 100%;
-  width: 30%;
+  width: 0%;
 }
 .Next {
   font-size: 1.625rem;
