@@ -86,6 +86,10 @@ const CaseCmsHero = () => {
     //   })
     //   .from(".stagger-panel_img", { x: "100vw", stagger: { each: 0.05 } })
     //   .to(".stagger-panel_img", { scale: 0.5, stagger: { each: 0.05 } });
+    return () => {
+      const t = ScrollTrigger.getAll();
+      t.forEach((t) => t.kill());
+    };
   }, []);
 
   return (
