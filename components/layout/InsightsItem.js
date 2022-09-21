@@ -5,7 +5,7 @@ import Image from "next/image";
 const CaseStudiesItem = () => {
   return (
     <div className={classes.CaseItemWrapper}>
-      <Link type="blog" href="/">
+      <Link type="blog" href="/insightscms">
         <div className={classes.CaseItem}>
           <div className={classes.CaseImageWrapper}>
             <div className={classes.CaseImage}>

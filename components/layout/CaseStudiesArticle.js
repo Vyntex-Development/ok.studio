@@ -4,7 +4,7 @@ import classes from "./CaseStudiesArticle.module.css";
 const CaseStudiesArticle = () => {
   return (
     <div className={classes.CaseItemWrapper}>
-      <Link type="blog" href="/">
+      <Link type="blog" href="/casestudycms">
         <div className={classes.CaseItem}>
           <div className={classes.CaseContent}>
             <p>

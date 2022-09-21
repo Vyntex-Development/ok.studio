@@ -34,7 +34,7 @@ const Header = () => {
             </div>
           </div>
           <div className={classes.NavRight}>
-            <Link type="navButton" href="/">
+            <Link type="navButton" href="/contact">
               Contact
             </Link>
             <div className={classes.MenuButton}>

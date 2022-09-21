@@ -61,7 +61,7 @@ const Footer = () => {
                   <Link type="footer" href="/">
                     Careers
                   </Link>
-                  <Link type="footer" href="/">
+                  <Link type="footer" href="/contact">
                     Contact
                   </Link>
                 </div>
