@@ -7,6 +7,7 @@ import VideoSection from "../layout/VideoSection";
 
 const HomePage = () => {
   const [activeFaq, setActiveFaq] = useState("1");
+
   return (
     <div>
       <HomeHero></HomeHero>
