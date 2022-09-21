@@ -3,7 +3,6 @@ import classes from "./CaseCmsHero.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-
 import { useEffect } from "react";
 
 const CaseCmsHero = () => {

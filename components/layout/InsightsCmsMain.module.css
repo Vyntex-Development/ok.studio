@@ -103,3 +103,20 @@
   width: auto;
   text-decoration: underline;
 }
+.Progress {
+  height: 4px;
+  background-color: #11131a;
+  width: 100%;
+  position: fixed;
+  top: 4.1rem;
+  z-index: 3;
+  margin-right: 0;
+  left: 0;
+  margin-left: 0;
+}
+
+.ProgressBar {
+  height: 100%;
+  background-color: var(--yellow);
+  width: 0%;
+}

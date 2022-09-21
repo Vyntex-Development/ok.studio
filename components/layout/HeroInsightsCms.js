@@ -1,42 +1,11 @@
 import Image from "next/image";
 import classes from "./HeroInsightsCms.module.css";
 import Link from "../UI/Link";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const HeroInsights = () => {
-  const progressNav = useRef();
-  const progressbarRef = useRef();
-
-  useEffect(() => {
-    let isScrolling = false;
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () => {
-        isScrolling = true;
-        render();
-        function render() {
-          if (!isScrolling) return;
-          progressbarRef.current.value =
-            (100 -
-              ((progressNav.current.offsetHeight +
-                progressNav.current.getBoundingClientRect().top) /
-                progressNav.current.offsetHeight) *
-                100) *
-            0.29;
-          isScrolling = false;
-        }
-      });
-    }
-  }, []);
-
   return (
     <div className="container">
-      <div ref={progressNav} className={classes.HeroSection}>
-        <progress ref={progressbarRef} min="0" max="100" value="1">
-          <div className="progress-bar">
-            <span></span>
-          </div>
-        </progress>
+      <div className={classes.HeroSection}>
         <div className={classes.HeroWrapper}>
           <div className="grid">
             <div className="coll-4">

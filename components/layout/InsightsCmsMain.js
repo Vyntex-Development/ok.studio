@@ -1,11 +1,64 @@
 import Image from "next/image";
 import classes from "./InsightsCmsMain.module.css";
 import Link from "../UI/Link";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const InsightsCmsMain = () => {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    // Update code
+    function pageCode() {
+      let tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#rich",
+          start: "top top",
+          end: "bottom bottom",
+          normalizeScroll: true,
+          scrub: true,
+        },
+      });
+      tl2.fromTo(
+        "#bar",
+
+        {
+          width: "0%",
+          height: "4px",
+        },
+        { width: "100%", height: "4px" },
+        0
+      );
+
+      // line start
+
+      let tl1 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#wrapper",
+          start: "top top",
+          end: "bottom bottom",
+          normalizeScroll: true,
+          scrub: true,
+        },
+      });
+      tl1.to("#line", {
+        width: "100%",
+      });
+
+      // line end
+    }
+    pageCode();
+  }, []);
+
   return (
     <div className="container">
       <div className={classes.MainWrapper}>
+        <div className={classes.Progress}>
+          <div className={classes.ProgressBar} id="bar"></div>
+        </div>
         <div className="grid">
           <div className="coll-2">
             <div className={classes.StickyWrapper}>
@@ -18,7 +71,7 @@ const InsightsCmsMain = () => {
             </div>
           </div>
           <div className="coll-10">
-            <div className={classes.RichWrapper}>
+            <div className={classes.RichWrapper} ref={imgRef} id="rich">
               <h3>
                 We focus on digital design, strategic marketing, and all things
                 technology to better businesses and brand experiences. We pride
