@@ -158,7 +158,7 @@ const Contact = () => {
                       value="$10k - $25K"
                     ></input>
                     <label className={classes.Label} htmlFor="1">
-                      10k - 25K
+                      $10k - $25K
                     </label>
                   </div>
                   <div className={classes.RadioWrapper}>
@@ -170,7 +170,7 @@ const Contact = () => {
                       value="$25k - $50K"
                     ></input>
                     <label className={classes.Label} htmlFor="2">
-                      25k - 50K
+                      $25k - $50K
                     </label>
                   </div>
                   <div className={classes.RadioWrapper}>
@@ -182,7 +182,7 @@ const Contact = () => {
                       value="$50k - $100k"
                     ></input>
                     <label className={classes.Label} htmlFor="3">
-                      50k - 100k
+                      $50k - $100k
                     </label>
                   </div>
                   <div className={classes.RadioWrapper}>
@@ -194,7 +194,7 @@ const Contact = () => {
                       value="$100K+"
                     ></input>
                     <label className={classes.Label} htmlFor="4">
-                      100K
+                      $100K+
                     </label>
                   </div>
                 </div>
