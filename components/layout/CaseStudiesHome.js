@@ -19,7 +19,7 @@ const CaseStudiesHome = () => {
                 list of projects that we can display without getting sued.{" "}
                 <span>(you know, NDAs)</span>
               </p>
-              <Link type="dark" href="/casestudycms">
+              <Link type="dark" href="/casestudycms" scroll={false}>
                 OUR PORTFOLIO
               </Link>
             </div>

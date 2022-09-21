@@ -3,22 +3,10 @@ import classes from "./CaseCmsHero.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import { useRef } from "react";
-import { useEffect, useState } from "react";
+
+import { useEffect } from "react";
 
 const CaseCmsHero = () => {
-  const [scroll, setScroll] = useState(false);
-  const setScrollHandler = () => {
-    if (scroll) return;
-    setScroll(true);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", setScrollHandler);
-    return () => {
-      window.removeEventListener("scroll", setScrollHandler);
-    };
-  }, []);
-
   useEffect(() => {
     let tlMain = gsap
       .timeline({
@@ -30,7 +18,7 @@ const CaseCmsHero = () => {
         },
       })
       .to("#track", {
-        xPercent: scroll ? -100 : 0,
+        xPercent: -100,
         ease: "none",
       });
 
