@@ -333,7 +333,9 @@
   .TitleWhite {
     font-size: 174px;
   }
-
+  .NotePanel {
+    margin-right: 4em;
+  }
   .ThanksPaneRelative {
     width: 90vw;
   }
