@@ -190,3 +190,98 @@
     width: 36%;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .Grid {
+    padding-top: 0;
+  }
+  .OverviewSection .ContentWrapper {
+    flex-direction: row;
+  }
+  .OverviewSection .DescriptionWrapper {
+    width: 50%;
+  }
+  .OverviewSection .Image {
+    height: 61vw;
+    margin-top: 5rem;
+  }
+  .NumberWrapper {
+    width: 60%;
+  }
+  .Number {
+    width: 20%;
+  }
+  .ChallengeGrid {
+    padding-top: 0;
+    grid-template-rows: auto auto;
+  }
+  .ChallengeGrid div:nth-of-type(1) {
+    height: 60vw;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .ChallengeGrid div:nth-of-type(2) {
+    height: 43vw;
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
+  .ChallengeGrid div:nth-of-type(3) {
+    height: 83vw;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: -15.5vw;
+  }
+  .ContentWrapperChallenge {
+    width: 50%;
+    margin-top: -17.5rem;
+  }
+  .SolutionGrid {
+    padding-top: 0;
+  }
+  .SolutionCollEight {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .SolutionCollFour {
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
+  .SolutionSection .Image {
+    height: 100%;
+  }
+  .OverviewSection .ContentWrapper {
+    justify-content: space-between;
+  }
+  .ContentWrapper {
+    justify-content: flex-start;
+  }
+  .GridMiddle {
+    padding-top: 0;
+    row-gap: 2.5rem;
+  }
+  .CollFourMiddle {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .CollEightMiddle {
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
+  .MiddleSection .ImageLarge {
+    height: 52.5vw;
+  }
+  .OutcoemSection .ContentWrapper {
+    width: 50%;
+  }
+  .OutcoemSection .Image {
+    margin-top: 5rem;
+    height: 68vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ContentWrapper h2 {
+    font-size: 16px;
+  }
+}
