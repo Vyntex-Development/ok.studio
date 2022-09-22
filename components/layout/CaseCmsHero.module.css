@@ -264,7 +264,6 @@
 }
 
 .ThanksPaneRelative {
-  background-color: red;
   width: 5px;
   height: 5px;
 }
@@ -315,5 +314,36 @@
   .ThanksPanelImageThree {
     margin-top: -39em;
     margin-left: 16.5em;
+  }
+}
+@media screen and (max-width: 991px) {
+  .Coll6 {
+    padding-left: 0%;
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .HeroDescription {
+    max-width: 564px;
+  }
+  .HeroTitle h1 {
+    line-height: 80%;
+    margin-bottom: 1rem;
+  }
+  .Title,
+  .TitleWhite {
+    font-size: 174px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .HeroWrapper {
+    padding-top: 208px;
+    padding-bottom: 80px;
+  }
+  .HeroTitle h1 {
+    line-height: 80%;
+    font-size: 68px;
+  }
+  .HeroDescription {
+    font-size: 16px;
   }
 }
