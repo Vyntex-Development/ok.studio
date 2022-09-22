@@ -109,6 +109,6 @@
 
 @media screen and (max-width: 991px) {
   .HeroSticky {
-    margin-top: -13rem;
+    margin-top: -26vh;
   }
 }
