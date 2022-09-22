@@ -186,6 +186,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+
+  flex-direction: column;
 }
 
 .ThanksPanelContainTwo {
@@ -204,6 +206,8 @@
   -webkit-box-pack: center;
   justify-content: center;
   align-items: center;
+
+  flex-direction: column;
 }
 
 .ThanksPanelImageOne {
@@ -251,6 +255,13 @@
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
+}
+
+.ThanksPaneRelative {
+  position: relative;
+  background-color: red;
+  width: 5px;
+  height: 5px;
 }
 
 /*horisontal scroll end*/
