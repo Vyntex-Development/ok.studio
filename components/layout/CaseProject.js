@@ -119,10 +119,12 @@ const CaseProject = () => {
 
   return (
     <div className={classes.ProjectSection}>
-      <div className="container">
-        <div className={`${classes.DotWrapper} dotWrapper`}>
-          <div className="dot"></div>
-          <p>What makes us totally ok</p>
+      <div className={classes.BgColor}>
+        <div className="container">
+          <div className={`${classes.DotWrapper} dotWrapper`}>
+            <div className="dot"></div>
+            <p>What makes us totally ok</p>
+          </div>
         </div>
       </div>
       <div className={classes.HeroWrapper} ref={imgRef} id="wrapper">
