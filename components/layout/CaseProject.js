@@ -120,7 +120,7 @@ const CaseProject = () => {
   return (
     <div>
       <div className="container">
-        <div className="dotWrapper">
+        <div className={`${classes.DotWrapper} dotWrapper`}>
           <div className="dot"></div>
           <p>What makes us totally ok</p>
         </div>
