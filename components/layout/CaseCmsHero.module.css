@@ -373,4 +373,7 @@
   .HeroDescription {
     font-size: 16px;
   }
+  .StickyElement {
+    top: 47px;
+  }
 }

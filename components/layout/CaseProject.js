@@ -118,7 +118,7 @@ const CaseProject = () => {
   }, []);
 
   return (
-    <div>
+    <div className={classes.ProjectSection}>
       <div className="container">
         <div className={`${classes.DotWrapper} dotWrapper`}>
           <div className="dot"></div>
