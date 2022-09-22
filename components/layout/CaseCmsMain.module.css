@@ -284,7 +284,46 @@
   .ContentWrapper h2 {
     font-size: 16px;
   }
-  .TechItem {
+
+  .OverviewSection .ContentWrapper {
     flex-direction: column;
+  }
+  .OverviewSection .DescriptionWrapper {
+    width: 100%;
+  }
+  .OverviewSection .Image {
+    margin-top: 2.5rem;
+    height: 65vw;
+  }
+  .OverviewSection {
+    padding-bottom: 2.5rem;
+  }
+  .TechItem {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .Number {
+    font-size: 12px;
+    width: 28px;
+  }
+  .Description {
+    font-size: 14px;
+  }
+  .TechDescription {
+    font-size: 14px;
+  }
+  .Tech {
+    column-gap: 4px;
+  }
+  .Tech span {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .TechWrapper {
+    margin-top: 8px;
+  }
+  .TechItem:nth-of-type(6) {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 16px;
   }
 }
