@@ -106,3 +106,9 @@
   text-transform: uppercase;
   color: var(--primary-white);
 }
+
+@media screen and (max-width: 991px) {
+  .HeroSticky {
+    margin-top: -13rem;
+  }
+}
