@@ -411,4 +411,7 @@
     height: 124px;
     margin-top: -25.7em;
   }
+  .SectionHeight {
+    height: 400vh;
+  }
 }
