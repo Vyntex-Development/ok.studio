@@ -42,6 +42,7 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left right",
           end: "left left",
+          normalizeScroll: true,
           scrub: true,
         },
       })
@@ -55,6 +56,7 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left left",
           end: "right right",
+          normalizeScroll: true,
           scrub: true,
         },
       })
