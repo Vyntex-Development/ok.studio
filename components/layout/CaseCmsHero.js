@@ -14,7 +14,8 @@ const CaseCmsHero = () => {
           start: "top top",
           end: "98% bottom",
           scrub: 1,
-          scrollTo: { y: 0, autoKill: false },
+          normalizeScroll: true,
+          ignoreMobileResize: true,
         },
       })
       .to("#track", {
@@ -31,7 +32,8 @@ const CaseCmsHero = () => {
           start: "left left",
           end: "right left",
           scrub: true,
-          scrollTo: { y: 0, autoKill: false },
+          normalizeScroll: true,
+          ignoreMobileResize: true,
         },
       })
       .from("#hero-panel-img", { scale: 1.6 }, 0);
@@ -45,7 +47,7 @@ const CaseCmsHero = () => {
           start: "left right",
           end: "left left",
           normalizeScroll: true,
-          scrollTo: { y: 0, autoKill: false },
+          ignoreMobileResize: true,
           scrub: true,
         },
       })
@@ -60,7 +62,7 @@ const CaseCmsHero = () => {
           start: "left left",
           end: "right right",
           normalizeScroll: true,
-          scrollTo: { y: 0, autoKill: false },
+          ignoreMobileResize: true,
           scrub: true,
         },
       })

@@ -11,6 +11,7 @@ const CaseProject = () => {
 
   useEffect(() => {
     // Update code
+
     function pageCode() {
       const percentBox = "number";
       let tl2 = gsap.timeline({
