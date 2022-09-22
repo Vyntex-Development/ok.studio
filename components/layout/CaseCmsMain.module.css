@@ -284,4 +284,7 @@
   .ContentWrapper h2 {
     font-size: 16px;
   }
+  .TechItem {
+    flex-direction: column;
+  }
 }
