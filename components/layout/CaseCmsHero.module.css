@@ -383,7 +383,7 @@
     top: 47px;
   }
 
-  .Image {
+  .HeroPanelImage .Image {
     display: none;
   }
   .ImageMobile {
@@ -391,5 +391,24 @@
   }
   .NotePanelImg {
     height: 100%;
+  }
+  .Title,
+  .TitleWhite {
+    font-size: 78px;
+  }
+  .ThanksPanelImageOne {
+    width: 52%;
+    height: 236px;
+    margin-top: -23em;
+  }
+  .ThanksPanelImageTwo {
+    width: 53%;
+    height: 170px;
+    margin-top: -2.5em;
+  }
+  .ThanksPanelImageThree {
+    width: 52%;
+    height: 124px;
+    margin-top: -25.7em;
   }
 }
