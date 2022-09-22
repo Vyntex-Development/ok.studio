@@ -333,6 +333,31 @@
   .TitleWhite {
     font-size: 174px;
   }
+
+  .ThanksPaneRelative {
+    width: 90vw;
+  }
+  .ThanksPanelImageOne {
+    margin-top: -30em;
+    margin-left: 0;
+    z-index: -1;
+    width: 25%;
+    height: 240px;
+  }
+  .ThanksPanelImageTwo {
+    margin-top: 1.5em;
+    margin-left: 25.25%;
+    margin-right: 0;
+    width: 37.5%;
+    height: 240px;
+  }
+  .ThanksPanelImageThree {
+    width: 37.5%;
+    height: 192px;
+    margin-top: -37.7em;
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .HeroWrapper {
