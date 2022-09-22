@@ -33,6 +33,12 @@
   width: 100%;
   height: 100%;
 }
+.ImageMobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 /* horisontal scroll*/
 .SectionHeight {
   height: 600vh;
@@ -375,5 +381,15 @@
   }
   .StickyElement {
     top: 47px;
+  }
+
+  .Image {
+    display: none;
+  }
+  .ImageMobile {
+    display: block;
+  }
+  .NotePanelImg {
+    height: 100%;
   }
 }

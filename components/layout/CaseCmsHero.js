@@ -126,6 +126,14 @@ const CaseCmsHero = () => {
                         src="/images/case_hero.png"
                       ></Image>
                     </div>
+                    <div className={classes.ImageMobile}>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        alt="hero"
+                        src="/images/case_hero_mobile.png"
+                      ></Image>
+                    </div>
                   </div>
                 </div>
                 <div className={classes.NotePanel} id="note-panel">
