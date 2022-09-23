@@ -43,21 +43,23 @@ const Contact = () => {
               <h2>Contact details</h2>
             </div>
             <form method="get">
-              <div className={classes.InputWrapper}>
-                <input type="text" placeholder="FULL NAME*" required></input>
-                <input type="text" placeholder="COMPANY*" required></input>
-              </div>
-              <div className={classes.InputWrapper}>
-                <input
-                  type="email"
-                  placeholder="EMAIL ADDRESS*"
-                  required
-                ></input>
-                <input
-                  type="tel"
-                  placeholder="PHONE (OPTIONAL)"
-                  name="phone"
-                ></input>
+              <div className={classes.InputFields}>
+                <div className={classes.InputWrapper}>
+                  <input type="text" placeholder="FULL NAME*" required></input>
+                  <input type="text" placeholder="COMPANY*" required></input>
+                </div>
+                <div className={classes.InputWrapper}>
+                  <input
+                    type="email"
+                    placeholder="EMAIL ADDRESS*"
+                    required
+                  ></input>
+                  <input
+                    type="tel"
+                    placeholder="PHONE (OPTIONAL)"
+                    name="phone"
+                  ></input>
+                </div>
               </div>
               <div className={classes.TitleWrapper}>
                 <Image

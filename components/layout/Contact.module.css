@@ -10,9 +10,9 @@
 
 .HeroContent h1 {
   font-family: "PPNeueBit-Bold";
-  font-size: 8.875rem;
+  font-size: 6.875rem;
   line-height: 80%;
-  max-width: 46.25rem;
+  max-width: 36.25rem;
   margin-bottom: 1.5rem;
 }
 .HeroContent p {
@@ -23,8 +23,11 @@
 .DotWrapper {
   align-items: flex-start;
 }
+.DotWrapper p {
+  line-height: 130%;
+}
 .Dot {
-  margin-top: 0.1875rem;
+  margin-top: 0.32rem;
 }
 .Gray {
   max-width: 212px;
@@ -83,7 +86,9 @@
   justify-content: space-between;
   margin-bottom: 2.5rem;
 }
-
+.InputFields {
+  padding-bottom: 1.5rem;
+}
 .InputWrapper input {
   width: 37.5%;
   padding-bottom: 1rem;
@@ -119,7 +124,7 @@
   margin-bottom: 4rem;
 }
 
-.RadioButtons:nth-of-type(6) {
+.RadioButtons:nth-of-type(5) {
   margin-bottom: 0;
 }
 
@@ -217,4 +222,7 @@
 }
 
 @media screen and (max-width: 991px) {
+  .HeroContent {
+    width: 100%;
+  }
 }
