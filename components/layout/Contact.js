@@ -154,11 +154,11 @@ const Contact = () => {
                     <input
                       className={classes.Radio}
                       type="radio"
-                      id="1"
+                      id="11"
                       name="price"
                       value="$10k - $25K"
                     ></input>
-                    <label className={classes.Label} htmlFor="1">
+                    <label className={classes.Label} htmlFor="11">
                       $10k - $25K
                     </label>
                   </div>
@@ -166,12 +166,12 @@ const Contact = () => {
                     <input
                       className={classes.Radio}
                       type="radio"
-                      id="2"
+                      id="12"
                       name="price"
                       value="$25k - $50K"
                       defaultChecked
                     ></input>
-                    <label className={classes.Label} htmlFor="2">
+                    <label className={classes.Label} htmlFor="12">
                       $25k - $50K
                     </label>
                   </div>
@@ -179,11 +179,11 @@ const Contact = () => {
                     <input
                       className={classes.Radio}
                       type="radio"
-                      id="3"
+                      id="13"
                       name="price"
                       value="$50k - $100k"
                     ></input>
-                    <label className={classes.Label} htmlFor="3">
+                    <label className={classes.Label} htmlFor="13">
                       $50k - $100k
                     </label>
                   </div>
@@ -191,11 +191,11 @@ const Contact = () => {
                     <input
                       className={classes.Radio}
                       type="radio"
-                      id="4"
+                      id="14"
                       name="price"
                       value="$100K+"
                     ></input>
-                    <label className={classes.Label} htmlFor="4">
+                    <label className={classes.Label} htmlFor="14">
                       $100K+
                     </label>
                   </div>
