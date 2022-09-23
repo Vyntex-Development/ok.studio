@@ -380,4 +380,7 @@
   .HeroContent h1 {
     max-width: 336px;
   }
+  .ContactLeft {
+    max-width: 336px;
+  }
 }
