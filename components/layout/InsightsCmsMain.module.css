@@ -82,7 +82,7 @@
   margin-left: 30%;
   margin-top: 2.5rem;
   padding-bottom: 5rem;
-  max-width: 680px;
+  max-width: 60%;
   font-size: 2.625rem;
   line-height: 130%;
   color: var(--white);
@@ -152,5 +152,51 @@
     margin-left: 0;
     max-width: 680px;
     padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .MainWrapper {
+    padding-bottom: 0;
+  }
+  .RichWrapper h3 {
+    font-size: 24px;
+    text-indent: 20%;
+  }
+  .RichWrapper h2 {
+    font-size: 44px;
+  }
+  .RichWrapper p {
+    font-size: 16px;
+  }
+  .RichWrapper .Caption {
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+
+  .RichWrapper ul {
+    row-gap: 0.5rem;
+    padding-bottom: 24px;
+  }
+  .RichWrapper ul li {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .RichWrapper li::marker {
+    font-size: 1.1rem;
+  }
+  .RichWrapper .Quote {
+    font-size: 24px;
+    padding-top: 8px;
+    border-top: 2px solid var(--yellow);
+    margin-top: 0;
+  }
+  .Progress {
+    height: 2px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    margin-right: 0;
+    left: 0;
+    margin-left: 0;
   }
 }
