@@ -130,6 +130,7 @@
 @media screen and (max-width: 767px) {
   .ProjectWrapper {
     margin-top: 145px;
+    row-gap: 1rem;
   }
   .TitleWrapperDesktop {
     width: 100%;
