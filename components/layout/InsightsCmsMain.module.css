@@ -1,5 +1,6 @@
 .MainWrapper {
   padding-top: 0;
+  padding-bottom: 5rem;
 }
 
 .RichWrapper h3 {
@@ -61,6 +62,7 @@
   flex-direction: column;
   row-gap: 1.5rem;
   padding-bottom: 2.5rem;
+  margin: 0;
 }
 
 .RichWrapper ul li {
@@ -119,4 +121,36 @@
   height: 100%;
   background-color: var(--yellow);
   width: 0%;
+}
+
+@media screen and (max-width: 991px) {
+  .MainWrapper {
+    padding-bottom: 40px;
+  }
+  .CollTwo {
+    display: none;
+  }
+  .RichWrapper h3 {
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .RichWrapper h2 {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .RichWrapper p {
+    padding-left: 0;
+  }
+  .RichWrapper .Image {
+    margin-top: 0;
+    height: 62vw;
+  }
+  .RichWrapper ul {
+    padding-left: 4%;
+  }
+  .RichWrapper .Quote {
+    margin-left: 0;
+    max-width: 680px;
+    padding-bottom: 40px;
+  }
 }

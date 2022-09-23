@@ -432,6 +432,10 @@ progress {
     grid-column-start: 1;
     grid-column-end: 13;
   }
+  .coll-10 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
 
   .yellow-card {
     height: auto;

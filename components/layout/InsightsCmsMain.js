@@ -60,7 +60,7 @@ const InsightsCmsMain = () => {
           <div className={classes.ProgressBar} id="bar"></div>
         </div>
         <div className="grid">
-          <div className="coll-2">
+          <div className={`${classes.CollTwo} coll-2`}>
             <div className={classes.StickyWrapper}>
               <Link href="/" type="nav">
                 Share this post

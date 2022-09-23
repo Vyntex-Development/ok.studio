@@ -8,7 +8,7 @@ const HeroInsights = () => {
       <div className={classes.HeroSection}>
         <div className={classes.HeroWrapper}>
           <div className="grid">
-            <div className="coll-4">
+            <div className={`${classes.CollFour} coll-4`}>
               <div className={classes.ShareWrapper}>
                 <Link href="/" type="nav">
                   Share this post
@@ -21,7 +21,7 @@ const HeroInsights = () => {
                 </div>
               </div>
             </div>
-            <div className="coll-8">
+            <div className={`${classes.CollEight} coll-8`}>
               <div className={classes.HeroContent}>
                 <p>UI-DESIGN</p>
                 <h1>
