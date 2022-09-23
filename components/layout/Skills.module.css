@@ -233,6 +233,9 @@
   .h1 {
     font-size: 68px;
   }
+  .Skills {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .AboutTitle {
