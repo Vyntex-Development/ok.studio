@@ -97,6 +97,7 @@
   }
   .HeroContent h1 {
     font-size: 44px;
+    max-width: 336px;
   }
   .CollFour {
     margin-top: 40px;

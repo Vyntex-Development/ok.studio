@@ -91,6 +91,7 @@ const Contact = () => {
                       id="2"
                       name="button"
                       value="E-COMMERCE"
+                      checked
                     ></input>
                     <label className={classes.Label} htmlFor="2">
                       E-COMMERCE
