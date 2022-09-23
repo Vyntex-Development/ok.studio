@@ -5,7 +5,11 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useEffect } from "react";
 
+// ScrollTrigger.normalizeScroll(true);
+// ScrollTrigger.config({ ignoreMobileResize: true })
 const CaseCmsHero = () => {
+  // ScrollTrigger.normalizeScroll(true);
+  // ScrollTrigger.config({ ignoreMobileResize: true })
   useEffect(() => {
     let tlMain = gsap
       .timeline({
@@ -16,6 +20,9 @@ const CaseCmsHero = () => {
           scrub: 1,
           normalizeScroll: true,
           ignoreMobileResize: true,
+          // config: {
+          //   ignoreMobileResize: true
+          // }
         },
       })
       .to("#track", {

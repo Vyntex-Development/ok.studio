@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 991px) {
   .HeroSticky {
-    margin-top: -26vh;
+    margin-top: -30vh;
   }
   .DotWrapper {
     background-color: var(--black);
@@ -118,9 +118,19 @@
     padding-bottom: 5rem;
     margin-bottom: 0;
   }
+  .HeroImageWrapper {
+    width: 560px;
+    height: 328px;
+  }
+  .ProjectWrapper {
+    margin-top: 220px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .ProjectWrapper {
+    margin-top: 145px;
+  }
   .TitleWrapperDesktop {
     width: 100%;
   }
@@ -135,9 +145,11 @@
   .Next {
     font-size: 16px;
   }
-  .HeroWrapper {
-    height: 400vh;
-    width: 90%;
-    margin: 0 auto;
+  .HeroImageWrapper {
+    width: 90vw;
+    height: 53vw;
+  }
+  .HeroSticky {
+    margin-top: -34vh;
   }
 }

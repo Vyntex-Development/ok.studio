@@ -64,58 +64,6 @@ const CaseProject = () => {
       // line end
     }
     pageCode();
-
-    // const el = imgRef.current;
-    // const target = "#moving";
-    // const percentBox = "number";
-    // const line = "#line";
-
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: el,
-    //     // trigger element - viewport
-    //     start: "top top",
-    //     end: "bottom bottom",
-    //     scrub: 1,
-    //     onUpdate: () => {
-    //       let percent = Math.round(tl.progress() * 100);
-    //       document.getElementById(percentBox).textContent = percent;
-    //     },
-    //   },
-    // });
-    // tl.fromTo(
-    //   target,
-    //   {
-    //     width: "40rem",
-    //     height: "25rem",
-    //     opacity: 0.2,
-    //   },
-    //   {
-    //     width: "100vw",
-    //     height: "100vh",
-    //     opacity: 0.4,
-    //   }
-    // );
-    // const tlTwo = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: el,
-    //     // trigger element - viewport
-    //     start: "top top",
-    //     end: "bottom bottom",
-    //     scrub: 1,
-    //   },
-    // });
-    // tlTwo.fromTo(
-    //   line,
-    //   {
-    //     width: "0%",
-    //     duration: 1,
-    //   },
-    //   {
-    //     width: "100%",
-    //     duration: 1,
-    //   }
-    // );
   }, []);
 
   return (
