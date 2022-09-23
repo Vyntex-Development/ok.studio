@@ -476,6 +476,10 @@ progress {
   .dotWrapper p {
     font-size: 14px;
   }
+
+  .dotWrapperAbout p {
+    font-size: 14px;
+  }
   .dotWrapper-black p {
     font-size: 14px;
   }

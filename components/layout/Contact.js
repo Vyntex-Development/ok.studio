@@ -111,8 +111,6 @@ const Contact = () => {
                       BRANDING
                     </label>
                   </div>
-                </div>
-                <div className={classes.InputWrapperRadio}>
                   <div className={classes.RadioWrapper}>
                     <input
                       className={classes.Radio}
