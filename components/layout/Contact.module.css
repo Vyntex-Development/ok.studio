@@ -377,4 +377,7 @@
   .Dot {
     margin-top: 4px;
   }
+  .HeroContent h1 {
+    max-width: 336px;
+  }
 }
