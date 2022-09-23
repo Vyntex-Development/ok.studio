@@ -75,7 +75,7 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left left",
           end: "right right",
-          // normalizeScroll: true,
+          normalizeScroll: true,
           // ignoreMobileResize: true,
           scrub: true,
           config: {
@@ -96,24 +96,6 @@ const CaseCmsHero = () => {
         },
         0
       );
-
-    // stagger photos
-    // gsap
-    //   .timeline({
-    //     scrollTrigger: {
-    //       trigger: ".stagger-panel",
-    //       containerAnimation: tlMain,
-    //       start: "left right",
-    //       end: "right left",
-    //       scrub: true,
-    //     },
-    //   })
-    //   .from(".stagger-panel_img", { x: "100vw", stagger: { each: 0.05 } })
-    //   .to(".stagger-panel_img", { scale: 0.5, stagger: { each: 0.05 } });
-    return () => {
-      const t = ScrollTrigger.getAll();
-      t.forEach((t) => t.kill());
-    };
   }, []);
 
   return (
