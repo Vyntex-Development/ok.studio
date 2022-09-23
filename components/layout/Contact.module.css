@@ -7,7 +7,10 @@
   width: 58.33%;
   margin-left: auto;
 }
-
+.InputWrapper input:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
 .HeroContent h1 {
   font-family: "PPNeueBit-Bold";
   font-size: 6.875rem;
@@ -370,5 +373,8 @@
 
   .RadioButtons:nth-of-type(5) {
     width: 330px;
+  }
+  .Dot {
+    margin-top: 4px;
   }
 }

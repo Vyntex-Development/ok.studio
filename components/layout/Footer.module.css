@@ -69,6 +69,11 @@
   max-width: 20.75rem;
 }
 
+.InputWrapper input:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
 .InputWrapper input {
   background-color: transparent;
   border-bottom: 1px solid var(--black) !important;
