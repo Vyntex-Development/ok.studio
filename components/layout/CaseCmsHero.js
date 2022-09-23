@@ -9,7 +9,7 @@ import { useEffect } from "react";
 // ScrollTrigger.config({ ignoreMobileResize: true })
 const CaseCmsHero = () => {
   // ScrollTrigger.normalizeScroll(true);
-  // ScrollTrigger.config({ ignoreMobileResize: true })
+  // ScrollTrigger.config({ ignoreMobileResize: true });
   useEffect(() => {
     let tlMain = gsap
       .timeline({
@@ -19,10 +19,10 @@ const CaseCmsHero = () => {
           end: "98% bottom",
           scrub: 1,
           normalizeScroll: true,
-          ignoreMobileResize: true,
-          // config: {
-          //   ignoreMobileResize: true
-          // }
+          // ignoreMobileResize: true,
+          config: {
+            ignoreMobileResize: true,
+          },
         },
       })
       .to("#track", {
@@ -40,7 +40,10 @@ const CaseCmsHero = () => {
           end: "right left",
           scrub: true,
           normalizeScroll: true,
-          ignoreMobileResize: true,
+          config: {
+            ignoreMobileResize: true,
+          },
+          // ignoreMobileResize: true,
         },
       })
       .from("#hero-panel-img", { scale: 1.6 }, 0);
@@ -54,8 +57,12 @@ const CaseCmsHero = () => {
           start: "left right",
           end: "left left",
           normalizeScroll: true,
-          ignoreMobileResize: true,
+
+          // ignoreMobileResize: true,
           scrub: true,
+          config: {
+            ignoreMobileResize: true,
+          },
         },
       })
       .from("#note-panel-img", { rotate: 40, scale: 0.3 });
@@ -68,9 +75,12 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left left",
           end: "right right",
-          normalizeScroll: true,
-          ignoreMobileResize: true,
+          // normalizeScroll: true,
+          // ignoreMobileResize: true,
           scrub: true,
+          config: {
+            ignoreMobileResize: true,
+          },
         },
       })
       .to("#thanks-panel", { xPercent: 100, ease: "none" })

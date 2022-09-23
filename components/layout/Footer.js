@@ -58,7 +58,7 @@ const Footer = () => {
                   <Link type="footer" href="/insights">
                     Insights
                   </Link>
-                  <Link type="footer" href="/">
+                  <Link type="footer" href="/casestudycms">
                     Careers
                   </Link>
                   <Link type="footer" href="/contact">
