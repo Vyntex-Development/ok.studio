@@ -225,4 +225,60 @@
   .HeroContent {
     width: 100%;
   }
+  .ContactWrapper {
+    flex-direction: column;
+    margin-bottom: 162px;
+  }
+  .ContactMain {
+    position: relative;
+  }
+  .ContactLeft {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 33%;
+    max-width: none;
+  }
+  .ContactLeft p {
+    width: 100%;
+  }
+  .ContactRight {
+    width: 100%;
+  }
+
+  .InputWrapper {
+    column-gap: 16px;
+  }
+  .InputWrapper input {
+    width: 50%;
+    font-size: 24px;
+  }
+  .RadioWrapper label {
+    /* font-size: 3.117vw; */
+    font-size: 24px;
+  }
+  .Submit {
+    font-size: 24px;
+  }
+  .InputWrapperButton {
+    right: auto;
+    column-gap: 32px;
+  }
+  .InputWrapperButton p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .HeroContent {
+    padding-top: 168px;
+    padding-bottom: 40px;
+  }
+  .HeroContent h1 {
+    font-size: 68px;
+    margin-bottom: 16px;
+  }
+  .HeroContent p {
+    font-size: 16px;
+  }
 }
