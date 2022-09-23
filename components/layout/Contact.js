@@ -91,7 +91,7 @@ const Contact = () => {
                       id="2"
                       name="button"
                       value="E-COMMERCE"
-                      checked
+                      defaultChecked
                     ></input>
                     <label className={classes.Label} htmlFor="2">
                       E-COMMERCE
@@ -169,6 +169,7 @@ const Contact = () => {
                       id="2"
                       name="price"
                       value="$25k - $50K"
+                      defaultChecked
                     ></input>
                     <label className={classes.Label} htmlFor="2">
                       $25k - $50K
