@@ -1,0 +1,29 @@
+.HeroWrapper {
+  padding-top: 14rem;
+  padding-bottom: 10rem;
+  padding-left: 15%;
+  padding-right: 8.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.HeroWrapper h1 {
+  font-size: 6.875rem;
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.HeroWrapper p {
+  font-size: 1.625rem;
+  line-height: 130%;
+  color: var(--gray);
+  max-width: 49.75rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .HeroWrapper {
+    padding-right: 0;
+  }
+}
