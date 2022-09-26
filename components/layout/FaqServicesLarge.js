@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import classes from "./FaqServiceLarge.module.css";
+import classes from "./FaqServicesLarge.module.css";
 import Image from "next/image";
 
 const FaqServicesLarge = ({ setActiveFaq, activeFaq }) => {

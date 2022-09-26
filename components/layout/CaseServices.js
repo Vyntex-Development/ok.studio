@@ -5,7 +5,7 @@ import Link from "../UI/Link";
 const CaseServices = () => {
   return (
     <div className="container">
-      <div className="dotWrapper">
+      <div className={`${classes.DotCase} dotWrapper`}>
         <div className="dot"></div>
         <p>How it works?</p>
       </div>

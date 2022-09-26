@@ -140,7 +140,7 @@
   font-size: 1rem;
   line-height: 100%;
   color: var(--gray);
-  width: 7rem;
+  width: 12.5%;
 }
 
 .FaqQuestionWrapper p:nth-of-type(2) {
@@ -157,7 +157,7 @@
   overflow: hidden;
   max-height: 0;
   transition: all 0.3s ease-in-out;
-  padding-left: 7rem;
+  padding-left: 12.5%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -231,8 +231,14 @@
 
 /* faq end */
 @media screen and (max-width: 991px) {
-  .DotWrapper {
-    padding-bottom: 5rem;
+  .Grid {
+    padding-top: 0;
+  }
+
+  .CollFour {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin-bottom: 40px;
   }
   .DotWrapperAbout {
     padding-bottom: 40px;
@@ -249,6 +255,14 @@
     grid-column-start: 5;
     grid-column-end: 9;
     width: 332px;
+  }
+  .DescriptionContent p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .DescriptionContent p:nth-of-type(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
   }
 }
 @media screen and (max-width: 767px) {

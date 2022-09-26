@@ -27,3 +27,9 @@
     padding-right: 0;
   }
 }
+@media screen and (max-width: 991px) {
+  .HeroWrapper {
+    padding-left: 0;
+    padding-bottom: 80px;
+  }
+}

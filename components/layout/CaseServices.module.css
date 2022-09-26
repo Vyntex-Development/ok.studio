@@ -70,9 +70,13 @@
   }
   .Grid {
     padding-bottom: 5rem;
+    padding-top: 0;
   }
   .ContentFirst {
     scroll-margin-top: 7rem;
+  }
+  .DotCase {
+    margin-bottom: 2.5rem;
   }
 }
 
