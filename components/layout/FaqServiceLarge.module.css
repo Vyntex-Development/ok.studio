@@ -1,0 +1,333 @@
+.Grid {
+  padding-top: 2.5rem;
+}
+.DescriptionWrapper {
+  padding-bottom: 5rem;
+}
+.DescriptionContent {
+  display: grid;
+  grid-column-gap: 6rem;
+  column-gap: 6rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.DescriptionContent p {
+  font-size: 1rem;
+  line-height: 130%;
+  color: var(--gray);
+}
+.DescriptionContent p:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-indent: 6.875rem;
+}
+.DescriptionContent p:nth-of-type(2) {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+.FaqWrapper {
+  padding-bottom: 7.5rem;
+}
+.FaqWrapper span {
+  color: var(--primary-white);
+  font-family: "PPNeue-Book";
+}
+.ContentWrapper {
+  margin-bottom: 5rem;
+}
+.ContentWrapper p:nth-of-type(1) {
+  text-indent: 6.875rem;
+  margin-bottom: 2rem;
+}
+
+.CollFour {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.CollAbout {
+  display: block;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.CollFour p {
+  font-family: "PPNeue-Medium";
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+.Image {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  margin-top: auto;
+}
+
+.ContentAbout {
+  display: none;
+}
+.ContentWrapperAbout {
+  padding-top: 2.5rem;
+}
+
+.ContentWrapperAbout .ContentAbout {
+  display: grid;
+  column-gap: 6rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.ContentWrapperAbout .ContentAbout p:nth-of-type(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.ContentWrapperAbout .ContentAbout p:nth-of-type(2) {
+  grid-column-start: 5;
+  grid-column-end: 8;
+}
+
+.ContentWrapperAbout p {
+  display: none;
+}
+.ContentAbout p {
+  display: block;
+  font-size: 1rem;
+  line-height: 130%;
+  color: var(--gray);
+  margin-bottom: 0 !important;
+}
+.Pnone {
+  display: none;
+}
+.AboutP {
+  display: block;
+}
+.AboutHome {
+  display: none;
+}
+
+/* faq start */
+
+.Faq {
+  width: 100%;
+  cursor: pointer;
+}
+
+.FaqRight {
+  border-top: 1px solid var(--gray);
+  width: 100%;
+  height: 24.5rem;
+}
+
+.FaqQuestionWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+}
+
+.FaqQuestionWrapper p:nth-of-type(1) {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--gray);
+  width: 7rem;
+}
+
+.FaqQuestionWrapper p:nth-of-type(2) {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--primary-white);
+  width: 45rem;
+}
+
+.FaqAnswerWrapper {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  padding-left: 7rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.FaqAnswerWrapper p {
+  font-family: "PPNeue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+  padding-bottom: 1.5rem;
+  margin-right: 8rem;
+}
+
+.Active {
+  max-height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ActiveQuestion p {
+  color: var(--primary-white);
+}
+
+.FaqIcon {
+  transition: all 0.3s ease-in-out;
+  margin-left: auto;
+}
+.ActiveQuestion .FaqIcon {
+  transform: rotate(135deg);
+}
+
+.ProgressWrapper {
+  width: 100%;
+  background-color: var(--gray);
+  height: 1px;
+}
+
+.Progress {
+  height: 100%;
+  background-color: var(--primary-white);
+  width: 0%;
+  transition: all 0.5s ease-in-out;
+}
+
+.Faq:hover .Progress {
+  width: 100%;
+}
+
+.DotWrapper {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+  padding-bottom: 2.5rem;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray);
+}
+.DotWrapperAbout {
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .FaqQuestionWrapper p:nth-of-type(2) {
+    width: 39rem;
+  }
+  .FaqRight {
+    height: 27.5rem;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .FaqAnswerWrapper {
+    padding-left: 6rem;
+  }
+  .FaqAnswerWrapper p {
+    margin-right: 0.5em;
+  }
+}
+
+/* faq end */
+@media screen and (max-width: 991px) {
+  .DotWrapper {
+    padding-bottom: 5rem;
+  }
+  .DotWrapperAbout {
+    padding-bottom: 40px;
+  }
+  .Image {
+    display: none;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 332px;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    width: 332px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .DotWrapper {
+    padding-bottom: 40px;
+  }
+  .DotWrapper p {
+    font-size: 14px;
+  }
+
+  .FaqQuestionWrapper p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+
+  .ContentWrapper p:nth-of-type(1) {
+    text-indent: 21vw;
+  }
+
+  .FaqAnswerWrapper p {
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 248px;
+    margin-right: 0;
+  }
+
+  .FaqAnswerWrapper {
+    flex-direction: column;
+    padding-left: 72px;
+    align-items: flex-start;
+  }
+
+  .FaqQuestionWrapper p:nth-of-type(1) {
+    width: 72px;
+  }
+  .FaqIcon span {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .FaqRight {
+    height: 346px;
+  }
+  .FaqWrapper {
+    padding-bottom: 115px;
+  }
+  .FaqP {
+    font-size: 1rem !important;
+  }
+  .CollAbout {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    width: 100%;
+  }
+  .ContentWrapperAbout .ContentAbout p:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    width: 100%;
+  }
+  .ContentWrapperAbout {
+    padding-top: 16px;
+    row-gap: 24px;
+  }
+  .ContentWrapperAbout .ContentAbout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}

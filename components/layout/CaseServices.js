@@ -7,7 +7,7 @@ const CaseServices = () => {
     <div className="container">
       <div className="dotWrapper">
         <div className="dot"></div>
-        <p>Insights worth reading</p>
+        <p>How it works?</p>
       </div>
       <div className={classes.ContentFirst}>
         <div className={`${classes.Grid} grid`}>
