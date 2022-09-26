@@ -13,7 +13,7 @@ const FaqServices = ({ setActiveFaq, activeFaq }) => {
           <p className={classes.P}>What is it all about?</p>
         </div>
         <div className={classes.DescriptionWrapper}>
-          <div className="grid">
+          <div className={`${classes.Grid} grid`}>
             <div className={classes.CollFour}>
               <p className={classes.FaqP}>SERVICE OVERVIEW</p>
             </div>
