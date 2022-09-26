@@ -30,6 +30,7 @@
 
 .FaqWrapper {
   padding-bottom: 5rem;
+  overflow: hidden;
 }
 .FaqWrapper span {
   color: var(--primary-white);
