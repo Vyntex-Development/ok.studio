@@ -11,6 +11,9 @@ const CaseCmsHero = () => {
   // ScrollTrigger.normalizeScroll(true);
   // ScrollTrigger.config({ ignoreMobileResize: true });
   useEffect(() => {
+    ScrollTrigger.config({ ignoreMobileResize: true });
+  }, []);
+  useEffect(() => {
     let tlMain = gsap
       .timeline({
         scrollTrigger: {
