@@ -1,6 +1,6 @@
 .HeroWrapper {
   padding-top: 14rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8.5rem;
   padding-left: 15%;
   padding-right: 8.33%;
   display: flex;
@@ -30,6 +30,20 @@
 @media screen and (max-width: 991px) {
   .HeroWrapper {
     padding-left: 0;
-    padding-bottom: 80px;
+    padding-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .HeroWrapper {
+    padding-top: 168px;
+    padding-bottom: 16px;
+  }
+  .HeroWrapper h1 {
+    font-size: 64px;
+  }
+  .HeroWrapper p {
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 }

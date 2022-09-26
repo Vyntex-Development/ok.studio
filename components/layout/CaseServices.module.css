@@ -28,7 +28,6 @@
 }
 
 .ContentFirst {
-  border-bottom: 1px solid var(--gray);
   scroll-margin-top: 9.5rem;
 }
 
@@ -116,7 +115,7 @@
     margin-bottom: 24px;
   }
   .ContentLeft {
-    margin-bottom: 52px;
+    margin-bottom: 24px;
   }
 
   .CollFour {
@@ -128,7 +127,7 @@
     grid-column-end: 13;
   }
   .Grid {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .ContentFirst {
