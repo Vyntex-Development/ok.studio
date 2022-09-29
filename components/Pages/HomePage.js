@@ -5,7 +5,7 @@ import CaseStudiesHome from "../layout/CaseStudiesHome";
 import InsightsSection from "../layout/InsightsSection";
 import VideoSection from "../layout/VideoSection";
 
-const HomePage = () => {
+const HomePage = ({ insights }) => {
   const [activeFaq, setActiveFaq] = useState("1");
 
   return (
@@ -19,7 +19,7 @@ const HomePage = () => {
         }}
       ></FaqSection>
       <CaseStudiesHome></CaseStudiesHome>
-      <InsightsSection></InsightsSection>
+      <InsightsSection insights={insights}></InsightsSection>
     </div>
   );
 };

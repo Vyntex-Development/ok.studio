@@ -1,11 +1,11 @@
 import HeroInsights from "../layout/HeroInsights";
 import InsightsMainSection from "../layout/InsightsMainSection";
 
-const InsightsPage = () => {
+const InsightsPage = ({ insights }) => {
   return (
     <div>
       <HeroInsights></HeroInsights>
-      <InsightsMainSection></InsightsMainSection>
+      <InsightsMainSection insights={insights}></InsightsMainSection>
     </div>
   );
 };

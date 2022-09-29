@@ -17,14 +17,14 @@ const Footer = () => {
           <div className={classes.FooterTop}>
             <div className={classes.FooterFormWrapper}>
               <Link type="logo" href="/">
-                <Image
+                {/* <Image
                   layout="fixed"
                   objectFit="contain"
                   alt="logo"
                   width={74}
                   height={16}
                   src="/images/logo_dark.png"
-                ></Image>
+                ></Image> */}
               </Link>
               <h2>
                 Subscribe to our newsletter to stay in touch with the latest.
@@ -37,6 +37,7 @@ const Footer = () => {
                       layout="fixed"
                       objectFit="fill"
                       alt="icon"
+                      loader={false}
                       width={16}
                       height={5}
                       src="/images/arrow_input.png"

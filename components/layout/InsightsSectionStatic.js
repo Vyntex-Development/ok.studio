@@ -1,7 +1,8 @@
 import classes from "./InsightsSectionStatic.module.css";
 import InsightsItem from "./InsightsItem";
 
-const InsightsSectionStatic = () => {
+const InsightsSectionStatic = ({ insights }) => {
+  const slicedInsights = insights.slice(0, 2);
   return (
     <div className="container">
       <div className={classes.InsightsWrapper}>
@@ -10,9 +11,23 @@ const InsightsSectionStatic = () => {
           <p>Insights worth reading</p>
         </div>
         <div className="coll-8"></div>
+
         <div className={classes.InsightsItemsWrapper}>
-          <InsightsItem></InsightsItem>
-          <InsightsItem></InsightsItem>
+          <div className={classes.CardsWrapper}>
+            {slicedInsights.map(({ title, media, tag, _id, slug }) => {
+              return (
+                <>
+                  <InsightsItem
+                    key={_id}
+                    title={title}
+                    tag={tag}
+                    media={media}
+                    slug={slug}
+                  />
+                </>
+              );
+            })}
+          </div>
           <div className="yellow-card">
             <h1 className="h1-card">Subscribe</h1>
             <p className="p-card">

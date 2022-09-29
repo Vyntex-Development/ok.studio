@@ -1,21 +1,29 @@
 import HomePage from "../components/Pages/HomePage";
+import { getClient } from "../lib/sanity.server";
+import groq from "groq";
 
-export default function Home({ data }) {
+export default function Home({ insights }) {
   return (
     <>
-      <HomePage data={data} />
+      <HomePage insights={insights} />
     </>
   );
 }
 
-export async function getStaticProps() {
-  // Odavde vucemo podatke
-
-  //const response = await fetch("URL");
-  //const data = await response.json();
+export async function getStaticProps({ params, preview = false }) {
+  const insights = await getClient(preview).fetch(groq`
+    *[_type == "insights"]{
+      _id,
+      title,
+      description,
+      slug,
+      media,
+      tag
+    }
+    `);
   return {
     props: {
-      data: {},
+      insights,
     },
     revalidate: 10, // Definisemo na koliko se update-uje strana
   };

@@ -1,13 +1,11 @@
-import HeroInsightsCms from "../layout/HeroInsightsCms";
 import InsightsCmsMain from "../layout/InsightsCmsMain";
 import InsightsSectionStatic from "../layout/InsightsSectionStatic";
 
-const InsightsCmsPage = () => {
+const InsightsCmsPage = ({ insight, insights }) => {
   return (
     <div>
-      <HeroInsightsCms></HeroInsightsCms>
-      <InsightsCmsMain></InsightsCmsMain>
-      <InsightsSectionStatic></InsightsSectionStatic>
+      <InsightsCmsMain insight={insight}></InsightsCmsMain>
+      <InsightsSectionStatic insights={insights}></InsightsSectionStatic>
     </div>
   );
 };

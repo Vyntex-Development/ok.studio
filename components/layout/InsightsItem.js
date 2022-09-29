@@ -1,11 +1,16 @@
 import Link from "../UI/Link";
 import classes from "./InsightsItem.module.css";
 import Image from "next/image";
+import { useNextSanityImage } from "next-sanity-image";
+import { config } from "../../lib/config";
+import { urlFor } from "../../lib/sanity";
 
-const CaseStudiesItem = () => {
+const CaseStudiesItem = ({ title, media, tag, slug }) => {
+  const imageProps = useNextSanityImage(config, media);
+
   return (
     <div className={classes.CaseItemWrapper}>
-      <Link type="blog" href="/insightscms">
+      <Link type="blog" href={`insights/${slug.current}`}>
         <div className={classes.CaseItem}>
           <div className={classes.CaseImageWrapper}>
             <div className={classes.CaseImage}>
@@ -13,13 +18,13 @@ const CaseStudiesItem = () => {
                 layout="fill"
                 objectFit="cover"
                 alt="hero"
-                src="/images/insights_item.png"
+                {...imageProps}
               ></Image>
             </div>
           </div>
           <div className={classes.CaseContent}>
-            <p>Design Basics</p>
-            <h2>Collaborating with others, what should you know?</h2>
+            <p>{tag}</p>
+            <h2>{title}</h2>
           </div>
         </div>
       </Link>

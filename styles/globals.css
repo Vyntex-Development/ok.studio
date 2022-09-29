@@ -390,6 +390,12 @@ progress {
   }
 }
 /* Min Font Size */
+
+@media screen and (max-width: 1439px) {
+  .yellow-card {
+    height: 29.8rem;
+  }
+}
 @media screen and (max-width: 991px) {
   body {
     font-size: calc(0.20181634712411706vw + 0.625em);

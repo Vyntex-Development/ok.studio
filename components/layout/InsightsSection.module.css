@@ -40,6 +40,18 @@
   height: 25rem;
 }
 
+@media screen and (max-width: 1439px) {
+  .InsightsItemsWrapper div:nth-of-type(1) div a div div div {
+    height: 13rem;
+  }
+  .InsightsItemsWrapper div:nth-of-type(2) div a div div div {
+    height: 18rem;
+  }
+  .InsightsItemsWrapper div:nth-of-type(3) div a div div div {
+    height: 23rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .InsightsItemsWrapper div:nth-of-type(1) div a div div div {
     height: 17vw;

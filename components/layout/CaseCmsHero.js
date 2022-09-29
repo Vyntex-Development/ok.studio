@@ -21,11 +21,11 @@ const CaseCmsHero = () => {
           start: "top top",
           end: "98% bottom",
           scrub: 1,
-          normalizeScroll: true,
+          // normalizeScroll: true,
           // ignoreMobileResize: true,
-          config: {
-            ignoreMobileResize: true,
-          },
+          // config: {
+          //   ignoreMobileResize: true,
+          // },
         },
       })
       .to("#track", {
@@ -42,10 +42,10 @@ const CaseCmsHero = () => {
           start: "left left",
           end: "right left",
           scrub: true,
-          normalizeScroll: true,
-          config: {
-            ignoreMobileResize: true,
-          },
+          // normalizeScroll: true,
+          // config: {
+          //   ignoreMobileResize: true,
+          // },
           // ignoreMobileResize: true,
         },
       })
@@ -59,13 +59,13 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left right",
           end: "left left",
-          normalizeScroll: true,
+          // normalizeScroll: true,
 
-          // ignoreMobileResize: true,
-          scrub: true,
-          config: {
-            ignoreMobileResize: true,
-          },
+          // // ignoreMobileResize: true,
+          // scrub: true,
+          // config: {
+          //   ignoreMobileResize: true,
+          // },
         },
       })
       .from("#note-panel-img", { rotate: 40, scale: 0.3 });
@@ -78,12 +78,12 @@ const CaseCmsHero = () => {
           containerAnimation: tlMain,
           start: "left left",
           end: "right right",
-          normalizeScroll: true,
+          // normalizeScroll: true,
           // ignoreMobileResize: true,
           scrub: true,
-          config: {
-            ignoreMobileResize: true,
-          },
+          // config: {
+          //   ignoreMobileResize: true,
+          // },
         },
       })
       .to("#thanks-panel", { xPercent: 100, ease: "none" })
