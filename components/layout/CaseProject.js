@@ -70,16 +70,16 @@ const CaseProject = () => {
     <div className={classes.ProjectSection}>
       <div className={classes.BgColor}>
         <div className="container">
-          <div className={`${classes.DotWrapper} dotWrapper`}>
+          <div className={`${classes.DotWrapperProject} dotWrapper`}>
             <div className="dot"></div>
             <p>What makes us totally ok</p>
           </div>
         </div>
       </div>
-      <div className={classes.HeroWrapper} ref={imgRef} id="wrapper">
-        <div className={classes.HeroSticky}>
-          <div className={classes.HeroImageWrapper} id="moving">
-            <div className={classes.Image}>
+      <div className={classes.HeroWrapperProject} ref={imgRef} id="wrapper">
+        <div className={classes.HeroStickyProject}>
+          <div className={classes.HeroImageWrapperProject} id="moving">
+            <div className={classes.ImageProject}>
               <Image
                 layout="fill"
                 objectFit="cover"

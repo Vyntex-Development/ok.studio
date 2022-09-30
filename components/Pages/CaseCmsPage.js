@@ -6,7 +6,7 @@ const CaseCmsPage = () => {
   return (
     <div>
       <CaseCmsHero></CaseCmsHero>
-      <CaseCmsMain></CaseCmsMain>
+
       <CaseProject></CaseProject>
     </div>
   );
