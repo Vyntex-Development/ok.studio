@@ -68,7 +68,7 @@ const CaseCmsHero = () => {
           // },
         },
       })
-      .from("#note-panel-img", { scale: 0.3, rotate: 40 }, 0);
+      .from("#note-panel-img", { rotate: 40, scale: 0.3 });
     // { rotate: 40, scale: 0.3 })
     // thanks
     gsap
