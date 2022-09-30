@@ -102,21 +102,19 @@ const InsightsCmsMain = ({ insight }) => {
                     Share this post
                   </Link>
                   <div className={classes.NameWrapper}>
-                    <p>
-                      By: <span>{insight.username}</span>
-                    </p>
+                    <p>{/* By: <span>{insight.username}</span> */}</p>
                     <p>
                       Latest modified:
-                      {new Date(insight.lastModifiedAt).toDateString()}
+                      {/* {new Date(insight.lastModifiedAt).toDateString()} */}
                     </p>
                   </div>
                 </div>
               </div>
               <div className={`${classes.CollEight} coll-8`}>
                 <div className={classes.HeroContent}>
-                  <p>{insight.tag}</p>
+                  {/* <p>{insight.tag}</p>
                   <h1>{insight.title}</h1>
-                  <p>{insight.description}</p>
+                  <p>{insight.description}</p> */}
                 </div>
               </div>
             </div>

@@ -3,6 +3,7 @@ import InsightsCmsPage from "../../components/Pages/InsightsCmsPage";
 import { getClient } from "../../lib/sanity.server";
 
 export default function InisghtsCms({ insight, insights }) {
+  console.log(insight);
   return (
     <>
       <InsightsCmsPage insights={insights} insight={insight} />
@@ -14,6 +15,7 @@ export async function getStaticPaths() {
   const paths = await getClient().fetch(
     groq`*[_type == "insights" && defined(slug.current)][].slug.current`
   );
+
   return {
     paths: paths.map((slug) => ({ params: { slug } })),
     fallback: true,
