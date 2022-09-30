@@ -239,7 +239,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.Image}>
+                                <div className={classes.ImageMain}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
@@ -256,7 +256,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.Image}>
+                                <div className={classes.ImageMain}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
@@ -273,7 +273,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.Image}>
+                                <div className={classes.ImageMain}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
@@ -322,7 +322,7 @@ const CaseCmsHero = () => {
                 </div>
               </div>
               <div className="coll-9">
-                <div className={classes.Image}>
+                <div className={classes.ImageMain}>
                   <Image
                     layout="fill"
                     objectFit="cover"
@@ -573,7 +573,7 @@ const CaseCmsHero = () => {
                 </div>
               </div>
               <div className={`${classes.SolutionCollEight} coll-8`}>
-                <div className={classes.Image}>
+                <div className={classes.ImageMain}>
                   <Image
                     layout="fill"
                     objectFit="cover"
@@ -688,7 +688,7 @@ const CaseCmsHero = () => {
                 </div>
               </div>
               <div className="coll-8">
-                <div className={classes.Image}>
+                <div className={classes.ImageMain}>
                   <Image
                     layout="fill"
                     objectFit="cover"

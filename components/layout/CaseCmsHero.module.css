@@ -311,7 +311,7 @@
 .Grid {
   padding-top: 2.5rem;
 }
-.Image {
+.ImageMain {
   position: relative;
   width: 100%;
   height: 40rem;
@@ -573,7 +573,7 @@
   .OverviewSection .DescriptionWrapper {
     width: 50%;
   }
-  .OverviewSection .Image {
+  .OverviewSection .ImageMain {
     height: 61vw;
     margin-top: 5rem;
   }
@@ -620,7 +620,7 @@
     grid-column-start: 7;
     grid-column-end: 13;
   }
-  .SolutionSection .Image {
+  .SolutionSection .ImageMain {
     height: 100%;
   }
   .OverviewSection .ContentWrapper {
@@ -647,7 +647,7 @@
   .OutcoemSection .ContentWrapper {
     width: 50%;
   }
-  .OutcoemSection .Image {
+  .OutcoemSection .ImageMain {
     margin-top: 5rem;
     height: 68vw;
   }
@@ -711,7 +711,7 @@
   .OverviewSection .DescriptionWrapper {
     width: 100%;
   }
-  .OverviewSection .Image {
+  .OverviewSection .ImageMain {
     margin-top: 2.5rem;
     height: 65vw;
   }
@@ -820,7 +820,7 @@
   .OutcoemSection .ContentWrapper {
     width: 100%;
   }
-  .OutcoemSection .Image {
+  .OutcoemSection .ImageMain {
     margin-top: 2.5rem;
     height: 63vw;
   }
