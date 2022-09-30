@@ -121,12 +121,12 @@ const InsightsCmsMain = ({ insight }) => {
               </div>
             </div>
             <div className={classes.Image}>
-              <Image
+              {/* <Image
                 layout="fill"
                 objectFit="cover"
                 alt="hero"
                 {...imageProps}
-              ></Image>
+              ></Image> */}
             </div>
           </div>
         </div>
@@ -149,10 +149,10 @@ const InsightsCmsMain = ({ insight }) => {
             </div>
             <div className="coll-10">
               <div className={classes.RichWrapper} ref={imgRef} id="rich">
-                <PortableText
+                {/* <PortableText
                   value={insight.body}
                   components={myPortableTextComponents}
-                />
+                /> */}
               </div>
             </div>
           </div>
