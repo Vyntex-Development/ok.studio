@@ -62,7 +62,7 @@ const CaseCmsHero = () => {
           // normalizeScroll: true,
 
           // // ignoreMobileResize: true,
-          // scrub: true,
+          scrub: true,
           // config: {
           //   ignoreMobileResize: true,
           // },
