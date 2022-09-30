@@ -293,7 +293,7 @@ const CaseCmsHero = () => {
         </div>
       </div>
 
-      <div className={classes.CaseMain}>
+      {/* <div className={classes.CaseMain}>
         <div className="container">
           <div className={classes.OverviewSection}>
             <div className="dotWrapper">
@@ -699,7 +699,7 @@ const CaseCmsHero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
