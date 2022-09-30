@@ -783,7 +783,7 @@ const CaseCmsHero = () => {
             <div className={classes.TitleWrapperDesktop}>
               <h1>Hideo Ventures</h1>
               <div className={classes.ProjectWrapper}>
-                <div className={classes.NumberWrapper}>
+                <div className={classes.NumberWrapperProject}>
                   <p id="number">0</p>
                   <div className={classes.ProjectLine}>
                     <div id="line"></div>
