@@ -90,7 +90,7 @@ const InsightsCmsMain = ({ insight }) => {
   }, []);
 
   // const imageProps = useNextSanityImage(config, insight.media);
-  console.log(insight.title);
+  console.log(insight && insight.title);
   return (
     <div>
       <div className="container">
