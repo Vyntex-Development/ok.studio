@@ -6,8 +6,6 @@ const CaseCmsPage = () => {
   return (
     <div>
       <CaseCmsHero></CaseCmsHero>
-
-      <CaseProject></CaseProject>
     </div>
   );
 };

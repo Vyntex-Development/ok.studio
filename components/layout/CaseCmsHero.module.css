@@ -491,6 +491,119 @@
 
 /* main end */
 
+/*project start*/
+
+.HeroMobile {
+  display: none;
+}
+
+.HeroWrapperProject {
+  height: 400vh;
+  width: 100%;
+}
+
+.HeroStickyProject {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroImageWrapperProject {
+  overflow: hidden;
+  width: 40rem;
+  background-color: transparent;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageProject {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.TitleWrapperDesktop {
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  width: 49.74rem;
+  text-align: center;
+}
+
+.TitleWrapperDesktop h1 {
+  font-family: "PPNeueBit-Bold";
+  font-size: 6.875rem;
+}
+
+.DateWrapper {
+  position: absolute;
+  width: 49.74rem;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.DateWrapper p {
+  font-family: "PPNeue-Medium";
+  font-size: 1rem;
+  line-height: 100%;
+  color: var(--gray);
+  margin-top: 35rem;
+}
+
+.ProjectWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+  position: absolute;
+  top: 50%; /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  margin-top: 250px;
+}
+
+.NumberWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+.NumberWrapper p:nth-of-type(1) {
+  color: var(--white);
+}
+.NumberWrapper p:nth-of-type(2) {
+  color: var(--gray);
+}
+
+.ProjectLine {
+  height: 1px;
+  background-color: var(--gray);
+  width: 9.3rem;
+}
+.ProjectLine div {
+  background-color: var(--white);
+  height: 100%;
+  width: 0%;
+}
+.Next {
+  font-size: 1.625rem;
+  line-height: 126%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-white);
+}
+.ProjectSection {
+  background-color: var(--black);
+}
 @media screen and (max-width: 1439px) {
   .Coll6 {
     padding-left: 9.5%;
@@ -650,6 +763,25 @@
   .OutcoemSection .ImageMain {
     margin-top: 5rem;
     height: 68vw;
+  }
+  /* project*/
+  .HeroStickyProject {
+    margin-top: -30vh;
+  }
+
+  .DotWrapperProject {
+    background-color: var(--black);
+    position: relative;
+    z-index: 2;
+    padding-bottom: 5rem;
+    margin-bottom: 0;
+  }
+  .HeroImageWrapperProject {
+    width: 560px;
+    height: 328px;
+  }
+  .ProjectWrapper {
+    margin-top: 220px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -823,5 +955,32 @@
   .OutcoemSection .ImageMain {
     margin-top: 2.5rem;
     height: 63vw;
+  }
+
+  /* project */
+  .ProjectWrapper {
+    margin-top: 145px;
+    row-gap: 1rem;
+  }
+  .TitleWrapperDesktop {
+    width: 100%;
+  }
+  .TitleWrapperDesktop h1 {
+    font-size: 42px;
+  }
+  .BgColor {
+    background-color: var(--black);
+    position: relative;
+    z-index: 1;
+  }
+  .Next {
+    font-size: 16px;
+  }
+  .HeroImageWrapperProject {
+    width: 90vw;
+    height: 53vw;
+  }
+  .HeroStickyProject {
+    margin-top: -34vh;
   }
 }
