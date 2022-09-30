@@ -3,7 +3,7 @@ import Link from "../UI/Link";
 import InsightsItem from "./InsightsItem";
 
 const InsightsSection = ({ insights }) => {
-  const slicedInsights = insights.slice(0, 3);
+  // const slicedInsights = insights.slice(0, 3);
   return (
     <div className="container">
       <div className={classes.InsightsWrapper}>
@@ -18,7 +18,7 @@ const InsightsSection = ({ insights }) => {
           <InsightsItem></InsightsItem>
         </div> */}
         <div className={classes.InsightsItemsWrapper}>
-          {slicedInsights.map(({ title, media, tag, _id, slug }) => {
+          {/* {slicedInsights.map(({ title, media, tag, _id, slug }) => {
             return (
               <InsightsItem
                 key={_id}
@@ -28,7 +28,7 @@ const InsightsSection = ({ insights }) => {
                 slug={slug}
               />
             );
-          })}
+          })} */}
         </div>
       </div>
     </div>

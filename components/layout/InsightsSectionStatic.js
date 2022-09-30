@@ -2,7 +2,7 @@ import classes from "./InsightsSectionStatic.module.css";
 import InsightsItem from "./InsightsItem";
 
 const InsightsSectionStatic = ({ insights }) => {
-  const slicedInsights = insights.slice(0, 2);
+  // const slicedInsights = insights.slice(0, 2);
   return (
     <div className="container">
       <div className={classes.InsightsWrapper}>
@@ -14,7 +14,7 @@ const InsightsSectionStatic = ({ insights }) => {
 
         <div className={classes.InsightsItemsWrapper}>
           <div className={classes.CardsWrapper}>
-            {slicedInsights.map(({ title, media, tag, _id, slug }) => {
+            {/* {slicedInsights.map(({ title, media, tag, _id, slug }) => {
               return (
                 <>
                   <InsightsItem
@@ -26,7 +26,7 @@ const InsightsSectionStatic = ({ insights }) => {
                   />
                 </>
               );
-            })}
+            })} */}
           </div>
           <div className="yellow-card">
             <h1 className="h1-card">Subscribe</h1>
