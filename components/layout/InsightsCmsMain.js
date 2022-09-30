@@ -113,19 +113,21 @@ const InsightsCmsMain = ({ insight }) => {
               </div>
               <div className={`${classes.CollEight} coll-8`}>
                 <div className={classes.HeroContent}>
-                  {/* <p>{insight.tag}</p> */}
+                  <p>{insight && insight.tag}</p>
                   <h1>{insight && insight.title}</h1>
-                  {/* <p>{insight.description}</p> */}
+                  <p>{insight && insight.description}</p>
                 </div>
               </div>
             </div>
             <div className={classes.Image}>
-              {/* <Image
-                layout="fill"
-                objectFit="cover"
-                alt="hero"
-                {...imageProps}
-              ></Image> */}
+              {insight && (
+                <Image
+                  layout="fill"
+                  objectFit="cover"
+                  alt="hero"
+                  {...imageProps}
+                ></Image>
+              )}
             </div>
           </div>
         </div>
