@@ -68,8 +68,8 @@ const CaseCmsHero = () => {
           // },
         },
       })
-      .from("#note-panel-img", { rotate: 40, scale: 0.3 });
-
+      .from("#note-panel-img", { scale: 0.3, rotate: 40 }, 0);
+    // { rotate: 40, scale: 0.3 })
     // thanks
     gsap
       .timeline({
@@ -293,7 +293,7 @@ const CaseCmsHero = () => {
         </div>
       </div>
 
-      {/* <div className={classes.CaseMain}>
+      <div className={classes.CaseMain}>
         <div className="container">
           <div className={classes.OverviewSection}>
             <div className="dotWrapper">
@@ -699,7 +699,7 @@ const CaseCmsHero = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
