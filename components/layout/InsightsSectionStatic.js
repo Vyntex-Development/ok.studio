@@ -14,19 +14,20 @@ const InsightsSectionStatic = ({ insights }) => {
 
         <div className={classes.InsightsItemsWrapper}>
           <div className={classes.CardsWrapper}>
-            {slicedInsights.map(({ title, media, tag, _id, slug }) => {
-              return (
-                <>
-                  <InsightsItem
-                    key={_id}
-                    title={title}
-                    tag={tag}
-                    media={media}
-                    slug={slug}
-                  />
-                </>
-              );
-            })}
+            {insights &&
+              slicedInsights.map(({ title, media, tag, _id, slug }) => {
+                return (
+                  <>
+                    <InsightsItem
+                      key={_id}
+                      title={title}
+                      tag={tag}
+                      media={media}
+                      slug={slug}
+                    />
+                  </>
+                );
+              })}
           </div>
           <div className="yellow-card">
             <h1 className="h1-card">Subscribe</h1>
