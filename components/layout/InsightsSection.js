@@ -3,7 +3,7 @@ import Link from "../UI/Link";
 import InsightsItem from "./InsightsItem";
 
 const InsightsSection = ({ insights }) => {
-  const slicedInsights = insight && insights.slice(0, 3);
+  const slicedInsights = insights && insights.slice(0, 3);
   return (
     <div className="container">
       <div className={classes.InsightsWrapper}>
