@@ -29,19 +29,19 @@ import { urlFor } from "../../lib/sanity";
 //   },
 // };
 
-const myPortableTextComponents = {
-  types: {
-    image: ({ value }) => {
-      console.log(value);
-      return (
-        <figure>
-          <figcaption>{value.caption}</figcaption>
-          <img src={urlFor(value)} />
-        </figure>
-      );
-    },
-  },
-};
+// const myPortableTextComponents = {
+//   types: {
+//     image: ({ value }) => {
+//       console.log(value);
+//       return (
+//         <figure>
+//           <figcaption>{value.caption}</figcaption>
+//           <img src={urlFor(value)} />
+//         </figure>
+//       );
+//     },
+//   },
+// };
 
 const InsightsCmsMain = ({ insight }) => {
   const imgRef = useRef(null);
@@ -89,7 +89,7 @@ const InsightsCmsMain = ({ insight }) => {
     pageCode();
   }, []);
 
-  const imageProps = useNextSanityImage(config, insight.media);
+  // const imageProps = useNextSanityImage(config, insight.media);
   return (
     <div>
       <div className="container">
