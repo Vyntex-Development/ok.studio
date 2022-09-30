@@ -22,7 +22,8 @@ export async function getStaticPaths() {
   };
 }
 
-const query = groq`*[_type == "insights" && slug.current == $slug][0] {
+export async function getStaticProps({ params, preview = false }) {
+  const query = groq`*[_type == "insights" && slug.current == $slug][0] {
     title,
     "username":author->username,
     body,
@@ -32,7 +33,6 @@ const query = groq`*[_type == "insights" && slug.current == $slug][0] {
     lastModifiedAt
 }`;
 
-export async function getStaticProps({ params, preview = false }) {
   const insights = await getClient(preview).fetch(groq`
     *[_type == "insights"]{
       _id,
