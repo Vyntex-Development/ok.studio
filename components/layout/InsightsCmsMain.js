@@ -89,7 +89,7 @@ const InsightsCmsMain = ({ insight }) => {
     pageCode();
   }, []);
 
-  // const imageProps = useNextSanityImage(config, insight.media);
+  const imageProps = useNextSanityImage(config, insight && insight.media);
   console.log(insight && insight.title);
   return (
     <div>
@@ -103,10 +103,14 @@ const InsightsCmsMain = ({ insight }) => {
                     Share this post
                   </Link>
                   <div className={classes.NameWrapper}>
-                    <p>{/* By: <span>{insight.username}</span> */}</p>
+                    <p>
+                      By: <span>{insight && insight.username}</span>
+                    </p>
                     <p>
                       Latest modified:
-                      {/* {new Date(insight.lastModifiedAt).toDateString()} */}
+                      {new Date(
+                        insight && insight.lastModifiedAt
+                      ).toDateString()}
                     </p>
                   </div>
                 </div>
