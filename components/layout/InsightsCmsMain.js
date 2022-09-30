@@ -29,19 +29,19 @@ import { urlFor } from "../../lib/sanity";
 //   },
 // };
 
-// const myPortableTextComponents = {
-//   types: {
-//     image: ({ value }) => {
-//       console.log(value);
-//       return (
-//         <figure>
-//           <figcaption>{value.caption}</figcaption>
-//           <img src={urlFor(value)} />
-//         </figure>
-//       );
-//     },
-//   },
-// };
+const myPortableTextComponents = {
+  types: {
+    image: ({ value }) => {
+      console.log(value);
+      return (
+        <figure>
+          <figcaption>{value.caption}</figcaption>
+          <img src={urlFor(value)} />
+        </figure>
+      );
+    },
+  },
+};
 
 const InsightsCmsMain = ({ insight }) => {
   const imgRef = useRef(null);
@@ -154,10 +154,12 @@ const InsightsCmsMain = ({ insight }) => {
             </div>
             <div className="coll-10">
               <div className={classes.RichWrapper} ref={imgRef} id="rich">
-                {/* <PortableText
-                  value={insight.body}
-                  components={myPortableTextComponents}
-                /> */}
+                {insight && (
+                  <PortableText
+                    value={insight && insight.body}
+                    components={myPortableTextComponents}
+                  />
+                )}
               </div>
             </div>
           </div>
