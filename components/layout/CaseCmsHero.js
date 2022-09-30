@@ -102,185 +102,183 @@ const CaseCmsHero = () => {
   }, []);
 
   return (
-    <div>
-      <div className={classes.CaseSection}>
-        <div>
-          <div className={classes.HeroWrapper}>
-            <div className="container">
-              <div className={`${classes.Grid} grid`}>
-                <div className="coll-4">
-                  <div className={classes.HeroTitle}>
-                    <h1>Minespider</h1>
-                  </div>
+    <div className={classes.CaseSection}>
+      <div>
+        <div className={classes.HeroWrapper}>
+          <div className="container">
+            <div className={`${classes.Grid} grid`}>
+              <div className="coll-4">
+                <div className={classes.HeroTitle}>
+                  <h1>Minespider</h1>
                 </div>
-                <div className={`${classes.Coll6} coll-6`}>
-                  <p className={classes.HeroDescription}>
-                    Banyan tree is an international hospitality brand that
-                    manages and develops resorts, hotels. and spas in Asia,
-                    America, Africa, and the middle east.
-                  </p>
-                </div>
+              </div>
+              <div className={`${classes.Coll6} coll-6`}>
+                <p className={classes.HeroDescription}>
+                  Banyan tree is an international hospitality brand that manages
+                  and develops resorts, hotels. and spas in Asia, America,
+                  Africa, and the middle east.
+                </p>
               </div>
             </div>
           </div>
-          <div className={classes.SectionHeight} id="section-height">
-            <div className={classes.StickyElement}>
-              <div className={classes.Track} id="track">
-                <div className={classes.TrackFlex}>
-                  <div className={classes.HeroPanel} id="hero-panel">
-                    <div className={classes.HeroPanelImage} id="hero-panel-img">
-                      <div className={classes.Image}>
+        </div>
+        <div className={classes.SectionHeight} id="section-height">
+          <div className={classes.StickyElement}>
+            <div className={classes.Track} id="track">
+              <div className={classes.TrackFlex}>
+                <div className={classes.HeroPanel} id="hero-panel">
+                  <div className={classes.HeroPanelImage} id="hero-panel-img">
+                    <div className={classes.Image}>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        alt="hero"
+                        src="/images/case_hero.png"
+                      ></Image>
+                    </div>
+                    <div className={classes.ImageMobile}>
+                      <Image
+                        layout="fill"
+                        objectFit="cover"
+                        alt="hero"
+                        src="/images/case_hero_mobile.png"
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+                <div className={classes.NotePanel} id="note-panel">
+                  <div className={classes.NotePanelContain}>
+                    <div className={classes.NotePanelImg} id="note-panel-img">
+                      <div className={classes.NotePanelImageHeight}>
                         <Image
                           layout="fill"
                           objectFit="cover"
                           alt="hero"
-                          src="/images/case_hero.png"
-                        ></Image>
-                      </div>
-                      <div className={classes.ImageMobile}>
-                        <Image
-                          layout="fill"
-                          objectFit="cover"
-                          alt="hero"
-                          src="/images/case_hero_mobile.png"
+                          src="/images/case_panel.png"
                         ></Image>
                       </div>
                     </div>
+                    <p className={classes.DescriptionPanel}>
+                      The plan included detailed service pages that served as
+                      landing pages with an appointment scheduling element, a
+                      modern blog, and a stable marketing infrastructure.
+                    </p>
                   </div>
-                  <div className={classes.NotePanel} id="note-panel">
-                    <div className={classes.NotePanelContain}>
-                      <div className={classes.NotePanelImg} id="note-panel-img">
-                        <div className={classes.NotePanelImageHeight}>
-                          <Image
-                            layout="fill"
-                            objectFit="cover"
-                            alt="hero"
-                            src="/images/case_panel.png"
-                          ></Image>
+                </div>
+                <div
+                  className={classes.ThanksPanelWrapp}
+                  id="thanks-panel-wrapp"
+                >
+                  <div className={classes.ThanksPanel} id="thanks-panel">
+                    <div className={classes.ThanksPanelContain}>
+                      <h1 className={classes.Title}>Case study</h1>
+                      <div className={classes.ThanksPaneRelative}>
+                        <div className={classes.ThanksPanelImageOne}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_01.png"
+                                ></Image>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <p className={classes.DescriptionPanel}>
-                        The plan included detailed service pages that served as
-                        landing pages with an appointment scheduling element, a
-                        modern blog, and a stable marketing infrastructure.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    className={classes.ThanksPanelWrapp}
-                    id="thanks-panel-wrapp"
-                  >
-                    <div className={classes.ThanksPanel} id="thanks-panel">
-                      <div className={classes.ThanksPanelContain}>
-                        <h1 className={classes.Title}>Case study</h1>
-                        <div className={classes.ThanksPaneRelative}>
-                          <div className={classes.ThanksPanelImageOne}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_01.png"
-                                  ></Image>
-                                </div>
+                        <div className={classes.ThanksPanelImageTwo}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_02.png"
+                                ></Image>
                               </div>
                             </div>
                           </div>
-                          <div className={classes.ThanksPanelImageTwo}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_02.png"
-                                  ></Image>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className={classes.ThanksPanelImageThree}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_03.png"
-                                  ></Image>
-                                </div>
+                        </div>
+                        <div className={classes.ThanksPanelImageThree}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_03.png"
+                                ></Image>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div
-                        className={classes.ThanksPanelContainTwo}
-                        id="thanks-panel-contain-two"
-                      >
-                        <h1 className={classes.TitleWhite}>Case study</h1>
-                        <div className={classes.ThanksPaneRelative}>
-                          <div className={classes.ThanksPanelImageOne}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_03.png"
-                                  ></Image>
-                                </div>
+                    </div>
+                    <div
+                      className={classes.ThanksPanelContainTwo}
+                      id="thanks-panel-contain-two"
+                    >
+                      <h1 className={classes.TitleWhite}>Case study</h1>
+                      <div className={classes.ThanksPaneRelative}>
+                        <div className={classes.ThanksPanelImageOne}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_03.png"
+                                ></Image>
                               </div>
                             </div>
                           </div>
-                          <div className={classes.ThanksPanelImageTwo}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_01.png"
-                                  ></Image>
-                                </div>
+                        </div>
+                        <div className={classes.ThanksPanelImageTwo}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_01.png"
+                                ></Image>
                               </div>
                             </div>
                           </div>
-                          <div className={classes.ThanksPanelImageThree}>
-                            <div className={classes.ThanksPanelImageHeight}>
-                              <div
-                                className={classes.ThanksPanelPhoto}
-                                id="thanks-panel-photo"
-                              >
-                                <div className={classes.Image}>
-                                  <Image
-                                    layout="fill"
-                                    objectFit="cover"
-                                    alt="hero"
-                                    src="/images/case_02.png"
-                                  ></Image>
-                                </div>
+                        </div>
+                        <div className={classes.ThanksPanelImageThree}>
+                          <div className={classes.ThanksPanelImageHeight}>
+                            <div
+                              className={classes.ThanksPanelPhoto}
+                              id="thanks-panel-photo"
+                            >
+                              <div className={classes.Image}>
+                                <Image
+                                  layout="fill"
+                                  objectFit="cover"
+                                  alt="hero"
+                                  src="/images/case_02.png"
+                                ></Image>
                               </div>
                             </div>
                           </div>
@@ -294,6 +292,7 @@ const CaseCmsHero = () => {
           </div>
         </div>
       </div>
+
       <div className={classes.CaseMain}>
         <div className="container">
           <div className={classes.OverviewSection}>
