@@ -239,7 +239,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.ImageMain}>
+                                <div className={classes.Image}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
@@ -256,7 +256,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.ImageMain}>
+                                <div className={classes.Image}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
@@ -273,7 +273,7 @@ const CaseCmsHero = () => {
                                 className={classes.ThanksPanelPhoto}
                                 id="thanks-panel-photo"
                               >
-                                <div className={classes.ImageMain}>
+                                <div className={classes.Image}>
                                   <Image
                                     layout="fill"
                                     objectFit="cover"
