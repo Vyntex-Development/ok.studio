@@ -90,6 +90,7 @@ const InsightsCmsMain = ({ insight }) => {
   }, []);
 
   // const imageProps = useNextSanityImage(config, insight.media);
+  console.log(insight.title);
   return (
     <div>
       <div className="container">
@@ -113,7 +114,7 @@ const InsightsCmsMain = ({ insight }) => {
               <div className={`${classes.CollEight} coll-8`}>
                 <div className={classes.HeroContent}>
                   {/* <p>{insight.tag}</p> */}
-                  <h1>{insight.title}</h1>
+                  {/* <h1>{insight.title}</h1> */}
                   {/* <p>{insight.description}</p> */}
                 </div>
               </div>
