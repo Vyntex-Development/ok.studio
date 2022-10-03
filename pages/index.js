@@ -2,10 +2,14 @@ import HomePage from "../components/Pages/HomePage";
 import { getClient } from "../lib/sanity.server";
 import groq from "groq";
 
-export default function Home({ insights, casestudies }) {
+export default function Home({ insights, casestudies, services }) {
   return (
     <>
-      <HomePage insights={insights} casestudies={casestudies} />
+      <HomePage
+        insights={insights}
+        casestudies={casestudies}
+        services={services}
+      />
     </>
   );
 }
@@ -31,10 +35,21 @@ export async function getStaticProps({ params, preview = false }) {
       tag
     }
     `);
+  const services = await getClient(preview).fetch(groq`
+    *[_type == "services"]{
+      _id,
+      title,
+      description,
+      slug,
+      media,
+      tag
+    }
+    `);
   return {
     props: {
       insights,
       casestudies,
+      services,
     },
     revalidate: 10, // Definisemo na koliko se update-uje strana
   };

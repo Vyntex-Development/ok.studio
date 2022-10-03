@@ -3,9 +3,13 @@ import Image from "next/image";
 import Link from "../UI/Link";
 import { ABOUT_PAGE } from "../../utils/utils";
 import { useRouter } from "next/router";
+import FaqHomeItem from "./FaqHomeItem";
+import { useState } from "react";
 
-const FaqSection = ({ setActiveFaq, activeFaq }) => {
+const FaqSection = ({ services }) => {
   const { pathname } = useRouter();
+  const [active, setActive] = useState(services[0]._id);
+  console.log(services);
   return (
     <div>
       <div className="container">
@@ -85,7 +89,7 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                 </div>
               </div>
               <div className={classes.FaqRight}>
-                <div className={classes.Faq}>
+                {/* <div className={classes.Faq}>
                   <div
                     onClick={() => {
                       setActiveFaq("1");
@@ -124,8 +128,8 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
                   </div>
-                </div>
-                <div className={classes.Faq}>
+                </div> */}
+                {/* <div className={classes.Faq}>
                   <div
                     onClick={() => {
                       setActiveFaq("2");
@@ -164,8 +168,8 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
                   </div>
-                </div>
-                <div className={classes.Faq}>
+                </div> */}
+                {/* <div className={classes.Faq}>
                   <div
                     onClick={() => {
                       setActiveFaq("3");
@@ -204,7 +208,21 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
                   </div>
-                </div>
+                </div> */}
+                {services.map(({ title, description, tag, _id, slug }) => {
+                  return (
+                    <FaqHomeItem
+                      key={_id}
+                      title={title}
+                      tag={tag}
+                      description={description}
+                      slug={slug}
+                      id={_id}
+                      setActiveFaq={(id) => setActive(id)}
+                      active={active}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
