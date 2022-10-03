@@ -4,25 +4,15 @@ import FaqServices from "../layout/FaqServices";
 import CaseServices from "../layout/CaseServices";
 import FaqServicesLarge from "../layout/FaqServicesLarge";
 
-const ServicesCms = () => {
-  const [activeFaq, setActiveFaq] = useState("1");
+const ServicesCms = ({ service }) => {
+  console.log(service);
   return (
     <div>
       <div>
-        <HeroServicesCms></HeroServicesCms>
-        <FaqServices
-          activeFaq={activeFaq}
-          setActiveFaq={(id) => {
-            setActiveFaq(id);
-          }}
-        ></FaqServices>
+        <HeroServicesCms service={service}></HeroServicesCms>
+        {/* <FaqServices></FaqServices>
         <CaseServices></CaseServices>
-        <FaqServicesLarge
-          activeFaq={activeFaq}
-          setActiveFaq={(id) => {
-            setActiveFaq(id);
-          }}
-        ></FaqServicesLarge>
+        <FaqServicesLarge></FaqServicesLarge> */}
       </div>
     </div>
   );

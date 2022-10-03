@@ -1,6 +1,5 @@
 import FaqSection from "../layout/FaqSection";
 import HomeHero from "../layout/HomeHero";
-
 import CaseStudiesHome from "../layout/CaseStudiesHome";
 import InsightsSection from "../layout/InsightsSection";
 import VideoSection from "../layout/VideoSection";

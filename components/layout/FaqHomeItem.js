@@ -42,7 +42,7 @@ const FaqHomeItem = ({
         }`}
       >
         <p>{description}</p>
-        <Link type="dark" href="/">
+        <Link type="dark" href={`services/${slug.current}`}>
           GET A QUOTE
         </Link>
       </div>
