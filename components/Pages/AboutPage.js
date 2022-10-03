@@ -4,17 +4,11 @@ import { useState } from "react";
 import Founders from "../layout/Founders";
 import Skills from "../layout/Skills";
 
-const AboutPage = ({ casestudies }) => {
-  const [activeFaq, setActiveFaq] = useState("1");
+const AboutPage = ({ casestudies, services }) => {
   return (
     <div>
       <AboutHero></AboutHero>
-      <FaqSection
-        activeFaq={activeFaq}
-        setActiveFaq={(id) => {
-          setActiveFaq(id);
-        }}
-      ></FaqSection>
+      <FaqSection services={services}></FaqSection>
       <Founders></Founders>
       <Skills casestudies={casestudies}></Skills>
     </div>
