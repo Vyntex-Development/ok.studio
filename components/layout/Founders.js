@@ -53,8 +53,9 @@ const Founders = () => {
                   </div>
                   <div className={classes.DescriptionWrapper}>
                     <p className={classes.Description}>
-                      If you are intrested hiring us or ask anything related to
-                      your next project, <span>email Ilia.</span>
+                      If you are interested in creative collaborations or just
+                      want to talk about your next project,
+                      <span> email Ilia.</span>
                     </p>
                     <div className={classes.FounderIcon}>
                       <Image
@@ -104,8 +105,9 @@ const Founders = () => {
                   </div>
                   <div className={classes.DescriptionWrapper}>
                     <p className={classes.Description}>
-                      If you are intrested hiring us or ask anything related to
-                      your next project, <span>email Ilia.</span>
+                      For all other inquiries including joining our team and
+                      networking,
+                      <span> email Marina.</span>
                     </p>
                     <div className={classes.FounderIcon}>
                       <Image
