@@ -3,11 +3,13 @@ import Link from "../UI/Link";
 import classes from "./CaseStudiesArticle.module.css";
 import { useNextSanityImage } from "next-sanity-image";
 import { config } from "../../lib/config";
+import { urlFor } from "../../lib/sanity";
+
 const CaseStudiesArticle = ({ title, media, description, slug }) => {
   const imageProps = useNextSanityImage(config, media);
   return (
     <div className={classes.CaseItemWrapper}>
-      <Link type="blog" href="/casestudycms">
+      <Link type="blog" href={`casestudies/${slug.current}`}>
         <div className={classes.CaseItem}>
           <div className={classes.CaseContent}>
             <p>{description}</p>
