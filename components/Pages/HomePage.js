@@ -5,9 +5,8 @@ import CaseStudiesHome from "../layout/CaseStudiesHome";
 import InsightsSection from "../layout/InsightsSection";
 import VideoSection from "../layout/VideoSection";
 
-const HomePage = ({ insights }) => {
+const HomePage = ({ insights, casestudies }) => {
   const [activeFaq, setActiveFaq] = useState("1");
-  console.log(insights);
   return (
     <div>
       <HomeHero></HomeHero>
@@ -18,7 +17,7 @@ const HomePage = ({ insights }) => {
           setActiveFaq(id);
         }}
       ></FaqSection>
-      <CaseStudiesHome></CaseStudiesHome>
+      <CaseStudiesHome casestudies={casestudies}></CaseStudiesHome>
       <InsightsSection insights={insights}></InsightsSection>
     </div>
   );

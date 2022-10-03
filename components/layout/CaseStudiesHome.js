@@ -2,7 +2,8 @@ import classes from "./CaseStudiesHome.module.css";
 import Link from "../UI/Link";
 import CaseStudiesItem from "./CaseStudiesItem";
 
-const CaseStudiesHome = () => {
+const CaseStudiesHome = ({ casestudies }) => {
+  console.log(casestudies);
   return (
     <div className="container">
       <div className={classes.CaseWrapper}>
@@ -26,12 +27,25 @@ const CaseStudiesHome = () => {
             </div>
           </div>
         </div>
+        {/* <div className={classes.CaseItemsWrapper}>
+          <CaseStudiesItem></CaseStudiesItem>
+          <CaseStudiesItem></CaseStudiesItem>
+          <CaseStudiesItem></CaseStudiesItem>
+          <CaseStudiesItem></CaseStudiesItem>
+          <CaseStudiesItem></CaseStudiesItem>
+        </div> */}
         <div className={classes.CaseItemsWrapper}>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
+          {casestudies.map(({ title, media, tag, _id, slug }) => {
+            return (
+              <CaseStudiesItem
+                key={_id}
+                title={title}
+                tag={tag}
+                media={media}
+                slug={slug}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
