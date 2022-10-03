@@ -178,9 +178,7 @@ const CaseCmsHero = ({ casestudy }) => {
               </div>
               <div className={`${classes.Coll6} coll-6`}>
                 <p className={classes.HeroDescription}>
-                  Banyan tree is an international hospitality brand that manages
-                  and develops resorts, hotels. and spas in Asia, America,
-                  Africa, and the middle east.
+                  {casestudy && casestudy.description}
                 </p>
               </div>
             </div>

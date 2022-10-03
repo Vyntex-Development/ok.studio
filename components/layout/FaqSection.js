@@ -54,14 +54,14 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                 }`}
               >
                 <p className="p-large">
-                  We Are a ■ strategy-driven Digital Agency. We focus on digital
-                  design, data-driven insights, and all things technology.
+                  We Are a ■ <span> strategy-driven Digital Agency </span>. We
+                  focus on digital design, data-driven insights, and all things
+                  technology.
                 </p>
                 <p className="p-large">
-                  We
-                  <span> better businesses </span>, solve problems with ●
+                  We ●<span> better businesses </span>, solve problems with
                   creative solutions and elevate brand experiences through ▲
-                  digital culture.
+                  <span> digital culture </span>.
                 </p>
                 <div className={classes.ContentAbout}>
                   <p>
