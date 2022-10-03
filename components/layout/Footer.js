@@ -26,9 +26,7 @@ const Footer = () => {
                   src="/images/logo_dark.png"
                 ></Image> */}
               </Link>
-              <h2>
-                Subscribe to our newsletter to stay in touch with the latest.
-              </h2>
+              <h2>Stay in touch by subscribing to our newsletter</h2>
               <form method="get">
                 <div className={classes.InputWrapper}>
                   <input type="email" placeholder="Email Address*" required />
