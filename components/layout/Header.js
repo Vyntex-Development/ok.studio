@@ -28,9 +28,6 @@ const Header = () => {
               <Link type="nav" href="/insights">
                 Insights
               </Link>
-              <Link type="nav" href="/casestudycms">
-                Careers
-              </Link>
             </div>
           </div>
           <div className={classes.NavRight}>

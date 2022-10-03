@@ -28,7 +28,7 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                 pathname === ABOUT_PAGE ? classes.AboutHome : ""
               }`}
             >
-              We are what we do
+              We are OK Studio
             </p>
           </div>
           <div className="grid">
@@ -54,14 +54,14 @@ const FaqSection = ({ setActiveFaq, activeFaq }) => {
                 }`}
               >
                 <p className="p-large">
-                  We focus on digital design, strategic marketing, and all
-                  things technology to ■ <span>better businesses</span> and
-                  brand experiences.
+                  We Are a ■ strategy-driven Digital Agency. We focus on digital
+                  design, data-driven insights, and all things technology.
                 </p>
                 <p className="p-large">
-                  We pride ourselves in being ● <span>fully transparent</span>.
-                  We are clear on every step we take, and you will always be
-                  involved in all ▲ business decisions.
+                  We
+                  <span> better businesses </span>, solve problems with ●
+                  creative solutions and elevate brand experiences through ▲
+                  digital culture.
                 </p>
                 <div className={classes.ContentAbout}>
                   <p>
