@@ -26,13 +26,7 @@ const CaseStudiesHome = ({ casestudies }) => {
             </div>
           </div>
         </div>
-        {/* <div className={classes.CaseItemsWrapper}>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-          <CaseStudiesItem></CaseStudiesItem>
-        </div> */}
+
         <div className={classes.CaseItemsWrapper}>
           {casestudies.map(({ title, media, tag, _id, slug }) => {
             return (

@@ -5,10 +5,13 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useEffect } from "react";
 import { useRef } from "react";
+import { config } from "../../lib/config";
+import { useNextSanityImage } from "next-sanity-image";
+import { urlFor } from "../../lib/sanity";
 
 // ScrollTrigger.normalizeScroll(true);
 // ScrollTrigger.config({ ignoreMobileResize: true })
-const CaseCmsHero = () => {
+const CaseCmsHero = ({ casestudy }) => {
   // ScrollTrigger.normalizeScroll(true);
   // ScrollTrigger.config({ ignoreMobileResize: true });
   useEffect(() => {
@@ -160,7 +163,8 @@ const CaseCmsHero = () => {
     }
     pageCode();
   }, []);
-
+  const imageProps = useNextSanityImage(config, casestudy && casestudy.media);
+  console.log(casestudy);
   return (
     <div className={classes.CaseSection}>
       <div>
@@ -169,7 +173,7 @@ const CaseCmsHero = () => {
             <div className={`${classes.Grid} grid`}>
               <div className="coll-4">
                 <div className={classes.HeroTitle}>
-                  <h1>Minespider</h1>
+                  <h1>{casestudy && casestudy.title}</h1>
                 </div>
               </div>
               <div className={`${classes.Coll6} coll-6`}>

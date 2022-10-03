@@ -9,7 +9,7 @@ const CaseStudiesItem = ({ title, media, tag, slug }) => {
   const imageProps = useNextSanityImage(config, media);
   return (
     <div className={classes.CaseItemWrapper}>
-      <Link type="blog" href="/casestudycms">
+      <Link type="blog" href={`casestudies/${slug.current}`}>
         <div className={classes.CaseItem}>
           <div className={classes.CaseImageWrapper}>
             <div className={classes.CaseImage}>

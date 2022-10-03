@@ -2,10 +2,10 @@ import CaseCmsHero from "../layout/CaseCmsHero";
 import CaseCmsMain from "../layout/CaseCmsMain";
 import CaseProject from "../layout/CaseProject";
 
-const CaseCmsPage = () => {
+const CaseCmsPage = ({ casestudy }) => {
   return (
     <div>
-      <CaseCmsHero></CaseCmsHero>
+      <CaseCmsHero casestudy={casestudy}></CaseCmsHero>
     </div>
   );
 };
