@@ -4,7 +4,7 @@ import { useState } from "react";
 import Founders from "../layout/Founders";
 import Skills from "../layout/Skills";
 
-const AboutPage = () => {
+const AboutPage = ({ casestudies }) => {
   const [activeFaq, setActiveFaq] = useState("1");
   return (
     <div>
@@ -16,7 +16,7 @@ const AboutPage = () => {
         }}
       ></FaqSection>
       <Founders></Founders>
-      <Skills></Skills>
+      <Skills casestudies={casestudies}></Skills>
     </div>
   );
 };

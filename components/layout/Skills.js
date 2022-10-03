@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "../UI/Link";
 import CaseStudiesItem from "./CaseStudiesItem";
 
-const Skills = () => {
+const Skills = ({ casestudies }) => {
+  const slicedCase = casestudies.slice(0, 2);
   return (
     <div className={classes.SkillsSection}>
       <div className="container">
@@ -101,8 +102,17 @@ const Skills = () => {
                 </Link>
               </div>
               <div className={classes.CaseItemWrapper}>
-                <CaseStudiesItem></CaseStudiesItem>
-                <CaseStudiesItem></CaseStudiesItem>
+                {slicedCase.map(({ title, media, tag, _id, slug }) => {
+                  return (
+                    <CaseStudiesItem
+                      key={_id}
+                      title={title}
+                      tag={tag}
+                      media={media}
+                      slug={slug}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>

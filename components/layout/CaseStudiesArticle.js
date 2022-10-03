@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "../UI/Link";
 import classes from "./CaseStudiesArticle.module.css";
-const CaseStudiesArticle = () => {
+import { useNextSanityImage } from "next-sanity-image";
+import { config } from "../../lib/config";
+const CaseStudiesArticle = ({ title, media, description, slug }) => {
+  const imageProps = useNextSanityImage(config, media);
   return (
     <div className={classes.CaseItemWrapper}>
       <Link type="blog" href="/casestudycms">
         <div className={classes.CaseItem}>
           <div className={classes.CaseContent}>
-            <p>
-              An international hospitality brand that manages and developers
-              resorts, hotels and spas worldword.
-            </p>
-            <h2>Banyan Tree</h2>
+            <p>{description}</p>
+            <h2>{title}</h2>
           </div>
           <div className={classes.CaseImageWrapper}>
             <div className={classes.CaseImage}>
@@ -19,7 +19,7 @@ const CaseStudiesArticle = () => {
                 layout="fill"
                 objectFit="cover"
                 alt="hero"
-                src="/images/case_home.png"
+                {...imageProps}
               ></Image>
             </div>
           </div>

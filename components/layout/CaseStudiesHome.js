@@ -3,7 +3,6 @@ import Link from "../UI/Link";
 import CaseStudiesItem from "./CaseStudiesItem";
 
 const CaseStudiesHome = ({ casestudies }) => {
-  console.log(casestudies);
   return (
     <div className="container">
       <div className={classes.CaseWrapper}>

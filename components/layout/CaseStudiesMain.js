@@ -1,29 +1,10 @@
 import classes from "./CaseStudiesMain.module.css";
 import Link from "../UI/Link";
 import CaseStudiesArticle from "./CaseStudiesArticle";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-import { useEffect } from "react";
-import { scroll } from "react-scroll";
 
-const CaseStudiesMain = () => {
-  //   useEffect(() => {
-  //     const container = "#wrapper";
-  //     const components = "#component";
-  //     gsap.to(components, {
-  //       xPercent: -100 * (components.length - 1),
-  //       ease: "none",
-  //       scrollTrigger: {
-  //         trigger: container,
-  //         pin: true,
-  //         scrub: 1,
-  //         snap: 1 / (components.length - 1),
-  //         end: () => "+=" + document.querySelector("#wrapper").offsetWidth,
-  //       },
-  //     });
-  //   }, []);
-
+const CaseStudiesMain = ({ casestudies }) => {
+  const slicedCaseOne = casestudies.slice(0, 4);
+  const slicedCaseTwo = casestudies.slice(1, 5);
   return (
     <div className="container">
       <div className={classes.CaseMainTop}>
@@ -68,23 +49,20 @@ const CaseStudiesMain = () => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
+                    {slicedCaseOne.map(
+                      ({ title, media, description, _id, slug }) => {
+                        return (
+                          <CaseStudiesArticle
+                            key={_id}
+                            title={title}
+                            description={description}
+                            media={media}
+                            slug={slug}
+                          />
+                        );
+                      }
+                    )}
                   </div>
-                  {/* <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div>
-                <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div> */}
                 </div>
               </div>
             </div>
@@ -110,23 +88,20 @@ const CaseStudiesMain = () => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
+                    {slicedCaseTwo.map(
+                      ({ title, media, description, _id, slug }) => {
+                        return (
+                          <CaseStudiesArticle
+                            key={_id}
+                            title={title}
+                            description={description}
+                            media={media}
+                            slug={slug}
+                          />
+                        );
+                      }
+                    )}
                   </div>
-                  {/* <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div>
-                <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div> */}
                 </div>
               </div>
             </div>
@@ -152,23 +127,20 @@ const CaseStudiesMain = () => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
-                    <CaseStudiesArticle></CaseStudiesArticle>
+                    {slicedCaseOne.map(
+                      ({ title, media, description, _id, slug }) => {
+                        return (
+                          <CaseStudiesArticle
+                            key={_id}
+                            title={title}
+                            description={description}
+                            media={media}
+                            slug={slug}
+                          />
+                        );
+                      }
+                    )}
                   </div>
-                  {/* <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div>
-                <div className={classes.ItemsWrapper} id="component">
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                  <CaseStudiesArticle></CaseStudiesArticle>
-                </div> */}
                 </div>
               </div>
             </div>

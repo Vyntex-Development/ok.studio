@@ -3,7 +3,6 @@ import { getClient } from "../lib/sanity.server";
 import groq from "groq";
 
 export default function Home({ insights, casestudies }) {
-  console.log(casestudies);
   return (
     <>
       <HomePage insights={insights} casestudies={casestudies} />
