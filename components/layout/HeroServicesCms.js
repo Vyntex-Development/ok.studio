@@ -11,12 +11,8 @@ const ServicesCmsHero = ({ service }) => {
     <div className="container">
       <div className={classes.HeroWrapper}>
         <h1>{service && service.title}</h1>
-        <p>
-          We pride ourselves in being fully transparent. We are clear on every
-          step we take, and you will always be involved in all business
-          decisions.
-        </p>
-        <Link href="/" type="dark">
+        <p>{service && service.description}</p>
+        <Link href="/contact" type="dark">
           GET A QUOTE
         </Link>
       </div>

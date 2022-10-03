@@ -164,7 +164,31 @@ const CaseCmsHero = ({ casestudy }) => {
     pageCode();
   }, []);
   const imageProps = useNextSanityImage(config, casestudy && casestudy.media);
-  console.log(casestudy);
+  const imageLightFirst = useNextSanityImage(
+    config,
+    casestudy && casestudy.herolightfirst
+  );
+  const imageLightSecond = useNextSanityImage(
+    config,
+    casestudy && casestudy.herolightsecond
+  );
+  const imageLightThird = useNextSanityImage(
+    config,
+    casestudy && casestudy.herolightthird
+  );
+  const imageDarkfirst = useNextSanityImage(
+    config,
+    casestudy && casestudy.herodarkfirst
+  );
+  const imageDarkSecond = useNextSanityImage(
+    config,
+    casestudy && casestudy.herodarksecond
+  );
+  const imageDarkThird = useNextSanityImage(
+    config,
+    casestudy && casestudy.herodarkthird
+  );
+
   return (
     <div className={classes.CaseSection}>
       <div>
@@ -246,7 +270,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_01.png"
+                                  {...imageLightFirst}
                                 ></Image>
                               </div>
                             </div>
@@ -263,7 +287,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_02.png"
+                                  {...imageLightSecond}
                                 ></Image>
                               </div>
                             </div>
@@ -280,7 +304,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_03.png"
+                                  {...imageLightThird}
                                 ></Image>
                               </div>
                             </div>
@@ -305,7 +329,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_03.png"
+                                  {...imageDarkfirst}
                                 ></Image>
                               </div>
                             </div>
@@ -322,7 +346,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_01.png"
+                                  {...imageDarkSecond}
                                 ></Image>
                               </div>
                             </div>
@@ -339,7 +363,7 @@ const CaseCmsHero = ({ casestudy }) => {
                                   layout="fill"
                                   objectFit="cover"
                                   alt="hero"
-                                  src="/images/case_02.png"
+                                  {...imageDarkThird}
                                 ></Image>
                               </div>
                             </div>

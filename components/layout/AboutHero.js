@@ -12,8 +12,8 @@ const AboutHero = () => {
                   It s <span>OK</span>, we are humans.
                 </h1>
                 <p className="p-large">
-                  As humans, we power brands, help businesses achieve their
-                  digital goals while looking good.
+                  As humans, we empower brands and provide end-to-end digital
+                  solutions to better businesses.
                 </p>
                 <p>
                   That what makes us <span>OK STUDIO</span>

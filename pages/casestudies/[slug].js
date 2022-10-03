@@ -29,6 +29,12 @@ export async function getStaticProps({ params, preview = false }) {
     description,
     media,
     tag,
+    herolightfirst,
+    herolightsecond,
+    herolightthird,
+    herodarkfirst,
+    herodarksecond,
+    herodarkthird
     
 }`;
 
@@ -39,7 +45,7 @@ export async function getStaticProps({ params, preview = false }) {
       description,
       slug,
       media,
-      tag
+      tag,
     }
     `);
   const casestudy = await getClient(preview).fetch(query, {

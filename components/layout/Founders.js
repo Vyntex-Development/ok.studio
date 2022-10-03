@@ -121,11 +121,10 @@ const Founders = () => {
                 </Link>
               </div>
               <p className={`${classes.Large} p-large-white`}>
-                We focus on digital design, strategic marketing, and all things
-                technology to better businesses and brand experiences. We pride
-                ourselves in being fully transparent. We are clear on every step
-                we take, and you will always be involved in all business
-                decisions.
+                OK Studio is a data-driven, digital-first creative agency. We
+                focus on company culture, digital design, data-driven insights,
+                and all things technology. We design custom solutions and
+                deliver tailored success to businesses across all industries.
               </p>
             </div>
           </div>

@@ -69,146 +69,28 @@ const FaqSection = ({ services }) => {
                 </p>
                 <div className={classes.ContentAbout}>
                   <p>
-                    Nulla varius urna sagittis nunc aliquam porttitor. Maecenas
-                    ut diam eu sapien ornare aliquet non finibus eros. Phasellus
-                    ut varius augue. Phasellus posuere eros nec risus vulputate,
-                    non luctus orci dapibus. Integer sodales, arcu sit amet
-                    laoreet egestas, orci justo sagittis velit, sit amet
-                    eleifend lorem risus eu nisi. Nunc pharetra, erat a
-                    consectetur rutrum, lectus eros ultricies nibh, vel interdum
-                    dolor nibh.
+                    Our story begins with our co-founders Ilia and Marina. They
+                    had the vision to evolve the digital landscape through art,
+                    data, design, and technology. Vyntex Developments was their
+                    first creation. What started out as a small design studio
+                    quickly grew into an multidisciplinary agency, with happy
+                    clients across all industries. OK Studio is their newest
+                    creation. It is everything Vyntex is and more, with a focus
+                    on data-driven insights, strategy, and culture.
                   </p>
                   <p>
-                    Integer sodales, arcu sit amet laoreet egestas, orci justo
-                    sagittis velit, sit amet eleifend lorem risus eu nisi. Nunc
-                    pharetra, erat a consectetur rutrum, lectus eros ultricies
-                    nibh, vel interdum dolor nibh eget odio. Nunc pharetra, erat
-                    a consectetur rutrum, lectus eros ultricies nibh, vel
-                    interdum dolor nibh eget odio.
+                    Our clients make us who we are. Our purpose is to bring
+                    impactful results to a client-centric environment. We love
+                    going above and beyond for every single client ensuring
+                    success with the latest technologies and strategy-driven
+                    design experiences. Our values lead the way we work. We are
+                    committed to our clients, to excellence, to inspiring
+                    change, and to setting creative standards in the digital
+                    world.
                   </p>
                 </div>
               </div>
               <div className={classes.FaqRight}>
-                {/* <div className={classes.Faq}>
-                  <div
-                    onClick={() => {
-                      setActiveFaq("1");
-                    }}
-                    className={`${classes.FaqQuestionWrapper} ${
-                      activeFaq === "1" ? classes.ActiveQuestion : ""
-                    }`}
-                  >
-                    <p>01</p>
-                    <p>Websites + Platforms</p>
-                    <div className={classes.FaqIcon}>
-                      <Image
-                        layout="fixed"
-                        objectFit="fill"
-                        alt="icon"
-                        width={26}
-                        height={26}
-                        src="/images/faq_icon.png"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div
-                    className={`${classes.FaqAnswerWrapper} ${
-                      activeFaq === "1" ? classes.Active : ""
-                    }`}
-                  >
-                    <p>
-                      We conceive and create experiences that immerse consumers
-                      in the brand through a combination of utility and
-                      creativity.
-                    </p>
-                    <Link type="dark" href="/">
-                      LEARN MORE
-                    </Link>
-                  </div>
-                  <div className={classes.ProgressWrapper}>
-                    <div className={classes.Progress}></div>
-                  </div>
-                </div> */}
-                {/* <div className={classes.Faq}>
-                  <div
-                    onClick={() => {
-                      setActiveFaq("2");
-                    }}
-                    className={`${classes.FaqQuestionWrapper} ${
-                      activeFaq === "2" ? classes.ActiveQuestion : ""
-                    }`}
-                  >
-                    <p>02</p>
-                    <p>Branded ECommerces </p>
-                    <div className={classes.FaqIcon}>
-                      <Image
-                        layout="fixed"
-                        objectFit="fill"
-                        alt="icon"
-                        width={26}
-                        height={26}
-                        src="/images/faq_icon.png"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div
-                    className={`${classes.FaqAnswerWrapper} ${
-                      activeFaq === "2" ? classes.Active : ""
-                    }`}
-                  >
-                    <p>
-                      We conceive and create experiences that immerse consumers
-                      in the brand through a combination of utility and
-                      creativity.
-                    </p>
-                    <Link type="dark" href="/">
-                      LEARN MORE
-                    </Link>
-                  </div>
-                  <div className={classes.ProgressWrapper}>
-                    <div className={classes.Progress}></div>
-                  </div>
-                </div> */}
-                {/* <div className={classes.Faq}>
-                  <div
-                    onClick={() => {
-                      setActiveFaq("3");
-                    }}
-                    className={`${classes.FaqQuestionWrapper} ${
-                      activeFaq === "3" ? classes.ActiveQuestion : ""
-                    }`}
-                  >
-                    <p>03</p>
-                    <p>BRANDING AND ADVERTISING</p>
-                    <div className={classes.FaqIcon}>
-                      <Image
-                        layout="fixed"
-                        objectFit="fill"
-                        alt="icon"
-                        width={26}
-                        height={26}
-                        src="/images/faq_icon.png"
-                      ></Image>
-                    </div>
-                  </div>
-                  <div
-                    className={`${classes.FaqAnswerWrapper} ${
-                      activeFaq === "3" ? classes.Active : ""
-                    }`}
-                  >
-                    <p>
-                      We conceive and create experiences that immerse consumers
-                      in the brand through a combination of utility and
-                      creativity.
-                    </p>
-                    <Link type="dark" href="/">
-                      LEARN MORE
-                    </Link>
-                  </div>
-                  <div className={classes.ProgressWrapper}>
-                    <div className={classes.Progress}></div>
-                  </div>
-                </div> */}
                 {services.map(({ title, description, tag, _id, slug }) => {
                   return (
                     <FaqHomeItem
