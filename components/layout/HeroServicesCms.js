@@ -10,7 +10,7 @@ const ServicesCmsHero = ({ service }) => {
   return (
     <div className="container">
       <div className={classes.HeroWrapper}>
-        <h1>{service.title}</h1>
+        <h1>{service && service.title}</h1>
         <p>
           We pride ourselves in being fully transparent. We are clear on every
           step we take, and you will always be involved in all business
