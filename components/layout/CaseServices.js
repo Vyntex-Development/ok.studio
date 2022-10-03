@@ -20,14 +20,14 @@ const CaseServices = () => {
             <div className={classes.Height}>
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
-                  <div className={classes.ItemsWrapper} id="component">
+                  {/* <div className={classes.ItemsWrapper} id="component">
                     <CaseStudiesArticle></CaseStudiesArticle>
                     <CaseStudiesArticle></CaseStudiesArticle>
                     <CaseStudiesArticle></CaseStudiesArticle>
                     <CaseStudiesArticle></CaseStudiesArticle>
                     <CaseStudiesArticle></CaseStudiesArticle>
                     <CaseStudiesArticle></CaseStudiesArticle>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
