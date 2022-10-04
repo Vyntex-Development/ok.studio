@@ -1,6 +1,10 @@
 .CaseSection {
   background-color: var(--white);
 }
+
+.OverColl4 {
+  height: 100%;
+}
 .HeroWrapper {
   padding-top: 19rem;
   padding-bottom: 7.5rem;

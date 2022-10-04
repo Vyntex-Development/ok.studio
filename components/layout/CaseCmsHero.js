@@ -188,7 +188,51 @@ const CaseCmsHero = ({ casestudy }) => {
     config,
     casestudy && casestudy.herodarkthird
   );
+  const imageHero = useNextSanityImage(
+    config,
+    casestudy && casestudy.heroimage
+  );
 
+  const imageHeroSmall = useNextSanityImage(
+    config,
+    casestudy && casestudy.heroimagesmall
+  );
+
+  const imageOverview = useNextSanityImage(
+    config,
+    casestudy && casestudy.overviewimage
+  );
+
+  const imageChallengeFirst = useNextSanityImage(
+    config,
+    casestudy && casestudy.challengeimagefirst
+  );
+  const imageChallengeSecond = useNextSanityImage(
+    config,
+    casestudy && casestudy.challengeimagesecond
+  );
+  const imageChallengeThird = useNextSanityImage(
+    config,
+    casestudy && casestudy.challengeimagethird
+  );
+  const imageSolution = useNextSanityImage(
+    config,
+    casestudy && casestudy.solutionimage
+  );
+
+  const imageLast = useNextSanityImage(
+    config,
+    casestudy && casestudy.lastimage
+  );
+
+  const imageOutcome = useNextSanityImage(
+    config,
+    casestudy && casestudy.outcomeimage
+  );
+  const imageProject = useNextSanityImage(
+    config,
+    casestudy && casestudy.projectimage
+  );
   return (
     <div className={classes.CaseSection}>
       <div>
@@ -219,7 +263,7 @@ const CaseCmsHero = ({ casestudy }) => {
                         layout="fill"
                         objectFit="cover"
                         alt="hero"
-                        src="/images/case_hero.png"
+                        {...imageHero}
                       ></Image>
                     </div>
                     <div className={classes.ImageMobile}>
@@ -240,7 +284,7 @@ const CaseCmsHero = ({ casestudy }) => {
                           layout="fill"
                           objectFit="cover"
                           alt="hero"
-                          src="/images/case_panel.png"
+                          {...imageHeroSmall}
                         ></Image>
                       </div>
                     </div>
@@ -386,22 +430,12 @@ const CaseCmsHero = ({ casestudy }) => {
               <p>What makes us totally ok</p>
             </div>
             <div className={`${classes.Grid} grid`}>
-              <div className="coll-3">
+              <div className={`${classes.OverColl4} coll-3`}>
                 <div className={classes.ContentWrapper}>
                   <h2>OVERVIEW</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>
-                      We were very excited to work with Minespider. This
-                      innovative company has received funds from the European
-                      Union and has worked with industry giants such as Google,
-                      Volkswagen, and more.
-                    </p>
-                    <p>
-                      Minespider contacted us to create a new digital identity
-                      and website for their company. We love what they do and
-                      align with their brand values which are transparency and
-                      responsibility.
-                    </p>
+                    <p>{casestudy && casestudy.overviewdescriptionfirst}</p>
+                    <p>{casestudy && casestudy.overviewdescriptionsecond}</p>
                   </div>
                 </div>
               </div>
@@ -411,7 +445,7 @@ const CaseCmsHero = ({ casestudy }) => {
                     layout="fill"
                     objectFit="cover"
                     alt="hero"
-                    src="/images/case_02.png"
+                    {...imageOverview}
                   ></Image>
                 </div>
               </div>
@@ -423,7 +457,7 @@ const CaseCmsHero = ({ casestudy }) => {
               <p>Which technology did we use?</p>
             </div>
             <div className={`${classes.Grid} grid`}>
-              <div className="coll-4">
+              <div className={`${classes.OverColl4} coll-4`}>
                 <div className={classes.ContentWrapper}>
                   <h2>TECH STACK</h2>
                 </div>
@@ -589,7 +623,7 @@ const CaseCmsHero = ({ casestudy }) => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/challenge_01.png"
+                  {...imageChallengeFirst}
                 ></Image>
               </div>
               <div className={classes.ImageChallenge}>
@@ -597,7 +631,7 @@ const CaseCmsHero = ({ casestudy }) => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/challenge_02.png"
+                  {...imageChallengeSecond}
                 ></Image>
               </div>
               <div className={classes.ImageChallenge}>
@@ -605,7 +639,7 @@ const CaseCmsHero = ({ casestudy }) => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/challenge_03.png"
+                  {...imageChallengeThird}
                 ></Image>
               </div>
             </div>
@@ -613,18 +647,8 @@ const CaseCmsHero = ({ casestudy }) => {
               <div className={classes.ContentWrapper}>
                 <h2>OVERVIEW</h2>
                 <div className={classes.DescriptionWrapper}>
-                  <p>
-                    Minespider was not happy with its current digital image and
-                    needed to add marketing solutions for its potential
-                    customers. The challenge was to create a visual language
-                    that would integrate the mineral industry and blockchain
-                    technology by designing a unique and modern user experience.
-                  </p>
-                  <p>
-                    The plan included detailed service pages that served as
-                    landing pages with an appointment scheduling element, a
-                    modern blog, and a stable marketing infrastructure.
-                  </p>
+                  <p>{casestudy && casestudy.challengedescriptionfirst}</p>
+                  <p>{casestudy && casestudy.challengedescriptionsecond}</p>
                 </div>
               </div>
             </div>
@@ -639,20 +663,8 @@ const CaseCmsHero = ({ casestudy }) => {
                 <div className={classes.ContentWrapper}>
                   <h2>OUR SOLUTION</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>
-                      In order to achieve and go beyond our client is
-                      expectations, we started by characterizing the work. We
-                      learned about the target audience and researched the
-                      market and their competitors.
-                    </p>
-                    <p>
-                      Once the characterization was stable and met customer
-                      expectations, we started building the initial impression
-                      of the company. The first impression is the most critical
-                      step in creating the brand image. We went through
-                      potential color palettes that work well with minerals and
-                      the world of advanced technology.
-                    </p>
+                    <p>{casestudy && casestudy.solutiondescriptionfirst}</p>
+                    <p>{casestudy && casestudy.solutiondescriptionsecond}</p>
                   </div>
                 </div>
               </div>
@@ -662,7 +674,7 @@ const CaseCmsHero = ({ casestudy }) => {
                     layout="fill"
                     objectFit="cover"
                     alt="hero"
-                    src="/images/case_03.png"
+                    {...imageSolution}
                   ></Image>
                 </div>
               </div>
@@ -678,20 +690,8 @@ const CaseCmsHero = ({ casestudy }) => {
                 <div className={classes.ContentWrapper}>
                   <h2>THE OUTCOME</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>
-                      In order to achieve and go beyond our clients
-                      expectations, we started by characterizing the work. We
-                      learned about the target audience and researched the
-                      market and their competitors.
-                    </p>
-                    <p>
-                      Once the characterization was stable and met customer
-                      expectations, we started building the initial impression
-                      of the company. The first impression is the most critical
-                      step in creating the brand image. We went through
-                      potential color palettes that work well with minerals and
-                      the world of advanced technology.
-                    </p>
+                    <p>{casestudy && casestudy.outcomedescriptionfirst}</p>
+                    <p>{casestudy && casestudy.outcomedescriptionsecond}</p>
                   </div>
                 </div>
               </div>
@@ -701,41 +701,16 @@ const CaseCmsHero = ({ casestudy }) => {
                     layout="fill"
                     objectFit="cover"
                     alt="hero"
-                    src="/images/solution.png"
+                    {...imageOutcome}
                   ></Image>
                 </div>
               </div>
               <div className={classes.CollEightMiddle}>
                 <div className={classes.ContentWrapper}>
                   <div className={classes.DescriptionWrapper}>
-                    <p>
-                      Thanks to open communication, we were able to reach a
-                      final prototype that combines customer needs and market
-                      standards. The web design and branding included custom UI
-                      creation, icon design for the brand, illustrations, and
-                      animations that will support the brand message that the
-                      site needs to convey to the target audience.
-                    </p>
-                    <p>
-                      For Minespider, it was important to incorporate modern
-                      animations in all parts of the site in order to emphasize
-                      the technological aspect and the world standard. We chose
-                      to work with Webflow s development software to create an
-                      advanced digital experience. We wanted a website that was
-                      not online exceptional for its visitors but also a CMS
-                      that is easy to manage and update for the Minespider
-                      marketing team.
-                    </p>
-                    <p>
-                      Thanks to the detailed prototype we created in Figma, the
-                      development team had no room for imagination and the
-                      transition between the planned design and the final
-                      product was simple and quick. We have created an advanced
-                      content management system in Webflow for the client that
-                      does not require any prior knowledge in programming. We
-                      built an integration between the site systems and the
-                      customer management systems for their marketing team.
-                    </p>
+                    <p>{casestudy && casestudy.outcomedescriptionthird}</p>
+                    <p>{casestudy && casestudy.outcomedescriptionfourth}</p>
+                    <p>{casestudy && casestudy.outcomedescriptionfifth}</p>
                   </div>
                 </div>
               </div>
@@ -747,27 +722,13 @@ const CaseCmsHero = ({ casestudy }) => {
               <p>What makes us totally ok</p>
             </div>
             <div className={`${classes.Grid} grid`}>
-              <div className="coll-4">
+              <div className={`${classes.OverColl4} coll-4`}>
                 <div className={classes.ContentWrapper}>
                   <h2>THE OUTCOME</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>
-                      With the full cooperation of Minespider, our design and
-                      development team were able to overcome the challenges and
-                      give the brand its necessary facelift.
-                    </p>
-                    <p>
-                      Aside from creating a digital experience that met the
-                      clients standards, we were also able to optimize search
-                      engine rankings and brand exposure. We believe Minespider
-                      is new digital identity will be able to build long-term
-                      trust with their customers and increase conversion rates.
-                    </p>
-                    <p>
-                      We are pleased to take part in such a significant project
-                      which creates advanced technology and fights for human
-                      rights in developing countries.
-                    </p>
+                    <p>{casestudy && casestudy.lastdescriptionfirst}</p>
+                    <p>{casestudy && casestudy.lastdescriptionsecond}</p>
+                    <p>{casestudy && casestudy.lastdescriptionthird}</p>
                   </div>
                 </div>
               </div>
@@ -777,7 +738,8 @@ const CaseCmsHero = ({ casestudy }) => {
                     layout="fill"
                     objectFit="cover"
                     alt="hero"
-                    src="/images/case_03.png"
+                    imageLast
+                    {...imageLast}
                   ></Image>
                 </div>
               </div>
@@ -802,12 +764,12 @@ const CaseCmsHero = ({ casestudy }) => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/hero_img.png"
+                  {...imageProject}
                 ></Image>
               </div>
             </div>
             <div className={classes.TitleWrapperDesktop}>
-              <h1>Hideo Ventures</h1>
+              <h1>{casestudy && casestudy.projecttitle}</h1>
               <div className={classes.ProjectWrapper}>
                 <div className={classes.NumberWrapperProject}>
                   <p id="number">0</p>

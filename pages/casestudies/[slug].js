@@ -34,7 +34,33 @@ export async function getStaticProps({ params, preview = false }) {
     herolightthird,
     herodarkfirst,
     herodarksecond,
-    herodarkthird
+    herodarkthird,
+    heroimage,
+    heroimagesmall,
+    overviewdescriptionfirst,
+    overviewdescriptionsecond,
+    overviewimage,
+    challengedescriptionfirst,
+    challengedescriptionsecond,
+    challengeimagefirst,
+    challengeimagesecond,
+    challengeimagethird,
+    solutiondescriptionfirst,
+    solutiondescriptionsecond,
+    solutionimage,
+    outcomedescriptionfirst,
+    outcomedescriptionsecond,
+    outcomedescriptionthird,
+    outcomedescriptionfourth,
+    outcomedescriptionfifth,
+    outcomeimage,
+    lastdescriptionfirst,
+    lastdescriptionsecond,
+    lastdescriptionthird,
+    lastimage,
+    projectimage,
+    projecttitle
+
     
 }`;
 
