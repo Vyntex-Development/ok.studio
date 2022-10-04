@@ -1,7 +1,9 @@
 .CaseSection {
   background-color: var(--white);
 }
-
+.Coll5 {
+  grid-column-end: 6;
+}
 .OverColl4 {
   height: 100%;
 }
@@ -786,6 +788,9 @@
   }
   .ProjectWrapper {
     margin-top: 220px;
+  }
+  .Coll5 {
+    grid-column-end: 13;
   }
 }
 @media screen and (max-width: 767px) {

@@ -241,7 +241,7 @@ const CaseCmsHero = ({ casestudy, categories }) => {
         <div className={classes.HeroWrapper}>
           <div className="container">
             <div className={`${classes.Grid} grid`}>
-              <div className="coll-4">
+              <div className={`${classes.Coll5} coll-4`}>
                 <div className={classes.HeroTitle}>
                   <h1>{casestudy && casestudy.title}</h1>
                 </div>
