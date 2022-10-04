@@ -8,20 +8,14 @@ export default function Services({ casestudies }) {
   );
 }
 
-export async function getStaticProps({ params, preview = false }) {
-  const casestudies = await getClient(preview).fetch(groq`
-    *[_type == "casestudies"]{
-      _id,
-      title,
-      description,
-      slug,
-      media,
-      tag
-    }
-    `);
+export async function getStaticProps() {
+  // Odavde vucemo podatke
+
+  //const response = await fetch("URL");
+  //const data = await response.json();
   return {
     props: {
-      casestudies,
+      data: {},
     },
     revalidate: 10, // Definisemo na koliko se update-uje strana
   };
