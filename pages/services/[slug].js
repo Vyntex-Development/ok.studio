@@ -2,11 +2,15 @@ import groq from "groq";
 import ServicesCms from "../../components/Pages/ServicesCms";
 import { getClient } from "../../lib/sanity.server";
 
-export default function ServiceCms({ services, service }) {
+export default function ServiceCms({ services, service, casestudies }) {
   console.log(service);
   return (
     <>
-      <ServicesCms service={service} services={services} />
+      <ServicesCms
+        service={service}
+        services={services}
+        casestudies={casestudies}
+      />
     </>
   );
 }
