@@ -94,6 +94,9 @@
     width: 16px !important;
     height: 16px !important;
   }
+  .NumberWrapper {
+    width: 50%;
+  }
   .TechWrapper {
     margin-top: 8px;
   }

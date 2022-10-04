@@ -234,7 +234,6 @@ const CaseCmsHero = ({ casestudy, categories }) => {
     config,
     casestudy && casestudy.projectimage
   );
-
   console.log(casestudy);
   return (
     <div className={classes.CaseSection}>
@@ -467,14 +466,17 @@ const CaseCmsHero = ({ casestudy, categories }) => {
                 <div className={classes.TechWrapper}>
                   {casestudy &&
                     casestudy.categories?.map(
-                      ({
-                        title,
-                        tehnologyfirst,
-                        tehnologysecond,
-                        _id,
-                        iconfirst,
-                        iconsecond,
-                      }) => {
+                      (
+                        {
+                          title,
+                          tehnologyfirst,
+                          tehnologysecond,
+                          _id,
+                          iconfirst,
+                          iconsecond,
+                        },
+                        i
+                      ) => {
                         return (
                           <TechItem
                             key={_id}
@@ -483,6 +485,7 @@ const CaseCmsHero = ({ casestudy, categories }) => {
                             tehnologysecond={tehnologysecond}
                             iconfirst={iconfirst}
                             iconsecond={iconsecond}
+                            i={i}
                           />
                         );
                       }

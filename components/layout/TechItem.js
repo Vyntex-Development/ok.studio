@@ -12,6 +12,7 @@ const TechItem = ({
   tehnologysecond,
   iconfirst,
   iconsecond,
+  i,
 }) => {
   const imageProps = useNextSanityImage(config, iconfirst);
   const imagePropsSecond = useNextSanityImage(config, iconsecond);
@@ -19,7 +20,7 @@ const TechItem = ({
     <div>
       <div className={classes.TechItem}>
         <div className={classes.NumberWrapper}>
-          <p className={classes.Number}>01</p>
+          <p className={classes.Number}>0{i + 1}</p>
           <p className={classes.Description}>{title}</p>
         </div>
         <div className={classes.TechContent}>
@@ -35,14 +36,16 @@ const TechItem = ({
             <p className={classes.TechDescription}>{tehnologyfirst}</p>
           </div>
           <div className={classes.Tech}>
-            <Image
-              layout="fixed"
-              objectFit="fill"
-              alt="icon"
-              width={24}
-              height={24}
-              {...imagePropsSecond}
-            ></Image>
+            {iconsecond && (
+              <Image
+                layout="fixed"
+                objectFit="fill"
+                alt="icon"
+                width={24}
+                height={24}
+                {...imagePropsSecond}
+              ></Image>
+            )}
             <p className={classes.TechDescription}>{tehnologysecond}</p>
           </div>
         </div>
