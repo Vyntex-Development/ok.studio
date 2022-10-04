@@ -1,6 +1,6 @@
 import ServicesCms from "../components/Pages/ServicesCms";
 
-export default function ServicesCms({ casestudies }) {
+export default function Services({ casestudies }) {
   return (
     <>
       <ServicesCms casestudies={casestudies} />
