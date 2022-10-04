@@ -1,0 +1,178 @@
+.TechItem {
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-bottom: 1px solid var(--gray);
+}
+
+.NumberWrapper {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.TechContent {
+  display: flex;
+  width: 50%;
+}
+.Tech {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.Number {
+  color: var(--gray);
+  width: 25%;
+}
+.Description {
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--gray);
+}
+
+.TechDescription {
+  font-size: 1.625rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--primary-white);
+}
+.TechItem:nth-of-type(6) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .NumberWrapper {
+    width: 60%;
+  }
+  .Number {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*main*/
+  .ContentWrapper h2 {
+    font-size: 16px;
+  }
+
+  .OverviewSection .ContentWrapper {
+    flex-direction: column;
+  }
+  .OverviewSection .DescriptionWrapper {
+    width: 100%;
+  }
+  .OverviewSection .ImageMain {
+    margin-top: 2.5rem;
+    height: 65vw;
+  }
+  .OverviewSection {
+    padding-bottom: 2.5rem;
+  }
+  .TechItem {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .Number {
+    font-size: 12px;
+    width: 28px;
+  }
+  .Description {
+    font-size: 14px;
+  }
+  .TechDescription {
+    font-size: 14px;
+  }
+  .Tech {
+    column-gap: 4px;
+  }
+  .Tech span {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .TechWrapper {
+    margin-top: 8px;
+  }
+  .TechItem:nth-of-type(6) {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 16px;
+  }
+
+  .ChallengeGrid {
+    grid-template-rows: 90vw 80vw 284px 480px;
+    row-gap: 16px;
+  }
+  .ChallengeGrid div:nth-of-type(1) {
+    height: 90vw;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .ChallengeGrid div:nth-of-type(2) {
+    height: 80vw;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .ChallengeGrid div:nth-of-type(3) {
+    height: 480px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: 0;
+  }
+  .ContentWrapperChallenge {
+    width: 100%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 546px;
+  }
+  .ChallengeSection {
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
+  .SolutionSection {
+    padding-bottom: 40px;
+  }
+  .SolutionGrid {
+    grid-template-rows: 1fr 1fr;
+  }
+  .SolutionCollFour {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-top: 40px;
+  }
+  .SolutionCollEight {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .CollFourMiddle {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .CollEightMiddle {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  .MiddleSection {
+    padding-bottom: 2.5rem;
+  }
+  .OutcoemSection {
+    padding-bottom: 2.5rem;
+  }
+  .OutcoemSection .ContentWrapper {
+    width: 100%;
+  }
+  .OutcoemSection .ImageMain {
+    margin-top: 2.5rem;
+    height: 63vw;
+  }
+}

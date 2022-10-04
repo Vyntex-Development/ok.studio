@@ -25,6 +25,7 @@ export async function getStaticProps({ params, preview = false }) {
   const query = groq`*[_type == "casestudies" && slug.current == $slug][0] {
     title,
     "username":author->username,
+    "categories":categories[]->{title, tehnologyfirst, tehnologysecon, iconfirst, iconsecond},
     body,
     description,
     media,
@@ -36,6 +37,7 @@ export async function getStaticProps({ params, preview = false }) {
     herodarksecond,
     herodarkthird,
     heroimage,
+    imagedescription,
     heroimagesmall,
     overviewdescriptionfirst,
     overviewdescriptionsecond,

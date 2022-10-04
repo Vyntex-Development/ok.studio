@@ -8,10 +8,11 @@ import { useRef } from "react";
 import { config } from "../../lib/config";
 import { useNextSanityImage } from "next-sanity-image";
 import { urlFor } from "../../lib/sanity";
+import TechItem from "./TechItem";
 
 // ScrollTrigger.normalizeScroll(true);
 // ScrollTrigger.config({ ignoreMobileResize: true })
-const CaseCmsHero = ({ casestudy }) => {
+const CaseCmsHero = ({ casestudy, categories }) => {
   // ScrollTrigger.normalizeScroll(true);
   // ScrollTrigger.config({ ignoreMobileResize: true });
   useEffect(() => {
@@ -233,6 +234,8 @@ const CaseCmsHero = ({ casestudy }) => {
     config,
     casestudy && casestudy.projectimage
   );
+
+  console.log(casestudy);
   return (
     <div className={classes.CaseSection}>
       <div>
@@ -289,9 +292,7 @@ const CaseCmsHero = ({ casestudy }) => {
                       </div>
                     </div>
                     <p className={classes.DescriptionPanel}>
-                      The plan included detailed service pages that served as
-                      landing pages with an appointment scheduling element, a
-                      modern blog, and a stable marketing infrastructure.
+                      {casestudy && casestudy.imagedescription}
                     </p>
                   </div>
                 </div>
@@ -464,150 +465,28 @@ const CaseCmsHero = ({ casestudy }) => {
               </div>
               <div className="coll-8">
                 <div className={classes.TechWrapper}>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>01</p>
-                      <p className={classes.Description}>Research</p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/ahrefs.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Ahrefs</p>
-                      </div>
-                      <div className={classes.Tech}></div>
-                    </div>
-                  </div>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>02</p>
-                      <p className={classes.Description}>Communication</p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/slack.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Slack</p>
-                      </div>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/notion.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Notion</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>03</p>
-                      <p className={classes.Description}>
-                        Design and Prototype
-                      </p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/figma.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Figma</p>
-                      </div>
-                      <div className={classes.Tech}></div>
-                    </div>
-                  </div>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>04</p>
-                      <p className={classes.Description}>Framework</p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/next.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Next.js</p>
-                      </div>
-                      <div className={classes.Tech}></div>
-                    </div>
-                  </div>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>05</p>
-                      <p className={classes.Description}>
-                        Library and Languages
-                      </p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/react.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>React</p>
-                      </div>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/green.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>GreenSock</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={classes.TechItem}>
-                    <div className={classes.NumberWrapper}>
-                      <p className={classes.Number}>06</p>
-                      <p className={classes.Description}>CMS, CRM, ERP</p>
-                    </div>
-                    <div className={classes.TechContent}>
-                      <div className={classes.Tech}>
-                        <Image
-                          layout="fixed"
-                          objectFit="fill"
-                          alt="icon"
-                          width={24}
-                          height={24}
-                          src="/images/strapi.png"
-                        ></Image>
-                        <p className={classes.TechDescription}>Strapi</p>
-                      </div>
-                      <div className={classes.Tech}></div>
-                    </div>
-                  </div>
+                  {casestudy &&
+                    casestudy.categories?.map(
+                      ({
+                        title,
+                        tehnologyfirst,
+                        tehnologysecond,
+                        _id,
+                        iconfirst,
+                        iconsecond,
+                      }) => {
+                        return (
+                          <TechItem
+                            key={_id}
+                            title={title}
+                            tehnologyfirst={tehnologyfirst}
+                            tehnologysecond={tehnologysecond}
+                            iconfirst={iconfirst}
+                            iconsecond={iconsecond}
+                          />
+                        );
+                      }
+                    )}
                 </div>
               </div>
             </div>

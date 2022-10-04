@@ -28,6 +28,7 @@ export async function getStaticProps({ params, preview = false }) {
   const casestudies = await getClient(preview).fetch(groq`
     *[_type == "casestudies"]{
       _id,
+      "tech":tech[]->{id,number},
       title,
       description,
       slug,
