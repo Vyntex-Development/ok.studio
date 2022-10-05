@@ -57,7 +57,7 @@ const HeroHome = () => {
         "#stickylogo",
         { scale: 0.01, xPercent: 0 },
         {
-          scale: 1,
+          scale: 10,
           xPercent: 0.15,
           duration: 1,
           ease: "power1.out",
