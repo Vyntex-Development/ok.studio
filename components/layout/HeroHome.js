@@ -8,17 +8,17 @@ import { useEffect } from "react";
 
 const HeroHome = () => {
   useEffect(() => {
-    gsap.timeline({ repeat: -1, yoyo: true }).fromTo(
-      "#stickybgimage",
-      {
-        filter: "brightness(80%)",
-      },
-      {
-        filter: "brightness(120%)",
-        ease: "power1.inOut",
-        duration: 2.2,
-      }
-    );
+    // gsap.timeline({ repeat: -1, yoyo: true }).fromTo(
+    //   "#stickybgimage",
+    //   {
+    //     filter: "brightness(80%)",
+    //   },
+    //   {
+    //     filter: "brightness(120%)",
+    //     ease: "power1.inOut",
+    //     duration: 2.2,
+    //   }
+    // );
 
     let staggerSquares = gsap
       .timeline({
@@ -80,7 +80,7 @@ const HeroHome = () => {
       .to(
         "#stickylogo",
         {
-          backgroundColor: "#000000",
+          backgroundColor: "#06080F",
           duration: 0.03,
         },
         "<"
