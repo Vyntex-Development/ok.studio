@@ -53,8 +53,8 @@
 }
 .Squares {
   background-color: var(--black);
-  width: 10vw;
-  height: 10vw;
+  width: 5vw;
+  height: 5vw;
 }
 
 .StickyLogoWrapp {
