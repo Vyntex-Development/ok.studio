@@ -66,7 +66,7 @@ const HeroHome = () => {
       .fromTo(
         "#stickybgimage",
         { opacity: 0, scale: 1.3 },
-        { scale: 1, duration: 1, ease: "power1.out" },
+        { opacity: 1, scale: 1, duration: 1, ease: "power1.out" },
         0.1
       )
       .to(
@@ -80,7 +80,7 @@ const HeroHome = () => {
       .to(
         "#stickylogo",
         {
-          backgroundColor: "#06080F",
+          //   backgroundColor: "#06080F",
           duration: 0.03,
         },
         "<"
