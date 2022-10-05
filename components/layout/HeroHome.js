@@ -31,7 +31,7 @@ const HeroHome = () => {
       })
       .set("#stickysquares", { opacity: 1 })
       //stickysquares inside divs
-      .from("#stickysquares", {
+      .from("#squares", {
         opacity: 0,
         duration: 0.01,
         // stagger: { each: 0.5, from: "random" },
@@ -106,7 +106,11 @@ const HeroHome = () => {
                   ></Image>
                 </div>
               </div>
-              <div className={classes.StickySquares} id="stickysquares"></div>
+              <div className={classes.StickySquares} id="stickysquares">
+                <div id="squares" className={classes.Squares}></div>
+                <div id="squares" className={classes.Squares}></div>
+                <div id="squares" className={classes.Squares}></div>
+              </div>
               <div className={classes.StickyLogoWrapp} id="stickylogowrapp">
                 <div className={classes.StickyBgImg} id="stickybgimage">
                   <img src="/images/insights_hero.png" alt="Girl in a jacket" />
