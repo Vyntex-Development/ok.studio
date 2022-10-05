@@ -83,7 +83,7 @@ const HeroHome = () => {
       .to(
         "#stickylogo",
         {
-          color: "#b8b8b8",
+          //   color: "#b8b8b8",
           duration: 0.03,
         },
         "<"
@@ -533,14 +533,15 @@ const HeroHome = () => {
                   </div> */}
                 </div>
                 <div className={classes.StickyLogo} id="stickylogo">
-                  <Image
+                  <img src="/images/logo.png" alt="logo" />
+                  {/* <Image
                     layout="fixed"
                     objectFit="fill"
                     width={674}
                     height={146}
                     alt="hero"
                     src="/images/logo.png"
-                  ></Image>
+                  ></Image> */}
                   {/* <div className={classes.LogoImg}>
                     
                   </div> */}

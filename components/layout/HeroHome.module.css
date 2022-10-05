@@ -95,18 +95,18 @@
   height: 100%;
   object-fit: cover;
 }
+
 .StickyLogo {
-  position: absolute;
   width: 30610vw;
+}
+.StickyLogo img {
+  position: absolute;
+  width: 500px;
   z-index: 3;
   flex: 0 0 auto;
-  opacity: 0;
+  opacity: 1;
 }
-.LogoImg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 .SquareTrigger {
   width: 100%;
   height: 300vh;
