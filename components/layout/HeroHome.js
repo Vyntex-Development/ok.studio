@@ -519,7 +519,7 @@ const HeroHome = () => {
               </div>
               <div className={classes.StickyLogoWrapp} id="stickylogowrapp">
                 <div className={classes.StickyBgImg} id="stickybgimage">
-                  <img src="/images/insights_hero.png" alt="Girl in a jacket" />
+                  <img src="/images/hero_an.png" alt="Girl in a jacket" />
                   {/* <Image
                     layout="fixed"
                     objectFit="fill"
