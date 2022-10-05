@@ -55,7 +55,7 @@ const HeroHome = () => {
       })
       .fromTo(
         "#stickylogo",
-        { scale: 0.5, xPercent: 0 },
+        { scale: 1, xPercent: 0 },
         {
           scale: 8,
           xPercent: 0.15,
