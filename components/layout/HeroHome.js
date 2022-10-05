@@ -72,7 +72,7 @@ const HeroHome = () => {
       .to(
         "#stickybgimage",
         {
-          opacity: 1,
+          opacity: 0,
           duration: 0.03,
         },
         "<"
