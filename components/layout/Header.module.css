@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  position: relative;
 }
 .NavLeft {
   display: flex;
@@ -42,6 +43,97 @@
   width: 2.5rem;
   height: 2px;
   background-color: var(--primary-white);
+  transition: all 0.3s ease-in-out;
+}
+.HamburgerTransform div:nth-of-type(1) {
+  transform: translate(0px, 5px);
+}
+.HamburgerTransform div:nth-of-type(2) {
+  transform: translate(0px, -5px);
+}
+
+.NavMobile {
+  background-color: var(--primary-white);
+  position: absolute;
+  top: 64px;
+  left: -5vw;
+  width: 100vw;
+  padding-top: 80px;
+  display: none;
+}
+.NavLinksMobile a {
+  color: var(--black);
+  font-size: 68px !important;
+  line-height: 80% !important;
+  font-family: "PPNeueBit-Bold";
+}
+.NavLinksMobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: flex-start;
+  padding-left: 5vw;
+  overflow: hidden;
+}
+.navOpen {
+  transition: all 0.3s ease-in-out;
+}
+.navOpen .NavLinksMobile div {
+  overflow: hidden;
+}
+.navOpen .NavLinksMobile div a {
+  animation: mymove 1.5s 0.5s ease-in-out;
+}
+
+.NavBottom {
+  border-top: 1px solid #75767a;
+  /* margin-top: auto; */
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.TextWrapper {
+  display: flex;
+  column-gap: 8px;
+}
+.TextWrapper div {
+  border-radius: 100%;
+  background-color: var(--gray);
+  width: 12px;
+  height: 12px;
+}
+.TextWrapper p {
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--gray);
+}
+.LinksBottom {
+  display: flex;
+  width: 140px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+
+@keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mymoveclose {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: -300px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -52,11 +144,21 @@
   .NavLinkWrapper {
     display: none;
   }
+  .navOpen {
+    display: block;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .MenuButton div {
     width: 32px;
     height: 2px;
+  }
+  .NavMobile {
+    top: 48px;
   }
 }
