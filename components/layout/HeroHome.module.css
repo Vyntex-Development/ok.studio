@@ -93,7 +93,7 @@
 }
 
 .StickyLogo {
-  width: 30610vw;
+  width: 100em;
   height: 100%;
   color: var(--black);
 }

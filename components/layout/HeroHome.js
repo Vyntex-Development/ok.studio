@@ -61,7 +61,7 @@ const HeroHome = () => {
           scale: 1,
           xPercent: 0.15,
           duration: 1,
-          ease: "power1.out",
+          //   ease: "power1.out",
         }
       )
       .fromTo(
