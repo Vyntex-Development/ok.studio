@@ -515,6 +515,7 @@ const HeroHome = () => {
                 <div id="squares" className={classes.Squares}></div>
                 <div id="squares" className={classes.Squares}></div>
                 <div id="squares" className={classes.Squares}></div>
+                <div id="squares" className={classes.Squares}></div>
               </div>
               <div className={classes.StickyLogoWrapp} id="stickylogowrapp">
                 <div className={classes.StickyBgImg} id="stickybgimage">
