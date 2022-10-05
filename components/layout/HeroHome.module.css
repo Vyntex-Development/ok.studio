@@ -114,3 +114,9 @@
   width: 100%;
   height: 550vh;
 }
+@media screen and (max-width: 991px) {
+  .SquareTrigger {
+    width: 100%;
+    height: 299vh;
+  }
+}
