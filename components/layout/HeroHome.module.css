@@ -95,7 +95,7 @@
 .StickyLogo {
   width: 30610vw;
   height: 100%;
-  background-color: var(--black);
+  color: var(--black);
 }
 .StickyLogo {
   position: absolute;

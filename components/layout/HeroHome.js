@@ -83,7 +83,7 @@ const HeroHome = () => {
       .to(
         "#stickylogo",
         {
-          backgroundColor: "#b8b8b8",
+          color: "#b8b8b8",
           duration: 0.03,
         },
         "<"
