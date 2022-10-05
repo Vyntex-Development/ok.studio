@@ -2,6 +2,7 @@
   padding-top: 4rem;
   padding-bottom: 5rem;
   background-color: var(--black);
+  color: var(--primary-white);
 }
 .StickyWrapp {
   position: relative;
@@ -96,8 +97,9 @@
   width: 100em;
   height: 100%;
   color: var(--black);
-}
-.StickyLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background-color: transparent;
   z-index: 3;

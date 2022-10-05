@@ -30,7 +30,6 @@ const HeroHome = () => {
         },
       })
       .set("#stickysquares", { opacity: 1 })
-      //stickysquares inside divs
       .from("#squares", {
         opacity: 0,
         duration: 0.01,
@@ -61,7 +60,7 @@ const HeroHome = () => {
           scale: 1,
           xPercent: 0.15,
           duration: 1,
-          //   ease: "power1.out",
+          ease: "power1.out",
         }
       )
       .fromTo(
@@ -530,7 +529,7 @@ const HeroHome = () => {
                     width="674"
                     height="146"
                     viewBox="0 0 674 146"
-                    fill="none"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
