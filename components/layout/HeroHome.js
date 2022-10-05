@@ -109,14 +109,15 @@ const HeroHome = () => {
               <div className={classes.StickySquares} id="stickysquares"></div>
               <div className={classes.StickyLogoWrapp} id="stickylogowrapp">
                 <div className={classes.StickyBgImg} id="stickybgimage">
-                  <Image
+                  <img src="/images/insights_hero.png" alt="Girl in a jacket" />
+                  {/* <Image
                     layout="fixed"
                     objectFit="fill"
                     width={1000}
                     height={1000}
                     alt="hero"
                     src="/images/insights_hero.png"
-                  ></Image>
+                  ></Image> */}
                   {/* <div className={classes.ImageBg}>
                     
                   </div> */}
