@@ -34,7 +34,7 @@ const HeroHome = () => {
       .from("#stickysquares", {
         opacity: 0,
         duration: 0.01,
-        stagger: { each: 0.5, from: "random" },
+        // stagger: { each: 0.5, from: "random" },
       });
 
     let logoScale = gsap
@@ -109,20 +109,25 @@ const HeroHome = () => {
               <div className={classes.StickySquares} id="stickysquares"></div>
               <div className={classes.StickyLogoWrapp} id="stickylogowrapp">
                 <div className={classes.StickyBgImg} id="stickybgimage">
-                  <div className={classes.ImageBg}>
-                    <Image
-                      layout="fill"
-                      objectFit="cover"
-                      alt="hero"
-                      src="/images/hero_img.png"
-                    ></Image>
-                  </div>
+                  <Image
+                    layout="fixed"
+                    objectFit="fill"
+                    width={500}
+                    height={500}
+                    alt="hero"
+                    src="/images/insights_hero.png"
+                  ></Image>
+                  {/* <div className={classes.ImageBg}>
+                    
+                  </div> */}
                 </div>
                 <div className={classes.StickyLogo} id="stickylogo">
                   <div className={classes.LogoImg}>
                     <Image
-                      layout="fill"
-                      objectFit="cover"
+                      layout="fixed"
+                      objectFit="fill"
+                      width={500}
+                      height={500}
                       alt="hero"
                       src="/images/logo.png.png"
                     ></Image>

@@ -91,7 +91,6 @@
   z-index: 3;
   flex: 0 0 auto;
   opacity: 0;
-  background-color: var(--black);
 }
 .LogoImg {
   position: relative;
