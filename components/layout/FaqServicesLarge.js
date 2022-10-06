@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const FaqServicesLarge = ({ service }) => {
   const { pathname } = useRouter();
-  const [active, setActive] = useState(service.faq[0]._id);
+  const [active, setActive] = useState(service && service.faq[0]._id);
   return (
     <div>
       <div className="container">
@@ -21,23 +21,24 @@ const FaqServicesLarge = ({ service }) => {
             </div>
             <div className="coll-8">
               <div className={classes.FaqRight}>
-                {service.faq.map(
-                  ({ title, description, tag, _id, slug }, i) => {
-                    return (
-                      <FaqServicesLargeItem
-                        key={_id}
-                        title={title}
-                        tag={tag}
-                        description={description}
-                        slug={slug}
-                        id={_id}
-                        setActiveFaq={(id) => setActive(id)}
-                        active={active}
-                        i={i}
-                      />
-                    );
-                  }
-                )}
+                {service &&
+                  service.faq.map(
+                    ({ title, description, tag, _id, slug }, i) => {
+                      return (
+                        <FaqServicesLargeItem
+                          key={_id}
+                          title={title}
+                          tag={tag}
+                          description={description}
+                          slug={slug}
+                          id={_id}
+                          setActiveFaq={(id) => setActive(id)}
+                          active={active}
+                          i={i}
+                        />
+                      );
+                    }
+                  )}
               </div>
             </div>
           </div>
