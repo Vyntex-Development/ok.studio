@@ -17,19 +17,19 @@ const Footer = () => {
           <div className={classes.FooterTop}>
             <div className={classes.FooterFormWrapper}>
               <Link type="logo" href="/">
-                {/* <Image
+                <Image
                   layout="fixed"
                   objectFit="contain"
                   alt="logo"
                   width={74}
                   height={16}
                   src="/images/logo_dark.png"
-                ></Image> */}
+                ></Image>
               </Link>
-              <h2>Stay in touch by subscribing to our newsletter</h2>
+              <h2>SUBSCRIBE</h2>
               <form method="get">
                 <div className={classes.InputWrapper}>
-                  <input type="email" placeholder="Email Address*" required />
+                  <input type="email" placeholder="Email Address" required />
                   <button type="submit" className={classes.Submit}>
                     <Image
                       layout="fixed"
@@ -41,10 +41,28 @@ const Footer = () => {
                       src="/images/arrow_input.png"
                     ></Image>
                   </button>
+                  <div className={classes.InputDot}></div>
                 </div>
               </form>
             </div>
             <div className={classes.LinksWrapper}>
+              <div className={classes.LinkWrapper}>
+                <p>SERVICES</p>
+                <div className={classes.Links}>
+                  <Link type="footer" href="/">
+                    Branded E-commerce
+                  </Link>
+                  <Link type="footer" href="/">
+                    Website + Platforms
+                  </Link>
+                  <Link type="footer" href="/">
+                    Digital Products + Services
+                  </Link>
+                  <Link type="footer" href="/">
+                    Branding and Advertising
+                  </Link>
+                </div>
+              </div>
               <div className={classes.LinkWrapper}>
                 <p>Menu</p>
                 <div className={classes.Links}>
@@ -65,23 +83,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className={classes.LinkWrapper}>
-                <p>SERVICES</p>
-                <div className={classes.Links}>
-                  <Link type="footer" href="/">
-                    Branded E-commerce
-                  </Link>
-                  <Link type="footer" href="/">
-                    Website + Platforms
-                  </Link>
-                  <Link type="footer" href="/">
-                    Digital Products + Services
-                  </Link>
-                  <Link type="footer" href="/">
-                    Branding and Advertising
-                  </Link>
-                </div>
-              </div>
+
               <div className={classes.LinkWrapper}>
                 <p>SOCIAL</p>
                 <div className={classes.Links}>
@@ -102,25 +104,28 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
+              <div className={classes.LinkWrapper}>
+                <p>LEGAL</p>
+                <div className={classes.Links}>
+                  <Link type="footer" href="/">
+                    Privacy
+                  </Link>
+                  <Link type="footer" href="/">
+                    Terms
+                  </Link>
+                  <Link type="footer" href="/">
+                    Cookies
+                  </Link>
+                  <Link type="footer" href="/">
+                    Liscenses
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className={classes.FooterBottom}>
-            <div className={classes.Dot}>
-              <div></div>
-            </div>
             <div className={classes.CopyRight}>
               <p className={classes.FooterText}> Copyright OK STUDIO LLC</p>
-            </div>
-            <div className={classes.Privacy}>
-              <Link type="footer" href="/">
-                Privacy
-              </Link>
-              <Link type="footer" href="/">
-                Terms
-              </Link>
-              <Link type="footer" href="/">
-                Cookies
-              </Link>
             </div>
           </div>
         </div>
