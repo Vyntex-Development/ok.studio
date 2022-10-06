@@ -110,7 +110,7 @@
   height: 12px;
 }
 .TextWrapper p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 100%;
   color: var(--gray);
 }
@@ -175,5 +175,8 @@
   }
   .LinksBottom {
     width: 140px;
+  }
+  .TextWrapper p {
+    font-size: 14px;
   }
 }
