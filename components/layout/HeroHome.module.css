@@ -112,7 +112,7 @@
 }
 .LogoTrigger {
   width: 100%;
-  height: 550vh;
+  height: 250vh;
 }
 @media screen and (max-width: 991px) {
   .Squares {
