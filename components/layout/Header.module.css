@@ -116,7 +116,7 @@
 }
 .LinksBottom {
   display: flex;
-  width: 140px;
+  width: 175px;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 16px;
@@ -172,5 +172,8 @@
   }
   .NavOpen {
     top: 48px;
+  }
+  .LinksBottom {
+    width: 140px;
   }
 }
