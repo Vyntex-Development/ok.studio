@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
           <div className={classes.FooterBottom}>
             <div className={classes.CopyRight}>
-              <p className={classes.FooterText}> Copyright OK STUDIO LLC</p>
+              <p className={classes.FooterText}> Copyright © OK STUDIO LLC</p>
             </div>
           </div>
         </div>

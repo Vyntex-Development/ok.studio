@@ -112,6 +112,7 @@
 .Submit {
   position: absolute;
   right: 0;
+  top: 2px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -260,16 +261,20 @@
     max-width: none;
     width: 100%;
     row-gap: 0;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
+  .InputWrapper input {
+    padding-bottom: 1rem;
+  }
+
   .FooterFormWrapper h2 {
     margin-top: 40px;
-    margin-bottom: 24px;
-    max-width: 336px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
   }
   .LinksWrapper {
     width: auto;
-    margin-right: 2vw;
   }
   .LinkWrapper {
     row-gap: 24px;
@@ -285,9 +290,7 @@
   .Dot {
     display: none;
   }
-  .FooterText {
-    color: #d9d9d9;
-  }
+
   .Privacy {
     column-gap: 1rem;
   }
