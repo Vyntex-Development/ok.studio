@@ -3,7 +3,6 @@ import ServicesCms from "../../components/Pages/ServicesCms";
 import { getClient } from "../../lib/sanity.server";
 
 export default function ServiceCms({ services, service, casestudies }) {
-  console.log(service);
   return (
     <>
       <ServicesCms
@@ -30,8 +29,11 @@ export async function getStaticProps({ params, preview = false }) {
   const query = groq`*[_type == "services" && slug.current == $slug][0] {
     title,
     "categories":categories[]->{title, description, media, _id},
+    "faq":faq[]->{title, description, media, _id},
     body,
     description,
+    overviewfirst,
+    overviewsecond,
     media,
     tag,
     _id

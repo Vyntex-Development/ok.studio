@@ -11,7 +11,6 @@ const FaqHomeItem = ({
   active,
   slug,
 }) => {
-  console.log(title, description, slug, tag, id);
   return (
     <div className={classes.Faq}>
       <div

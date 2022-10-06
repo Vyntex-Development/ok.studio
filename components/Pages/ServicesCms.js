@@ -10,7 +10,7 @@ const ServicesCms = ({ service, casestudies }) => {
       <div>
         <HeroServicesCms service={service}></HeroServicesCms>
         <CaseServices casestudies={casestudies}></CaseServices>
-        {/* <FaqServicesLarge></FaqServicesLarge> */}
+        <FaqServicesLarge service={service}></FaqServicesLarge>
       </div>
     </div>
   );

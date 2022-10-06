@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 const ServicesCmsHero = ({ service }) => {
-  console.log(service);
   const { pathname } = useRouter();
   const [active, setActive] = useState(service.categories[0]._id);
 
@@ -33,23 +32,8 @@ const ServicesCmsHero = ({ service }) => {
             </div>
             <div className="coll-8">
               <div className={classes.DescriptionContent}>
-                <p>
-                  Nulla varius urna sagittis nunc aliquam porttitor. Maecenas ut
-                  diam eu sapien ornare aliquet non finibus eros. Phasellus ut
-                  varius augue. Phasellus posuere eros nec risus vulputate, non
-                  luctus orci dapibus. Integer sodales, arcu sit amet laoreet
-                  egestas, orci justo sagittis velit, sit amet eleifend lorem
-                  risus eu nisi. Nunc pharetra, erat a consectetur rutrum,
-                  lectus eros ultricies nibh, vel interdum dolor nibh.
-                </p>
-                <p>
-                  Integer sodales, arcu sit amet laoreet egestas, orci justo
-                  sagittis velit, sit amet eleifend lorem risus eu nisi. Nunc
-                  pharetra, erat a consectetur rutrum, lectus eros ultricies
-                  nibh, vel interdum dolor nibh eget odio. Nunc pharetra, erat a
-                  consectetur rutrum, lectus eros ultricies nibh, vel interdum
-                  dolor nibh eget odio.
-                </p>
+                <p>{service && service.overviewfirst}</p>
+                <p>{service && service.overviewsecond}</p>
               </div>
             </div>
           </div>
