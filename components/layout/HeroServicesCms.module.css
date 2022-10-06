@@ -148,7 +148,7 @@
 .FaqRight {
   border-top: 1px solid var(--gray);
   width: 100%;
-  height: 20rem;
+  height: 23rem;
 }
 
 .FaqQuestionWrapper {
@@ -306,7 +306,8 @@
     padding-bottom: 16px;
   }
   .HeroWrapper h1 {
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 46px;
   }
   .HeroWrapper p {
     font-size: 16px;
@@ -348,7 +349,7 @@
     height: 20px !important;
   }
   .FaqRight {
-    height: 346px;
+    height: 404px;
   }
   .FaqWrapper {
     padding-bottom: 115px;
