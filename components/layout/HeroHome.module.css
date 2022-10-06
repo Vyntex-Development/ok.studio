@@ -115,6 +115,9 @@
   height: 550vh;
 }
 @media screen and (max-width: 991px) {
+  .Squares {
+    width: 10vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -123,5 +126,8 @@
   }
   .StickyPanel {
     top: 48px;
+  }
+  .Squares {
+    height: 6vh;
   }
 }
