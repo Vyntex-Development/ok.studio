@@ -159,7 +159,7 @@
   }
   .NavMobile {
     display: flex;
-    height: 94vh;
+    height: 93.5vh;
     flex-direction: column;
     justify-content: space-between;
   }
