@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const ServicesCmsHero = ({ service }) => {
   const { pathname } = useRouter();
-  const [active, setActive] = useState(service.categories[0]._id);
+  const [active, setActive] = useState(service && service.categories[0]._id);
 
   return (
     <div className="container">
