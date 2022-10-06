@@ -1,7 +1,6 @@
 import classes from "./FaqHomeItem.module.css";
 import Image from "next/image";
 import Link from "../UI/Link";
-import { useRouter } from "next/router";
 
 const FaqHomeItem = ({
   setActiveFaq,

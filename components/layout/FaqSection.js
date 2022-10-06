@@ -9,7 +9,7 @@ import { useState } from "react";
 const FaqSection = ({ services }) => {
   const { pathname } = useRouter();
   const [active, setActive] = useState(services[0]._id);
-  console.log(services);
+
   return (
     <div>
       <div className="container">

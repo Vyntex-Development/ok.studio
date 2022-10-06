@@ -29,11 +29,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, preview = false }) {
   const query = groq`*[_type == "services" && slug.current == $slug][0] {
     title,
-    "username":author->username,
+    "categories":categories[]->{title, description, media, _id},
     body,
     description,
     media,
     tag,
+    _id
     
 }`;
 
@@ -47,6 +48,16 @@ export async function getStaticProps({ params, preview = false }) {
       tag
     }
     `);
+  const casestudies = await getClient(preview).fetch(groq`
+    *[_type == "casestudies"]{
+      _id,
+      title,
+      description,
+      slug,
+      media,
+      tag,
+    }
+    `);
   const service = await getClient(preview).fetch(query, {
     slug: params.slug,
   });
@@ -54,6 +65,7 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       service,
       services,
+      casestudies,
     },
     revalidate: 10, // Definisemo na koliko se update-uje strana
   };

@@ -21,21 +21,19 @@ const CaseServices = ({ casestudies }) => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    <div className={classes.ItemsWrapper} id="component">
-                      {/* {casestudies.map(
-                        ({ title, media, description, _id, slug }) => {
-                          return (
-                            <CaseStudiesArticle
-                              key={_id}
-                              title={title}
-                              description={description}
-                              media={media}
-                              slug={slug}
-                            />
-                          );
-                        }
-                      )} */}
-                    </div>
+                    {casestudies.map(
+                      ({ title, media, description, _id, slug }) => {
+                        return (
+                          <CaseStudiesArticle
+                            key={_id}
+                            title={title}
+                            description={description}
+                            media={media}
+                            slug={slug}
+                          />
+                        );
+                      }
+                    )}
                   </div>
                 </div>
               </div>
