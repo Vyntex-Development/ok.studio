@@ -88,9 +88,6 @@
 .NavOpen .NavLinksMobile div {
   overflow: hidden;
 }
-.NavOpen .NavLinksMobile div a {
-  animation: mymove 1.5s 0.5s ease-in-out;
-}
 
 .NavBottom {
   border-top: 1px solid #75767a;
@@ -124,22 +121,31 @@
   justify-content: space-between;
   row-gap: 16px;
 }
+.NavClose {
+  transition: all 0.6s 0.7s ease-in-out;
+}
+.NavOpen .NavLinksMobile div a {
+  animation: mymove 0.6s 0.3s ease-in-out;
+}
+.NavClose .NavLinksMobile div a {
+  animation: mymoveclose 0.6s 0.3s ease-in-out;
+}
 
 @keyframes mymove {
   from {
-    left: -300px;
+    margin-left: -300px;
   }
   to {
-    left: 0px;
+    margin-left: 0px;
   }
 }
 
 @keyframes mymoveclose {
   from {
-    bottom: 0px;
+    margin-left: 0px;
   }
   to {
-    bottom: -300px;
+    margin-left: -300px;
   }
 }
 
