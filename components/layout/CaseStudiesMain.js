@@ -39,7 +39,7 @@ const CaseStudiesMain = ({ casestudies }) => {
                 We conceive and create experiences that immerse consumers in the
                 brand through a combination of utility and creativity.
               </p>
-              <Link type="dark" href="/">
+              <Link type="dark" href="/services/websites-platforms">
                 LEARN MORE
               </Link>
             </div>
@@ -78,7 +78,7 @@ const CaseStudiesMain = ({ casestudies }) => {
                 We conceive and create experiences that immerse consumers in the
                 brand through a combination of utility and creativity.
               </p>
-              <Link type="dark" href="/">
+              <Link type="dark" href="/services/branding-and-advertising">
                 LEARN MORE
               </Link>
             </div>
@@ -117,7 +117,7 @@ const CaseStudiesMain = ({ casestudies }) => {
                 We conceive and create experiences that immerse consumers in the
                 brand through a combination of utility and creativity.
               </p>
-              <Link type="dark" href="/">
+              <Link type="dark" href="/services/branded-ecommerces">
                 LEARN MORE
               </Link>
             </div>
