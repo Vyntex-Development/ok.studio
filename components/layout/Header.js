@@ -8,6 +8,9 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [header, setHeader] = useState(false);
   const router = useRouter();
+  const onNavigationClose = () => {
+    setNavOpen(false);
+  };
 
   const openNavHandler = () => {
     setNavOpen(!navOpen);
@@ -56,7 +59,7 @@ const Header = () => {
             </div>
             <div
               className={`${classes.NavMobile} ${
-                navOpen ? classes.navOpen : ""
+                navOpen ? classes.NavOpen : classes.NavClose
               }`}
             >
               <div className={classes.NavLinksMobile}>
