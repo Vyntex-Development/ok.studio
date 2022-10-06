@@ -21,7 +21,7 @@ const Skills = ({ casestudies }) => {
                   We are carefully documenting our progress, so in case you like
                   studies — we ve got some cases.
                 </p>
-                <Link href="/" type="transparent">
+                <Link href="/services" type="transparent">
                   OUR PORTFOLIO
                 </Link>
               </div>
