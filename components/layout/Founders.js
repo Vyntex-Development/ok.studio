@@ -1,8 +1,29 @@
 import classes from "./Founders.module.css";
 import Image from "next/image";
 import Link from "../UI/Link";
+import { useNextSanityImage } from "next-sanity-image";
+import { config } from "../../lib/config";
 
-const Founders = () => {
+const Founders = ({ data }) => {
+  // console.log(
+  //   data["aboutpageData"]["pageBuilder"][1]["media"]["asset"]["_ref"]
+  // );
+  const namefirst =
+    data && data["aboutpageData"]["pageBuilder"][1]["namefirst"];
+  const namesecond =
+    data && data["aboutpageData"]["pageBuilder"][1]["namesecond"];
+  const companyfirst =
+    data && data["aboutpageData"]["pageBuilder"][1]["companyfirst"];
+  const companysecond =
+    data && data["aboutpageData"]["pageBuilder"][1]["companysecond"];
+  const descriptionfirst =
+    data && data["aboutpageData"]["pageBuilder"][1]["descriptionfirst"];
+  const descriptionsecond =
+    data && data["aboutpageData"]["pageBuilder"][1]["descriptionsecond"];
+  const descriptionlarge =
+    data && data["aboutpageData"]["pageBuilder"][1]["descriptionlarge"];
+  // const image = useNextSanityImage(config, media);
+  // const media = ["aboutpageData"]["pageBuilder"][1]["media"];
   return (
     <div>
       <div className="container">
@@ -48,13 +69,14 @@ const Founders = () => {
                     </div>
                   </div>
                   <div className={classes.NameWrapper}>
-                    <h1 className={classes.Name}>ILIA BORTNIKOV</h1>
-                    <p>Co-Founder and President</p>
+                    <h1 className={classes.Name}>{namefirst}</h1>
+                    <p>{companyfirst}</p>
                   </div>
                   <div className={classes.DescriptionWrapper}>
                     <p className={classes.Description}>
-                      If you are interested in creative collaborations or just
-                      want to talk about your next project,
+                      {/* If you are interested in creative collaborations or just
+                      want to talk about your next project, */}
+                      {descriptionfirst}
                       <span> email Ilia.</span>
                     </p>
                     <div className={classes.FounderIcon}>
@@ -100,13 +122,14 @@ const Founders = () => {
                     </div>
                   </div>
                   <div className={classes.NameWrapper}>
-                    <h1 className={classes.Name}>MARINA LU</h1>
-                    <p>Co-Founder and CEO</p>
+                    <h1 className={classes.Name}>{namesecond}</h1>
+                    <p>{companysecond}</p>
                   </div>
                   <div className={classes.DescriptionWrapper}>
                     <p className={classes.Description}>
-                      For all other inquiries including joining our team and
-                      networking,
+                      {/* For all other inquiries including joining our team and
+                      networking, */}
+                      {descriptionsecond}
                       <span> email Marina.</span>
                     </p>
                     <div className={classes.FounderIcon}>
@@ -123,10 +146,7 @@ const Founders = () => {
                 </Link>
               </div>
               <p className={`${classes.Large} p-large-white`}>
-                OK Studio is a data-driven, digital-first creative agency. We
-                focus on company culture, digital design, data-driven insights,
-                and all things technology. We design custom solutions and
-                deliver tailored success to businesses across all industries.
+                {descriptionlarge}
               </p>
             </div>
           </div>
@@ -138,6 +158,7 @@ const Founders = () => {
           objectFit="cover"
           alt="hero"
           src="/images/ok_image.png"
+          // {...image}
         ></Image>
       </div>
     </div>

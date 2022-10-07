@@ -9,8 +9,8 @@ const AboutPage = ({ casestudies, services, data }) => {
     <div>
       <AboutHero data={data}></AboutHero>
       <FaqSection services={services}></FaqSection>
-      <Founders></Founders>
-      <Skills casestudies={casestudies}></Skills>
+      <Founders data={data}></Founders>
+      <Skills casestudies={casestudies} data={data}></Skills>
     </div>
   );
 };

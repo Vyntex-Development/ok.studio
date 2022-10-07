@@ -6,7 +6,7 @@ const AboutHero = ({ data }) => {
     data && data["aboutpageData"]["pageBuilder"][0]["description"];
   const smalldescription =
     data && data["aboutpageData"]["pageBuilder"][0]["smalldescription"];
-  console.log(data["aboutpageData"]["pageBuilder"][0]["title"]);
+
   return (
     <div>
       <div className="container">
