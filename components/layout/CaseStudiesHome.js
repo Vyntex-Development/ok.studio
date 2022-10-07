@@ -20,7 +20,7 @@ const CaseStudiesHome = ({ casestudies }) => {
                 NDAs)
                 <span>(you know, NDAs)</span>
               </p>
-              <Link type="dark" href="/casestudycms" scroll={false}>
+              <Link type="dark" href="/services" scroll={false}>
                 OUR PORTFOLIO
               </Link>
             </div>

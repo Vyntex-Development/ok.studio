@@ -232,22 +232,23 @@
   }
 
   .ItemWrapper > div:nth-of-type(6n + 1) div a div div div {
-    height: 64vw;
+    /* height: 50vw; */
+    height: 62vw;
   }
   .ItemWrapper > div:nth-of-type(6n + 2) div a div div div {
-    height: 64vw;
+    height: 62vw;
   }
   .ItemWrapper > div:nth-of-type(6n + 3) div a div div div {
-    height: 64vw;
+    height: 62vw;
   }
   .ItemWrapper > div:nth-of-type(6n + 4) div a div div div {
-    height: 64vw;
+    height: 62vw;
   }
   .ItemWrapper > div:nth-of-type(6n + 5) div a div div div {
-    height: 64vw;
+    height: 62vw;
   }
   .ItemWrapper > div:nth-of-type(6n + 6) div a div div div {
-    height: 64vw;
+    height: 62vw;
   }
 
   .ItemWrapper div:nth-of-type(1) div a div div div {
