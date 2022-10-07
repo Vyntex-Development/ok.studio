@@ -28,16 +28,32 @@
 }
 
 .ItemWrapper div:nth-of-type(1) {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
+
+.ItemWrapper div:nth-of-type(1) div a div div div {
+  height: 15rem !important;
+}
+.ItemWrapper div:nth-of-type(3) div a div div div {
+  height: 25rem !important;
+}
+
 .ItemWrapper div:nth-of-type(2) {
   grid-column-start: 2;
   grid-column-end: 3;
 }
 .ItemWrapper div:nth-of-type(3) {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .YellowCard {
@@ -120,6 +136,34 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 1439px) {
+  .ItemWrapper > div:nth-of-type(6n + 1) div a div div div {
+    height: 23rem;
+  }
+  .ItemWrapper > div:nth-of-type(6n + 2) div a div div div {
+    height: 18rem;
+  }
+  .ItemWrapper > div:nth-of-type(6n + 3) div a div div div {
+    height: 13rem;
+  }
+  .ItemWrapper > div:nth-of-type(6n + 4) div a div div div {
+    height: 13rem;
+  }
+  .ItemWrapper > div:nth-of-type(6n + 5) div a div div div {
+    height: 18rem;
+  }
+  .ItemWrapper > div:nth-of-type(6n + 6) div a div div div {
+    height: 23rem;
+  }
+  .ItemWrapper div:nth-of-type(1) div a div div div {
+    height: 13rem !important;
+  }
+  .ItemWrapper div:nth-of-type(3) div a div div div {
+    height: 23rem !important;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .ItemWrapper {
     padding-top: 0;
@@ -136,6 +180,13 @@
   .ItemWrapper > div:nth-of-type(6n + 6) {
     margin-top: -20px;
     align-self: center;
+  }
+
+  .ItemWrapper div:nth-of-type(1) div a div div div {
+    height: 17vw !important;
+  }
+  .ItemWrapper div:nth-of-type(3) div a div div div {
+    height: 27vw !important;
   }
 
   .ItemWrapper > div:nth-of-type(6n + 1) div a div div div {
@@ -197,6 +248,13 @@
   }
   .ItemWrapper > div:nth-of-type(6n + 6) div a div div div {
     height: 64vw;
+  }
+
+  .ItemWrapper div:nth-of-type(1) div a div div div {
+    height: 64vw !important;
+  }
+  .ItemWrapper div:nth-of-type(3) div a div div div {
+    height: 64vw !important;
   }
 
   .ItemWrapper div:nth-of-type(1) {

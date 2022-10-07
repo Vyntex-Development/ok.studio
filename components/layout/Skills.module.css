@@ -175,6 +175,16 @@
   border-top: 1px solid #d9d9d9;
 }
 
+@media screen and (max-width: 1439px) {
+  .CaseItemWrapper div:nth-of-type(1) div a div div div {
+    height: 17rem;
+  }
+
+  .CaseItemWrapper div:nth-of-type(2) div a div div div {
+    height: 22rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .SkillsSection {
     padding-top: 2.5rem;

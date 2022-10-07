@@ -38,6 +38,10 @@ const Skills = ({ casestudies, data }) => {
     data && data["aboutpageData"]["pageBuilder"][3]["description03"];
   const numbersdescription04 =
     data && data["aboutpageData"]["pageBuilder"][3]["description04"];
+  const digitaldescription01 =
+    data && data["aboutpageData"]["pageBuilder"][4]["descriptionfirst"];
+  const digitaldescription02 =
+    data && data["aboutpageData"]["pageBuilder"][4]["descriptionsecond"];
 
   const slicedCase = casestudies.slice(3, 5);
   return (
@@ -234,23 +238,8 @@ const Skills = ({ casestudies, data }) => {
             </div>
             <div className="coll-8">
               <div className={classes.WorkItem}>
-                <p className={classes.AboutP}>
-                  Nulla varius urna sagittis nunc aliquam porttitor. Maecenas ut
-                  diam eu sapien ornare aliquet non finibus eros. Phasellus ut
-                  varius augue. Phasellus posuere eros nec risus vulputate, non
-                  luctus orci dapibus. Integer sodales, arcu sit amet laoreet
-                  egestas, orci justo sagittis velit, sit amet eleifend lorem
-                  risus eu nisi. Nunc pharetra, erat a consectetur rutrum,
-                  lectus eros ultricies nibh, vel interdum dolor nibh.
-                </p>
-                <p className={classes.AboutP}>
-                  Integer sodales, arcu sit amet laoreet egestas, orci justo
-                  sagittis velit, sit amet eleifend lorem risus eu nisi. Nunc
-                  pharetra, erat a consectetur rutrum, lectus eros ultricies
-                  nibh, vel interdum dolor nibh eget odio. Nunc pharetra, erat a
-                  consectetur rutrum, lectus eros ultricies nibh, vel interdum
-                  dolor nibh eget odio.
-                </p>
+                <p className={classes.AboutP}>{digitaldescription01}</p>
+                <p className={classes.AboutP}>{digitaldescription02}</p>
               </div>
             </div>
           </div>

@@ -84,6 +84,24 @@
   height: 25rem;
 }
 
+@media screen and (max-width: 1439px) {
+  .CaseItemsWrapper div:nth-of-type(1) div a div div div {
+    height: 32rem;
+  }
+  .CaseItemsWrapper div:nth-of-type(2) div a div div div {
+    height: 17rem;
+  }
+  .CaseItemsWrapper div:nth-of-type(3) div a div div div {
+    height: 22rem;
+  }
+  .CaseItemsWrapper div:nth-of-type(4) div a div div div {
+    height: 17rem;
+  }
+  .CaseItemsWrapper div:nth-of-type(5) div a div div div {
+    height: 22rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .CaseItemsWrapper div:nth-of-type(1) div a div div div {
     height: 40vw;
