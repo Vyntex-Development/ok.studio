@@ -3,8 +3,24 @@ import Image from "next/image";
 import Link from "../UI/Link";
 import CaseStudiesItem from "./CaseStudiesItem";
 
-const Skills = ({ casestudies }) => {
-  const slicedCase = casestudies.slice(0, 2);
+const Skills = ({ casestudies, data }) => {
+  console.log(data);
+  const skillstitle = data && data["aboutpageData"]["pageBuilder"][2]["title"];
+  const skillsdescription =
+    data && data["aboutpageData"]["pageBuilder"][2]["description"];
+  const skill01 = data && data["aboutpageData"]["pageBuilder"][2]["skill01"];
+  const skill02 = data && data["aboutpageData"]["pageBuilder"][2]["skill02"];
+  const skill03 = data && data["aboutpageData"]["pageBuilder"][2]["skill03"];
+  const skill04 = data && data["aboutpageData"]["pageBuilder"][2]["skill04"];
+  const skill05 = data && data["aboutpageData"]["pageBuilder"][2]["skill05"];
+  const skill06 = data && data["aboutpageData"]["pageBuilder"][2]["skill06"];
+  const skill07 = data && data["aboutpageData"]["pageBuilder"][2]["skill07"];
+  const skill08 = data && data["aboutpageData"]["pageBuilder"][2]["skill08"];
+  const skill09 = data && data["aboutpageData"]["pageBuilder"][2]["skill09"];
+  const skill10 = data && data["aboutpageData"]["pageBuilder"][2]["skill10"];
+  const skill11 = data && data["aboutpageData"]["pageBuilder"][2]["skill11"];
+  const skill12 = data && data["aboutpageData"]["pageBuilder"][2]["skill12"];
+  const slicedCase = casestudies.slice(3, 5);
   return (
     <div className={classes.SkillsSection}>
       <div className="container">
@@ -17,10 +33,7 @@ const Skills = ({ casestudies }) => {
             <div className={classes.SkillsWrapperLeft}>
               <h2 className={classes.AboutTitle}>THE SKILLS</h2>
               <div className={classes.SmallContent}>
-                <p className={classes.AboutP}>
-                  We are carefully documenting our progress, so in case you like
-                  studies — we ve got some cases.
-                </p>
+                <p className={classes.AboutP}>{skillsdescription}</p>
                 <Link href="/services" type="transparent">
                   OUR PORTFOLIO
                 </Link>
@@ -29,16 +42,12 @@ const Skills = ({ casestudies }) => {
           </div>
           <div className="coll-8">
             <div className={classes.CollEight}>
-              <h1 className={classes.h1}>
-                Product, Branding, Design, Development and CX
-              </h1>
+              <h1 className={classes.h1}>{skillstitle}</h1>
               <div className={classes.Skills}>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>
-                      Design Systems and Guidelines
-                    </p>
-                    <p className={classes.AboutP}>Visual Identity</p>
+                    <p className={classes.AboutP}>{skill01}</p>
+                    <p className={classes.AboutP}>{skill02}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -46,10 +55,8 @@ const Skills = ({ casestudies }) => {
                 </div>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>Website and App Design</p>
-                    <p className={classes.AboutP}>
-                      Brand Guidelines and Playbooks
-                    </p>
+                    <p className={classes.AboutP}>{skill03}</p>
+                    <p className={classes.AboutP}>{skill04}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -57,8 +64,8 @@ const Skills = ({ casestudies }) => {
                 </div>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>UI Design</p>
-                    <p className={classes.AboutP}>Visual Design</p>
+                    <p className={classes.AboutP}>{skill05}</p>
+                    <p className={classes.AboutP}>{skill06}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -66,8 +73,8 @@ const Skills = ({ casestudies }) => {
                 </div>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>Interaction Design</p>
-                    <p className={classes.AboutP}>Graphic Design</p>
+                    <p className={classes.AboutP}>{skill07}</p>
+                    <p className={classes.AboutP}>{skill08}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -75,8 +82,8 @@ const Skills = ({ casestudies }) => {
                 </div>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>Full-Stack Development</p>
-                    <p className={classes.AboutP}>Art Direction</p>
+                    <p className={classes.AboutP}>{skill09}</p>
+                    <p className={classes.AboutP}>{skill10}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -84,8 +91,8 @@ const Skills = ({ casestudies }) => {
                 </div>
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.SkillsItem}>
-                    <p className={classes.AboutP}>Custom CMS Implementation</p>
-                    <p className={classes.AboutP}>Campaign Development</p>
+                    <p className={classes.AboutP}>{skill11}</p>
+                    <p className={classes.AboutP}>{skill12}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
