@@ -4,10 +4,10 @@ import { useState } from "react";
 import Founders from "../layout/Founders";
 import Skills from "../layout/Skills";
 
-const AboutPage = ({ casestudies, services }) => {
+const AboutPage = ({ casestudies, services, data }) => {
   return (
     <div>
-      <AboutHero></AboutHero>
+      <AboutHero data={data}></AboutHero>
       <FaqSection services={services}></FaqSection>
       <Founders></Founders>
       <Skills casestudies={casestudies}></Skills>

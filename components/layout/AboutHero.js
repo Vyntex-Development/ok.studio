@@ -1,6 +1,12 @@
 import classes from "./AboutHero.module.css";
 
-const AboutHero = () => {
+const AboutHero = ({ data }) => {
+  const title = data && data["aboutpageData"]["pageBuilder"][0]["title"];
+  const description =
+    data && data["aboutpageData"]["pageBuilder"][0]["description"];
+  const smalldescription =
+    data && data["aboutpageData"]["pageBuilder"][0]["smalldescription"];
+  console.log(data["aboutpageData"]["pageBuilder"][0]["title"]);
   return (
     <div>
       <div className="container">
@@ -9,14 +15,17 @@ const AboutHero = () => {
             <div className={classes.HeroWrapper}>
               <div className={classes.HeroItem}>
                 <h1>
-                  It s <span>OK</span>, we are humans.
+                  {title}
+                  {/* It s <span>OK</span>, we are humans. */}
                 </h1>
                 <p className="p-large">
-                  As humans, we empower brands and provide end-to-end digital
-                  solutions to better businesses.
+                  {/* As humans, we empower brands and provide end-to-end digital
+                  solutions to better businesses. */}
+                  {description}
                 </p>
                 <p>
-                  That what makes us <span>OK STUDIO</span>
+                  {smalldescription}
+                  {/* That what makes us <span>OK STUDIO</span> */}
                 </p>
               </div>
             </div>
