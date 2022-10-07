@@ -5,7 +5,7 @@ import InsightsItem from "./InsightsItem";
 const InsightsSection = ({ insights }) => {
   const slicedInsights = insights && insights.slice(0, 3);
   // const slicedInsight = data["homepageData"]["pageBuilder"][0];
-  console.log(data["homepageData"]["pageBuilder"][0]);
+  // console.log(data["homepageData"]["pageBuilder"][0]);
   return (
     <div className="container">
       <div className={classes.InsightsWrapper}>
