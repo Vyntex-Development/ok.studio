@@ -2,7 +2,7 @@ import classes from "./InsightsSection.module.css";
 import Link from "../UI/Link";
 import InsightsItem from "./InsightsItem";
 
-const InsightsSection = ({ insights, data }) => {
+const InsightsSection = ({ insights }) => {
   const slicedInsights = insights && insights.slice(0, 3);
   // const slicedInsight = data["homepageData"]["pageBuilder"][0];
   console.log(data["homepageData"]["pageBuilder"][0]);

@@ -5,7 +5,7 @@ import InsightsSection from "../layout/InsightsSection";
 import VideoSection from "../layout/VideoSection";
 import HeroHome from "../layout/HeroHome";
 
-const HomePage = ({ insights, casestudies, services, data }) => {
+const HomePage = ({ insights, casestudies, services }) => {
   return (
     <div>
       <HeroHome></HeroHome>
