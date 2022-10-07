@@ -345,5 +345,10 @@
   }
   .WorkItem p:nth-child(1) {
     text-indent: 22vw;
+    width: auto;
+  }
+
+  .WorkItem p:nth-child(2) {
+    width: auto;
   }
 }
