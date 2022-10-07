@@ -20,6 +20,25 @@ const Skills = ({ casestudies, data }) => {
   const skill10 = data && data["aboutpageData"]["pageBuilder"][2]["skill10"];
   const skill11 = data && data["aboutpageData"]["pageBuilder"][2]["skill11"];
   const skill12 = data && data["aboutpageData"]["pageBuilder"][2]["skill12"];
+  const numbersdescription =
+    data && data["aboutpageData"]["pageBuilder"][3]["description"];
+  const numberstitle01 =
+    data && data["aboutpageData"]["pageBuilder"][3]["title01"];
+  const numberstitle02 =
+    data && data["aboutpageData"]["pageBuilder"][3]["title02"];
+  const numberstitle03 =
+    data && data["aboutpageData"]["pageBuilder"][3]["title03"];
+  const numberstitle04 =
+    data && data["aboutpageData"]["pageBuilder"][3]["title04"];
+  const numbersdescription01 =
+    data && data["aboutpageData"]["pageBuilder"][3]["description01"];
+  const numbersdescription02 =
+    data && data["aboutpageData"]["pageBuilder"][3]["description02"];
+  const numbersdescription03 =
+    data && data["aboutpageData"]["pageBuilder"][3]["description03"];
+  const numbersdescription04 =
+    data && data["aboutpageData"]["pageBuilder"][3]["description04"];
+
   const slicedCase = casestudies.slice(3, 5);
   return (
     <div className={classes.SkillsSection}>
@@ -100,10 +119,7 @@ const Skills = ({ casestudies, data }) => {
                 </div>
               </div>
               <div className={classes.SmallContentMobile}>
-                <p className={classes.AboutP}>
-                  We are carefully documenting our progress, so in case you like
-                  studies — we ve got some cases.
-                </p>
+                <p className={classes.AboutP}>{skillsdescription}</p>
                 <Link href="/" type="transparent">
                   OUR PORTFOLIO
                 </Link>
@@ -134,10 +150,7 @@ const Skills = ({ casestudies, data }) => {
               <div className={classes.SkillsWrapperLeft}>
                 <h2 className={classes.AboutTitleMargin}>THE NUMBERS</h2>
                 <div className={classes.SmallContentAbout}>
-                  <p className={classes.AboutP}>
-                    We are carefully documenting our progress, so in case you
-                    like studies — we ve got some cases.
-                  </p>
+                  <p className={classes.AboutP}>{numbersdescription}</p>
                 </div>
               </div>
             </div>
@@ -146,15 +159,12 @@ const Skills = ({ casestudies, data }) => {
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>01</h1>
-                    <h1 className={classes.h1}>STUDIO</h1>
+                    <h1 className={classes.h1}>{numberstitle01}</h1>
                     <div className={classes.MobileTitle}>
                       <h1 className={classes.h1}>01</h1>
-                      <h1 className={classes.h1}>STUDIO</h1>
+                      <h1 className={classes.h1}>{numberstitle01}</h1>
                     </div>
-                    <p className={classes.AboutP}>
-                      We are carefully documenting our progress, so in case you
-                      like.
-                    </p>
+                    <p className={classes.AboutP}>{numbersdescription01}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -163,15 +173,12 @@ const Skills = ({ casestudies, data }) => {
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>02</h1>
-                    <h1 className={classes.h1}>PRODUCTS</h1>
+                    <h1 className={classes.h1}>{numberstitle02}</h1>
                     <div className={classes.MobileTitle}>
                       <h1 className={classes.h1}>02</h1>
-                      <h1 className={classes.h1}>PRODUCTS</h1>
+                      <h1 className={classes.h1}>{numberstitle02}</h1>
                     </div>
-                    <p className={classes.AboutP}>
-                      We are carefully documenting our progress, so in case you
-                      like.
-                    </p>
+                    <p className={classes.AboutP}>{numbersdescription02}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -180,15 +187,12 @@ const Skills = ({ casestudies, data }) => {
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>03</h1>
-                    <h1 className={classes.h1}>SERVICES</h1>
+                    <h1 className={classes.h1}>{numberstitle03}</h1>
                     <div className={classes.MobileTitle}>
                       <h1 className={classes.h1}>03</h1>
-                      <h1 className={classes.h1}>SERVICES</h1>
+                      <h1 className={classes.h1}>{numberstitle03}</h1>
                     </div>
-                    <p className={classes.AboutP}>
-                      We are carefully documenting our progress, so in case you
-                      like.
-                    </p>
+                    <p className={classes.AboutP}>{numbersdescription03}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>
@@ -197,15 +201,12 @@ const Skills = ({ casestudies, data }) => {
                 <div className={classes.SkillsItemWrapper}>
                   <div className={classes.NumberItem}>
                     <h1 className={classes.h1}>04</h1>
-                    <h1 className={classes.h1}>PROJECTS</h1>
+                    <h1 className={classes.h1}>{numberstitle04}</h1>
                     <div className={classes.MobileTitle}>
                       <h1 className={classes.h1}>04</h1>
-                      <h1 className={classes.h1}>PROJECTS</h1>
+                      <h1 className={classes.h1}>{numberstitle04}</h1>
                     </div>
-                    <p className={classes.AboutP}>
-                      We are carefully documenting our progress, so in case you
-                      like.
-                    </p>
+                    <p className={classes.AboutP}>{numbersdescription04}</p>
                   </div>
                   <div className={classes.ProgressWrapper}>
                     <div className={classes.Progress}></div>

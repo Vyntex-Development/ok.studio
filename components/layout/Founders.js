@@ -5,9 +5,9 @@ import { useNextSanityImage } from "next-sanity-image";
 import { config } from "../../lib/config";
 
 const Founders = ({ data }) => {
-  // console.log(
-  //   data["aboutpageData"]["pageBuilder"][1]["media"]["asset"]["_ref"]
-  // );
+  console.log(
+    data["aboutpageData"]["pageBuilder"][1]["media"]["asset"]["_ref"]
+  );
   const namefirst =
     data && data["aboutpageData"]["pageBuilder"][1]["namefirst"];
   const namesecond =
@@ -45,7 +45,7 @@ const Founders = ({ data }) => {
                         layout="fill"
                         objectFit="cover"
                         alt="hero"
-                        src="/images/hero_img.png"
+                        src="/images/team02.webp"
                       ></Image>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ const Founders = ({ data }) => {
                         layout="fill"
                         objectFit="cover"
                         alt="hero"
-                        src="/images/insights_item.png"
+                        src="/images/team01.webp"
                       ></Image>
                     </div>
                   </div>
