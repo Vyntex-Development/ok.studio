@@ -15,8 +15,8 @@ const AboutHero = ({ data }) => {
             <div className={classes.HeroWrapper}>
               <div className={classes.HeroItem}>
                 <h1>
-                  {title}
-                  {/* It s <span>OK</span>, we are humans. */}
+                  {/* {title} */}
+                  It's <span>OK</span>, we are humans.
                 </h1>
                 <p className="p-large">
                   {/* As humans, we empower brands and provide end-to-end digital
@@ -24,8 +24,8 @@ const AboutHero = ({ data }) => {
                   {description}
                 </p>
                 <p>
-                  {smalldescription}
-                  {/* That what makes us <span>OK STUDIO</span> */}
+                  {/* {smalldescription} */}
+                  That what makes us <span>OK STUDIO</span>
                 </p>
               </div>
             </div>
