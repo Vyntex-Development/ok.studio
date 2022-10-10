@@ -15,10 +15,20 @@ import TechItem from "./TechItem";
 const CaseCmsHero = ({ casestudy, categories }) => {
   // ScrollTrigger.normalizeScroll(true);
   // ScrollTrigger.config({ ignoreMobileResize: true });
+  const sectionHeightRef = useRef();
+  const trackRef = useRef();
   useEffect(() => {
     ScrollTrigger.config({ ignoreMobileResize: true });
   }, []);
   useEffect(() => {
+    function setTrackHeights() {
+      let trackWidth = trackRef.current.offsetWidth;
+      console.log(trackWidth);
+      sectionHeightRef.current.height = trackWidth;
+    }
+    setTrackHeights();
+    window.addEventListener("resize", setTrackHeights);
+
     let tlMain = gsap
       .timeline({
         scrollTrigger: {
@@ -104,6 +114,9 @@ const CaseCmsHero = ({ casestudy, categories }) => {
         },
         0
       );
+    return () => {
+      window.removeEventListener("resize", setTrackHeights);
+    };
   }, []);
 
   const imgRef = useRef(null);
@@ -254,9 +267,13 @@ const CaseCmsHero = ({ casestudy, categories }) => {
             </div>
           </div>
         </div>
-        <div className={classes.SectionHeight} id="section-height">
+        <div
+          className={classes.SectionHeight}
+          id="section-height"
+          ref={sectionHeightRef}
+        >
           <div className={classes.StickyElement}>
-            <div className={classes.Track} id="track">
+            <div className={classes.Track} id="track" ref={trackRef}>
               <div className={classes.TrackFlex}>
                 <div className={classes.HeroPanel} id="hero-panel">
                   <div className={classes.HeroPanelImage} id="hero-panel-img">
