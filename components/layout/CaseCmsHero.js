@@ -18,7 +18,10 @@ const CaseCmsHero = ({ casestudy, categories }) => {
   const sectionHeightRef = useRef();
   const trackRef = useRef();
   useEffect(() => {
-    ScrollTrigger.config({ ignoreMobileResize: true });
+    ScrollTrigger.config({
+      ignoreMobileResize: true,
+      scroller: window.innerWidth > 991 ? "#section-height" : null,
+    });
   }, []);
   useEffect(() => {
     function setTrackHeights() {
