@@ -6,10 +6,13 @@ import { useRouter } from "next/router";
 
 const Footer = () => {
   const { pathname } = useRouter();
+  console.log(pathname);
+  const isCaseStudiesCmsPage = pathname === "/casestudies/[slug]";
+  console.log(isCaseStudiesCmsPage);
   return (
     <div
       className={`${classes.Footer} ${
-        pathname === CASE_PAGE ? classes.FooterNone : ""
+        isCaseStudiesCmsPage ? classes.FooterNone : ""
       }`}
     >
       <div className="container">
