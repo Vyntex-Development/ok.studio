@@ -69,8 +69,13 @@ const FaqSection = ({ services, datahome, data }) => {
                   pathname === ABOUT_PAGE ? classes.ContentWrapperAbout : ""
                 }`}
               >
-                <p className="p-large"> {servicesdescriptionhome}</p>
-                <p className="p-large">{servicesdescriptionhomesecond}</p>
+                <p className={`${classes.White} p-large`}>
+                  {" "}
+                  {servicesdescriptionhome}
+                </p>
+                <p className={`${classes.White} p-large`}>
+                  {servicesdescriptionhomesecond}
+                </p>
                 {/* <p className="p-large">
                   We Are a ■ <span> strategy-driven Digital Agency </span>. We
                   focus on digital design, data-driven insights, and all things

@@ -1,3 +1,7 @@
+.White {
+  color: var(--primary-white);
+}
+
 .FaqWrapper {
   padding-bottom: 10rem;
 }
