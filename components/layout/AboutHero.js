@@ -16,7 +16,7 @@ const AboutHero = ({ data }) => {
               <div className={classes.HeroItem}>
                 <h1>
                   {/* {title} */}
-                  It's <span>OK</span>, we are humans.
+                  It&apos;s <span>OK</span>, we are humans.
                 </h1>
                 <p className="p-large">
                   {/* As humans, we empower brands and provide end-to-end digital
