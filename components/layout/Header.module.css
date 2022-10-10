@@ -166,6 +166,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .Navigation {
+    height: 8vh;
+  }
   .MenuButton div {
     width: 32px;
     height: 2px;
