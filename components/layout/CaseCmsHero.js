@@ -629,7 +629,7 @@ const CaseCmsHero = ({ casestudy, categories }) => {
           </div>
         </div>
       </div>
-      <div className={classes.ProjectSection}>
+      {/* <div className={classes.ProjectSection}>
         <div className={classes.BgColor}>
           <div className="container">
             <div className={`${classes.DotWrapperProject} dotWrapper`}>
@@ -677,7 +677,7 @@ const CaseCmsHero = ({ casestudy, categories }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
