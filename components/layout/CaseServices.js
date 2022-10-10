@@ -2,7 +2,8 @@ import CaseStudiesArticle from "./CaseStudiesArticle";
 import classes from "./CaseServices.module.css";
 import Link from "../UI/Link";
 
-const CaseServices = ({ casestudies }) => {
+const CaseServices = ({ casestudies, service }) => {
+  console.log(service);
   return (
     <div className="container">
       <div className={`${classes.DotCase} dotWrapper`}>
@@ -21,8 +22,8 @@ const CaseServices = ({ casestudies }) => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    {casestudies &&
-                      casestudies.map(
+                    {service &&
+                      service.casestudies.map(
                         ({ title, media, description, _id, slug }) => {
                           return (
                             <CaseStudiesArticle

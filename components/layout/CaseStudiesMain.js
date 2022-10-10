@@ -2,9 +2,8 @@ import classes from "./CaseStudiesMain.module.css";
 import Link from "../UI/Link";
 import CaseStudiesArticle from "./CaseStudiesArticle";
 
-const CaseStudiesMain = ({ casestudies }) => {
-  const slicedCaseOne = casestudies.slice(0, 4);
-  const slicedCaseTwo = casestudies.slice(1, 5);
+const CaseStudiesMain = ({ casestudies, services }) => {
+  // console.log(services[2]["casestudies"]);
   return (
     <div className="container">
       <div className={classes.CaseMainTop}>
@@ -34,11 +33,8 @@ const CaseStudiesMain = ({ casestudies }) => {
         <div className={`${classes.Grid} grid`}>
           <div className={`${classes.CollFour} coll-4`}>
             <div className={classes.ContentLeft}>
-              <h2>Websites + Platforms</h2>
-              <p>
-                We conceive and create experiences that immerse consumers in the
-                brand through a combination of utility and creativity.
-              </p>
+              <h2>{services && services[2]["title"]}</h2>
+              <p>{services && services[2]["description"]}</p>
               <Link type="dark" href="/services/websites-platforms">
                 LEARN MORE
               </Link>
@@ -49,19 +45,20 @@ const CaseStudiesMain = ({ casestudies }) => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    {slicedCaseOne.map(
-                      ({ title, media, description, _id, slug }) => {
-                        return (
-                          <CaseStudiesArticle
-                            key={_id}
-                            title={title}
-                            description={description}
-                            media={media}
-                            slug={slug}
-                          />
-                        );
-                      }
-                    )}
+                    {services[2]["casestudies"] &&
+                      services[2]["casestudies"].map(
+                        ({ title, media, description, _id, slug }) => {
+                          return (
+                            <CaseStudiesArticle
+                              key={_id}
+                              title={title}
+                              description={description}
+                              media={media}
+                              slug={slug}
+                            />
+                          );
+                        }
+                      )}
                   </div>
                 </div>
               </div>
@@ -73,11 +70,8 @@ const CaseStudiesMain = ({ casestudies }) => {
         <div className={`${classes.Grid} grid`}>
           <div className={`${classes.CollFour} coll-4`}>
             <div className={classes.ContentLeft}>
-              <h2>BRANDING ADVERTISING</h2>
-              <p>
-                We conceive and create experiences that immerse consumers in the
-                brand through a combination of utility and creativity.
-              </p>
+              <h2>{services && services[0]["title"]}</h2>
+              <p>{services && services[0]["description"]}</p>
               <Link type="dark" href="/services/branding-and-advertising">
                 LEARN MORE
               </Link>
@@ -88,19 +82,20 @@ const CaseStudiesMain = ({ casestudies }) => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    {slicedCaseTwo.map(
-                      ({ title, media, description, _id, slug }) => {
-                        return (
-                          <CaseStudiesArticle
-                            key={_id}
-                            title={title}
-                            description={description}
-                            media={media}
-                            slug={slug}
-                          />
-                        );
-                      }
-                    )}
+                    {services[0]["casestudies"] &&
+                      services[0]["casestudies"].map(
+                        ({ title, media, description, _id, slug }) => {
+                          return (
+                            <CaseStudiesArticle
+                              key={_id}
+                              title={title}
+                              description={description}
+                              media={media}
+                              slug={slug}
+                            />
+                          );
+                        }
+                      )}
                   </div>
                 </div>
               </div>
@@ -112,11 +107,8 @@ const CaseStudiesMain = ({ casestudies }) => {
         <div className={`${classes.Grid} grid`}>
           <div className={`${classes.CollFour} coll-4`}>
             <div className={classes.ContentLeft}>
-              <h2>Branded ECommerces</h2>
-              <p>
-                We conceive and create experiences that immerse consumers in the
-                brand through a combination of utility and creativity.
-              </p>
+              <h2>{services && services[1]["title"]}</h2>
+              <p>{services && services[1]["description"]}</p>
               <Link type="dark" href="/services/branded-ecommerces">
                 LEARN MORE
               </Link>
@@ -127,19 +119,20 @@ const CaseStudiesMain = ({ casestudies }) => {
               <div className={classes.Sticky}>
                 <div className={classes.WrapperAnimate} id="wrapper">
                   <div className={classes.ItemsWrapper} id="component">
-                    {slicedCaseOne.map(
-                      ({ title, media, description, _id, slug }) => {
-                        return (
-                          <CaseStudiesArticle
-                            key={_id}
-                            title={title}
-                            description={description}
-                            media={media}
-                            slug={slug}
-                          />
-                        );
-                      }
-                    )}
+                    {services[1]["casestudies"] &&
+                      services[1]["casestudies"].map(
+                        ({ title, media, description, _id, slug }) => {
+                          return (
+                            <CaseStudiesArticle
+                              key={_id}
+                              title={title}
+                              description={description}
+                              media={media}
+                              slug={slug}
+                            />
+                          );
+                        }
+                      )}
                   </div>
                 </div>
               </div>

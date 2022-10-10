@@ -31,6 +31,7 @@ export async function getStaticProps({ params, preview = false }) {
     homedescription,
     "categories":categories[]->{title, description, media, _id},
     "faq":faq[]->{title, description, media, _id},
+    "casestudies":casestudies[]->{title,description,media,slug, _id},
     body,
     description,
     overviewfirst,

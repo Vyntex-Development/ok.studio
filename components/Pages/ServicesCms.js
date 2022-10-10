@@ -8,7 +8,10 @@ const ServicesCms = ({ service, casestudies }) => {
     <div>
       <div>
         <HeroServicesCms service={service}></HeroServicesCms>
-        <CaseServices casestudies={casestudies}></CaseServices>
+        <CaseServices
+          casestudies={casestudies}
+          service={service}
+        ></CaseServices>
         <FaqServicesLarge service={service}></FaqServicesLarge>
       </div>
     </div>

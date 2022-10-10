@@ -159,7 +159,7 @@
   }
   .NavMobile {
     display: flex;
-    height: 95.5vh;
+    height: 97vh;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -178,5 +178,8 @@
   }
   .TextWrapper p {
     font-size: 14px;
+  }
+  .NavMobile {
+    height: 95.5vh;
   }
 }
