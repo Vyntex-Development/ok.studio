@@ -10,7 +10,10 @@ const HomePage = ({ insights, casestudies, services, datahome }) => {
     <div>
       <HeroHome></HeroHome>
       <FaqSection datahome={datahome} services={services}></FaqSection>
-      <CaseStudiesHome casestudies={casestudies}></CaseStudiesHome>
+      <CaseStudiesHome
+        casestudies={casestudies}
+        datahome={datahome}
+      ></CaseStudiesHome>
       <InsightsSection insights={insights}></InsightsSection>
     </div>
   );

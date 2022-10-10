@@ -9,7 +9,6 @@ import { useState } from "react";
 const FaqSection = ({ services, datahome, data }) => {
   const { pathname } = useRouter();
   const [active, setActive] = useState(services[0]._id);
-  console.log(data);
   const servicesdescriptionhome =
     datahome &&
     datahome["homepageData"]["pageBuilder"][1]["servicesdescriptionhome"];

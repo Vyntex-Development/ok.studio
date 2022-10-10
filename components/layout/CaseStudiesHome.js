@@ -2,7 +2,13 @@ import classes from "./CaseStudiesHome.module.css";
 import Link from "../UI/Link";
 import CaseStudiesItem from "./CaseStudiesItem";
 
-const CaseStudiesHome = ({ casestudies }) => {
+const CaseStudiesHome = ({ casestudies, datahome }) => {
+  console.log(datahome);
+  const title = datahome && datahome["homepageData"]["pageBuilder"][2]["title"];
+  const description =
+    datahome && datahome["homepageData"]["pageBuilder"][2]["description"];
+  const smalldescription =
+    datahome && datahome["homepageData"]["pageBuilder"][2]["smalldescription"];
   return (
     <div className="container">
       <div className={classes.CaseWrapper}>
@@ -13,12 +19,10 @@ const CaseStudiesHome = ({ casestudies }) => {
         <div className="grid">
           <div className="coll-8">
             <div className={classes.CaseContent}>
-              <h1>Case Studies</h1>
+              <h1>{title}</h1>
               <p className="p-large">
-                Here are some projects we are proud of, or to be direct — a list
-                of projects that we can display without getting sued. (you know,
-                NDAs)
-                <span>(you know, NDAs)</span>
+                {description}
+                <span>{smalldescription}</span>
               </p>
               <Link type="dark" href="/services" scroll={false}>
                 OUR PORTFOLIO
