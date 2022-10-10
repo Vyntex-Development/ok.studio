@@ -8,7 +8,7 @@ const AboutPage = ({ casestudies, services, data }) => {
   return (
     <div>
       <AboutHero data={data}></AboutHero>
-      <FaqSection services={services}></FaqSection>
+      <FaqSection services={services} data={data}></FaqSection>
       <Founders data={data}></Founders>
       <Skills casestudies={casestudies} data={data}></Skills>
     </div>

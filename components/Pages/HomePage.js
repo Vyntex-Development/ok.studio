@@ -5,11 +5,11 @@ import InsightsSection from "../layout/InsightsSection";
 import VideoSection from "../layout/VideoSection";
 import HeroHome from "../layout/HeroHome";
 
-const HomePage = ({ insights, casestudies, services }) => {
+const HomePage = ({ insights, casestudies, services, datahome }) => {
   return (
     <div>
       <HeroHome></HeroHome>
-      <FaqSection services={services}></FaqSection>
+      <FaqSection datahome={datahome} services={services}></FaqSection>
       <CaseStudiesHome casestudies={casestudies}></CaseStudiesHome>
       <InsightsSection insights={insights}></InsightsSection>
     </div>

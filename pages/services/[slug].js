@@ -28,6 +28,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, preview = false }) {
   const query = groq`*[_type == "services" && slug.current == $slug][0] {
     title,
+    homedescription,
     "categories":categories[]->{title, description, media, _id},
     "faq":faq[]->{title, description, media, _id},
     body,

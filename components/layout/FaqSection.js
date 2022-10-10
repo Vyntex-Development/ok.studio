@@ -6,10 +6,22 @@ import { useRouter } from "next/router";
 import FaqHomeItem from "./FaqHomeItem";
 import { useState } from "react";
 
-const FaqSection = ({ services }) => {
+const FaqSection = ({ services, datahome, data }) => {
   const { pathname } = useRouter();
   const [active, setActive] = useState(services[0]._id);
+  console.log(data);
+  const servicesdescriptionhome =
+    datahome &&
+    datahome["homepageData"]["pageBuilder"][1]["servicesdescriptionhome"];
+  const servicesdescriptionhomesecond =
+    datahome &&
+    datahome["homepageData"]["pageBuilder"][1]["servicesdescriptionhomesecond"];
 
+  const servicesdescriptionaboutfirst =
+    data && data["aboutpageData"]["pageBuilder"][5]["servicesdescriptionabout"];
+  const servicesdescriptionaboutsecond =
+    data &&
+    data["aboutpageData"]["pageBuilder"][5]["servicesdescriptionaboutsecond"];
   return (
     <div>
       <div className="container">
@@ -57,18 +69,20 @@ const FaqSection = ({ services }) => {
                   pathname === ABOUT_PAGE ? classes.ContentWrapperAbout : ""
                 }`}
               >
-                <p className="p-large">
+                <p className="p-large"> {servicesdescriptionhome}</p>
+                <p className="p-large">{servicesdescriptionhomesecond}</p>
+                {/* <p className="p-large">
                   We Are a ■ <span> strategy-driven Digital Agency </span>. We
                   focus on digital design, data-driven insights, and all things
                   technology.
-                </p>
-                <p className="p-large">
+                </p> */}
+                {/* <p className="p-large">
                   We ●<span> better businesses </span>, solve problems with
                   creative solutions and elevate brand experiences through ▲
                   <span> digital culture </span>.
-                </p>
+                </p> */}
                 <div className={classes.ContentAbout}>
-                  <p>
+                  {/* <p>
                     Our story begins with our co-founders Ilia and Marina. They
                     had the vision to evolve the digital landscape through art,
                     data, design, and technology. Vyntex Developments was their
@@ -77,8 +91,9 @@ const FaqSection = ({ services }) => {
                     clients across all industries. OK Studio is their newest
                     creation. It is everything Vyntex is and more, with a focus
                     on data-driven insights, strategy, and culture.
-                  </p>
-                  <p>
+                  </p> */}
+                  <p>{servicesdescriptionaboutfirst}</p>
+                  {/* <p>
                     Our clients make us who we are. Our purpose is to bring
                     impactful results to a client-centric environment. We love
                     going above and beyond for every single client ensuring
@@ -87,7 +102,8 @@ const FaqSection = ({ services }) => {
                     committed to our clients, to excellence, to inspiring
                     change, and to setting creative standards in the digital
                     world.
-                  </p>
+                  </p> */}
+                  <p>{servicesdescriptionaboutsecond}</p>
                 </div>
               </div>
               <div className={classes.FaqRight}>
