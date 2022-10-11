@@ -1,8 +1,35 @@
 import classes from "./Contact.module.css";
-import Link from "../UI/Link";
 import Image from "next/image";
-
+import { useRef } from "react";
+const sanityClient = require("@sanity/client");
+const client = sanityClient({
+  projectId: "147yq19f",
+  dataset: "production",
+  apiVersion: "2021-10-21", // use current UTC date - see "specifying API version"!
+  token:
+    "skGtvaPCryjuiIplkRAhlIOiTWrfVBOlxEkKueIimT8UiZKx9kJ5g06bqry9imIeCBrXDgXVj0ehDoxmq2FxR3wmXwUM69Gn5Fd9j5kTeTgLrXFgriLH5CAJqQRLnh42kkzO6bGPDemzVDsrtvJOhxH3VX41Iq7hi4JQ9RweWApjyxRIzhH4", // or leave blank for unauthenticated usage
+  useCdn: true, // `false` if you want to ensure fresh data
+});
 const Contact = () => {
+  const nameInputRef = useRef();
+  const companyInputRef = useRef();
+  const emailInputRef = useRef();
+  const phoneInputRef = useRef();
+  const onSubmitHandler = (ev) => {
+    ev.preventDefault();
+    console.log(nameInputRef.current.value);
+    const doc = {
+      _type: "formData",
+      name: nameInputRef.current.value,
+      company: companyInputRef.current.value,
+      email: emailInputRef.current.value,
+      phone: phoneInputRef.current.value,
+    };
+
+    client.create(doc).then((res) => {
+      console.log(`Bike was created, document ID is ${res._id}`);
+    });
+  };
   return (
     <div className="container">
       <div className={classes.HeroWrapper}>
@@ -42,19 +69,31 @@ const Contact = () => {
               ></Image>
               <h2>Contact details</h2>
             </div>
-            <form method="get">
+            <form method="get" onSubmit={onSubmitHandler}>
               <div className={classes.InputFields}>
                 <div className={classes.InputWrapper}>
-                  <input type="text" placeholder="FULL NAME*" required></input>
-                  <input type="text" placeholder="COMPANY*" required></input>
+                  <input
+                    ref={nameInputRef}
+                    type="text"
+                    placeholder="FULL NAME*"
+                    required
+                  ></input>
+                  <input
+                    ref={companyInputRef}
+                    type="text"
+                    placeholder="COMPANY*"
+                    required
+                  ></input>
                 </div>
                 <div className={classes.InputWrapper}>
                   <input
+                    ref={emailInputRef}
                     type="email"
                     placeholder="EMAIL ADDRESS*"
                     required
                   ></input>
                   <input
+                    ref={phoneInputRef}
                     type="tel"
                     placeholder="PHONE (OPTIONAL)"
                     name="phone"
