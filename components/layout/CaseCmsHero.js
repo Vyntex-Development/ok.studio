@@ -17,7 +17,9 @@ const CaseCmsHero = ({ casestudy, categories }) => {
   // ScrollTrigger.config({ ignoreMobileResize: true });
   const sectionHeightRef = useRef();
   const trackRef = useRef();
+
   useEffect(() => {
+    ScrollTrigger.normalizeScroll(true); // enable
     ScrollTrigger.config({
       ignoreMobileResize: true,
       scroller: window.innerWidth > 991 ? "#section-height" : null,
