@@ -11,8 +11,8 @@ const client = sanityClient({
   useCdn: true, // `false` if you want to ensure fresh data
 });
 const Contact = () => {
-  const [topic, setTopic] = useState(null);
-  const [budget, setBudget] = useState(null);
+  const [topic, setTopic] = useState("E-COMMERCE");
+  const [budget, setBudget] = useState("$25k - $50K");
   const setTopicHandler = (ev) => {
     setTopic(ev.target.value);
   };
