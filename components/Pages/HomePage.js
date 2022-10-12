@@ -8,7 +8,7 @@ import HeroHome from "../layout/HeroHome";
 const HomePage = ({ insights, casestudies, services, datahome }) => {
   return (
     <div>
-      <HeroHome></HeroHome>
+      <HeroHome datahome={datahome}></HeroHome>
       <FaqSection datahome={datahome} services={services}></FaqSection>
       <CaseStudiesHome
         casestudies={casestudies}

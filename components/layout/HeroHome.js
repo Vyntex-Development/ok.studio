@@ -5,8 +5,10 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useRef } from "react";
 import { useEffect } from "react";
+import { useNextSanityImage } from "next-sanity-image";
+import { config } from "../../lib/config";
 
-const HeroHome = () => {
+const HeroHome = ({ datahome }) => {
   useEffect(() => {
     // gsap.timeline({ repeat: -1, yoyo: true }).fromTo(
     //   "#stickybgimage",
@@ -106,6 +108,20 @@ const HeroHome = () => {
         "<"
       );
   }, []);
+  console.log(
+    datahome["homepageData"]["pageBuilder"][0]["herovideo"]["asset"]["_ref"]
+  );
+
+  const heroImage = useNextSanityImage(
+    config,
+    datahome &&
+      datahome["homepageData"]["pageBuilder"][0]["heroimage"]["asset"]["_ref"]
+  );
+  const heroVideo = useNextSanityImage(
+    config,
+    datahome &&
+      datahome["homepageData"]["pageBuilder"][0]["herovideo"]["asset"]["_ref"]
+  );
 
   return (
     <div>
@@ -119,7 +135,8 @@ const HeroHome = () => {
                     layout="fill"
                     objectFit="cover"
                     alt="hero"
-                    src="/images/hero_img.png"
+                    // src="/images/hero_img.png"
+                    {...heroVideo}
                   ></Image>
                 </div>
               </div>
@@ -538,8 +555,9 @@ const HeroHome = () => {
                 <img
                   className={classes.StickyBgImg}
                   id="stickybgimage"
-                  src="/images/hero_an.png"
-                  alt="Girl in a jacket"
+                  // src="/images/hero_an.png"
+                  {...heroImage}
+                  alt="hero image"
                 />
 
                 <div className={classes.StickyLogo} id="stickylogo">
