@@ -63,7 +63,7 @@ const Contact = () => {
     }
 
     const doc = {
-      _type: "formData",
+      _type: "contactFormData",
       name: nameInputRef.current.value,
       company: companyInputRef.current.value,
       email: emailInputRef.current.value,
