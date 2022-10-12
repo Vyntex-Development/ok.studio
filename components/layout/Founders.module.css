@@ -147,6 +147,9 @@
 .FoundersLinks div:nth-child(2):hover .ImageHoverTwo {
   width: 18rem;
 }
+.FoundersLinks div:nth-child(2):hover .NameHover {
+  top: -1px;
+}
 
 .DescriptionWrapper {
   display: flex;

@@ -40,7 +40,7 @@ const Founders = ({ data }) => {
           <div className="coll-8">
             <div className={classes.FoundersWrapper}>
               <div className={classes.FoundersLinks}>
-                <Link type="blog" href="/">
+                <Link type="blog" href="mailto: hello@vyntex.com">
                   <div className={classes.ImageHoverOne}>
                     <div className={classes.ImageFounders}>
                       <Image
@@ -93,7 +93,7 @@ const Founders = ({ data }) => {
                     </div>
                   </div>
                 </Link>
-                <Link type="blog" href="/">
+                <Link type="blog" href="mailto: hello@vyntex.com">
                   <div className={classes.ImageHoverTwo}>
                     <div className={classes.ImageFounders}>
                       <Image
