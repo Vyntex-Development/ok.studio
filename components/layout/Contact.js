@@ -37,11 +37,11 @@ const Contact = () => {
   const onSubmitHandler = (ev) => {
     ev.preventDefault();
     nameInputRef.current.value.trim() === ""
-      ? setNameInputError("This name is required")
+      ? setNameInputError("The full name field is required.")
       : setNameInputError("");
     console.log(emailInputRef.current.value);
     emailInputRef.current.value.trim() === ""
-      ? setEmailInputError("This email is required")
+      ? setEmailInputError("The email field is required.")
       : setEmailInputError("");
     if (emailInputRef.current.value.trim() !== "") {
       !emailInputRef.current.value.includes("@")
@@ -50,7 +50,7 @@ const Contact = () => {
     }
 
     companyInputRef.current.value.trim() === ""
-      ? setCompanyInputError("This company required")
+      ? setCompanyInputError("The company field is required.")
       : setCompanyInputError("");
     if (
       nameInputRef.current.value.trim() === "" ||
@@ -117,32 +117,40 @@ const Contact = () => {
             <form method="get" onSubmit={onSubmitHandler}>
               <div className={classes.InputFields}>
                 <div className={classes.InputWrapper}>
-                  <input
-                    ref={nameInputRef}
-                    type="text"
-                    placeholder="FULL NAME*"
-                  ></input>
-                  {nameInputError && <span>{nameInputError}</span>}
-                  <input
-                    ref={companyInputRef}
-                    type="text"
-                    placeholder="COMPANY*"
-                  ></input>
-                  {companyInputError && <span>{companyInputError}</span>}
+                  <div>
+                    <input
+                      ref={nameInputRef}
+                      type="text"
+                      placeholder="FULL NAME*"
+                    ></input>
+                    {nameInputError && <span>{nameInputError}</span>}
+                  </div>
+                  <div>
+                    <input
+                      ref={companyInputRef}
+                      type="text"
+                      placeholder="COMPANY*"
+                    ></input>
+                    {companyInputError && <span>{companyInputError}</span>}
+                  </div>
                 </div>
                 <div className={classes.InputWrapper}>
-                  <input
-                    ref={emailInputRef}
-                    // type="email"
-                    placeholder="EMAIL ADDRESS*"
-                  ></input>
-                  {emailInputError && <span>{emailInputError}</span>}
-                  <input
-                    ref={phoneInputRef}
-                    type="tel"
-                    placeholder="PHONE (OPTIONAL)"
-                    name="phone"
-                  ></input>
+                  <div>
+                    <input
+                      ref={emailInputRef}
+                      // type="email"
+                      placeholder="EMAIL ADDRESS*"
+                    ></input>
+                    {emailInputError && <span>{emailInputError}</span>}
+                  </div>
+                  <div>
+                    <input
+                      ref={phoneInputRef}
+                      type="tel"
+                      placeholder="PHONE (OPTIONAL)"
+                      name="phone"
+                    ></input>
+                  </div>
                 </div>
               </div>
               <div className={classes.TitleWrapper}>
