@@ -1,6 +1,7 @@
 import classes from "./Contact.module.css";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useRouter } from "next/router";
 const sanityClient = require("@sanity/client");
 const client = sanityClient({
   projectId: "147yq19f",
@@ -11,8 +12,18 @@ const client = sanityClient({
   useCdn: true, // `false` if you want to ensure fresh data
 });
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [topic, setTopic] = useState("E-COMMERCE");
   const [budget, setBudget] = useState("$25k - $50K");
+  const [nameInputError, setNameInputError] = useState("");
+  const [emailInputError, setEmailInputError] = useState("");
+  const [companyInputError, setCompanyInputError] = useState("");
+  const router = useRouter();
+  useEffect(() => {
+    if (isSubmitted) {
+      router.push("/");
+    }
+  }, [isSubmitted]);
   const setTopicHandler = (ev) => {
     setTopic(ev.target.value);
   };
@@ -25,6 +36,32 @@ const Contact = () => {
   const phoneInputRef = useRef();
   const onSubmitHandler = (ev) => {
     ev.preventDefault();
+    nameInputRef.current.value.trim() === ""
+      ? setNameInputError("This name is required")
+      : setNameInputError("");
+    console.log(emailInputRef.current.value);
+    emailInputRef.current.value.trim() === ""
+      ? setEmailInputError("This email is required")
+      : setEmailInputError("");
+    if (emailInputRef.current.value.trim() !== "") {
+      !emailInputRef.current.value.includes("@")
+        ? setEmailInputError("Email must include @ symbol")
+        : setEmailInputError("");
+    }
+
+    companyInputRef.current.value.trim() === ""
+      ? setCompanyInputError("This company required")
+      : setCompanyInputError("");
+    if (
+      nameInputRef.current.value.trim() === "" ||
+      emailInputRef.current.value.trim() === "" ||
+      companyInputRef.current.value.trim() === "" ||
+      (emailInputRef.current.value.trim() !== "" &&
+        !emailInputRef.current.value.includes("@"))
+    ) {
+      return;
+    }
+
     const doc = {
       _type: "formData",
       name: nameInputRef.current.value,
@@ -35,9 +72,8 @@ const Contact = () => {
       budget: budget,
     };
 
-    client.create(doc).then((res) => {
-      console.log(`Bike was created, document ID is ${res._id}`);
-    });
+    client.create(doc);
+    setIsSubmitted(true);
   };
   return (
     <div className="container">
@@ -85,22 +121,22 @@ const Contact = () => {
                     ref={nameInputRef}
                     type="text"
                     placeholder="FULL NAME*"
-                    required
                   ></input>
+                  {nameInputError && <span>{nameInputError}</span>}
                   <input
                     ref={companyInputRef}
                     type="text"
                     placeholder="COMPANY*"
-                    required
                   ></input>
+                  {companyInputError && <span>{companyInputError}</span>}
                 </div>
                 <div className={classes.InputWrapper}>
                   <input
                     ref={emailInputRef}
-                    type="email"
+                    // type="email"
                     placeholder="EMAIL ADDRESS*"
-                    required
                   ></input>
+                  {emailInputError && <span>{emailInputError}</span>}
                   <input
                     ref={phoneInputRef}
                     type="tel"
