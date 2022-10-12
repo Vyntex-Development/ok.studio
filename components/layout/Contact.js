@@ -1,6 +1,6 @@
 import classes from "./Contact.module.css";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 const sanityClient = require("@sanity/client");
 const client = sanityClient({
   projectId: "147yq19f",
@@ -11,19 +11,28 @@ const client = sanityClient({
   useCdn: true, // `false` if you want to ensure fresh data
 });
 const Contact = () => {
+  const [topic, setTopic] = useState(null);
+  const [budget, setBudget] = useState(null);
+  const setTopicHandler = (ev) => {
+    setTopic(ev.target.value);
+  };
+  const setBudgetHandler = (ev) => {
+    setBudget(ev.target.value);
+  };
   const nameInputRef = useRef();
   const companyInputRef = useRef();
   const emailInputRef = useRef();
   const phoneInputRef = useRef();
   const onSubmitHandler = (ev) => {
     ev.preventDefault();
-    console.log(nameInputRef.current.value);
     const doc = {
       _type: "formData",
       name: nameInputRef.current.value,
       company: companyInputRef.current.value,
       email: emailInputRef.current.value,
       phone: phoneInputRef.current.value,
+      topic: topic,
+      budget: budget,
     };
 
     client.create(doc).then((res) => {
@@ -115,6 +124,7 @@ const Contact = () => {
                 <div className={classes.InputWrapperRadio}>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setTopicHandler}
                       className={classes.Radio}
                       type="radio"
                       id="1"
@@ -127,6 +137,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setTopicHandler}
                       className={classes.Radio}
                       type="radio"
                       id="2"
@@ -140,6 +151,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setTopicHandler}
                       className={classes.Radio}
                       type="radio"
                       id="3"
@@ -152,6 +164,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setTopicHandler}
                       className={classes.Radio}
                       type="radio"
                       id="4"
@@ -165,6 +178,7 @@ const Contact = () => {
                   <div className={classes.RadioWrapper}>
                     <input
                       className={classes.Radio}
+                      onChange={setTopicHandler}
                       type="radio"
                       id="5"
                       name="button"
@@ -191,6 +205,7 @@ const Contact = () => {
                 <div className={classes.InputWrapperRadio}>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setBudgetHandler}
                       className={classes.Radio}
                       type="radio"
                       id="11"
@@ -203,6 +218,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setBudgetHandler}
                       className={classes.Radio}
                       type="radio"
                       id="12"
@@ -216,6 +232,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setBudgetHandler}
                       className={classes.Radio}
                       type="radio"
                       id="13"
@@ -228,6 +245,7 @@ const Contact = () => {
                   </div>
                   <div className={classes.RadioWrapper}>
                     <input
+                      onChange={setBudgetHandler}
                       className={classes.Radio}
                       type="radio"
                       id="14"
