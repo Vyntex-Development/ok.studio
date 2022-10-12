@@ -5,9 +5,7 @@ import { useNextSanityImage } from "next-sanity-image";
 import { config } from "../../lib/config";
 
 const Founders = ({ data }) => {
-  console.log(
-    data["aboutpageData"]["pageBuilder"][1]["media"]["asset"]["_ref"]
-  );
+  console.log(data);
   const namefirst =
     data && data["aboutpageData"]["pageBuilder"][1]["namefirst"];
   const namesecond =
@@ -22,8 +20,12 @@ const Founders = ({ data }) => {
     data && data["aboutpageData"]["pageBuilder"][1]["descriptionsecond"];
   const descriptionlarge =
     data && data["aboutpageData"]["pageBuilder"][1]["descriptionlarge"];
-  // const image = useNextSanityImage(config, media);
-  // const media = ["aboutpageData"]["pageBuilder"][1]["media"];
+
+  const largeImage = useNextSanityImage(
+    config,
+    data && data["aboutpageData"]["pageBuilder"][1]["media"]["asset"]["_ref"]
+  );
+
   return (
     <div>
       <div className="container">
@@ -157,8 +159,8 @@ const Founders = ({ data }) => {
           layout="fill"
           objectFit="cover"
           alt="hero"
-          src="/images/ok_image.png"
-          // {...image}
+          // src="/images/ok_image.png"
+          {...largeImage}
         ></Image>
       </div>
     </div>
