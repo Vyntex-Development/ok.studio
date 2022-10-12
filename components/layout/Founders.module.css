@@ -158,6 +158,10 @@
   align-items: center;
 }
 @media screen and (max-width: 991px) {
+  .FoundersLinks div:nth-child(2):hover .NameHover {
+    top: -1px;
+  }
+
   .Large {
     text-indent: 14vw;
   }
