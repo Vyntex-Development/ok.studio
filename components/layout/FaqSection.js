@@ -5,6 +5,8 @@ import { ABOUT_PAGE } from "../../utils/utils";
 import { useRouter } from "next/router";
 import FaqHomeItem from "./FaqHomeItem";
 import { useState } from "react";
+import { useNextSanityImage } from "next-sanity-image";
+import { config } from "../../lib/config";
 
 const FaqSection = ({ services, datahome, data }) => {
   const { pathname } = useRouter();
@@ -21,6 +23,10 @@ const FaqSection = ({ services, datahome, data }) => {
   const servicesdescriptionaboutsecond =
     data &&
     data["aboutpageData"]["pageBuilder"][5]["servicesdescriptionaboutsecond"];
+  const aboutImage = useNextSanityImage(
+    config,
+    data && data["aboutpageData"]["pageBuilder"][5]["media"]["asset"]["_ref"]
+  );
   return (
     <div>
       <div className="container">
@@ -58,7 +64,8 @@ const FaqSection = ({ services, datahome, data }) => {
                   layout="fill"
                   objectFit="cover"
                   alt="hero"
-                  src="/images/hero_img.png"
+                  {...aboutImage}
+                  // src="/images/hero_img.png"
                 ></Image>
               </div>
             </div>
