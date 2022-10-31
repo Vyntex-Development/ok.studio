@@ -606,8 +606,12 @@ const CaseCmsHero = ({ casestudy, categories }) => {
                 <div className={classes.ContentWrapper}>
                   <h2>OUR SOLUTION</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>{casestudy && casestudy.solutiondescriptionfirst}</p>
-                    <p>{casestudy && casestudy.solutiondescriptionsecond}</p>
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.blockcontentsolution}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
@@ -633,8 +637,12 @@ const CaseCmsHero = ({ casestudy, categories }) => {
                 <div className={classes.ContentWrapper}>
                   <h2>THE OUTCOME</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>{casestudy && casestudy.outcomedescriptionfirst}</p>
-                    <p>{casestudy && casestudy.outcomedescriptionsecond}</p>
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.blockcontentoutcomefirst}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
@@ -651,9 +659,12 @@ const CaseCmsHero = ({ casestudy, categories }) => {
               <div className={classes.CollEightMiddle}>
                 <div className={classes.ContentWrapper}>
                   <div className={classes.DescriptionWrapper}>
-                    <p>{casestudy && casestudy.outcomedescriptionthird}</p>
-                    <p>{casestudy && casestudy.outcomedescriptionfourth}</p>
-                    <p>{casestudy && casestudy.outcomedescriptionfifth}</p>
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.blockcontentoutcomesecond}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
@@ -669,9 +680,12 @@ const CaseCmsHero = ({ casestudy, categories }) => {
                 <div className={classes.ContentWrapper}>
                   <h2>THE OUTCOME</h2>
                   <div className={classes.DescriptionWrapper}>
-                    <p>{casestudy && casestudy.lastdescriptionfirst}</p>
-                    <p>{casestudy && casestudy.lastdescriptionsecond}</p>
-                    <p>{casestudy && casestudy.lastdescriptionthird}</p>
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.blockcontentlast}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
