@@ -39,6 +39,8 @@ export async function getStaticProps({ params, preview = false }) {
     heroimage,
     imagedescription,
     heroimagesmall,
+    blockcontentoverview,
+    blockcontentchallenge,
     overviewdescriptionfirst,
     overviewdescriptionsecond,
     overviewimage,

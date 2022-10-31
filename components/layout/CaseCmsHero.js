@@ -9,6 +9,21 @@ import { config } from "../../lib/config";
 import { useNextSanityImage } from "next-sanity-image";
 import { urlFor } from "../../lib/sanity";
 import TechItem from "./TechItem";
+import { PortableText } from "@portabletext/react";
+
+const myPortableTextComponentsOverview = {
+  types: {
+    image: ({ value }) => {
+      console.log(value);
+      return (
+        <figure>
+          <figcaption>{value.caption}</figcaption>
+          <img src={urlFor(value)} />
+        </figure>
+      );
+    },
+  },
+};
 
 // ScrollTrigger.normalizeScroll(true);
 // ScrollTrigger.config({ ignoreMobileResize: true })
@@ -252,7 +267,9 @@ const CaseCmsHero = ({ casestudy, categories }) => {
     config,
     casestudy && casestudy.projectimage
   );
-  console.log(casestudy);
+
+  // console.log(casestudy && casestudy.body[0].children[0].text);
+  console.log(casestudy && casestudy.blockcontentchallenge);
   return (
     <div className={classes.CaseSection}>
       <div>
@@ -457,9 +474,23 @@ const CaseCmsHero = ({ casestudy, categories }) => {
               <div className={`${classes.OverColl4} coll-3`}>
                 <div className={classes.ContentWrapper}>
                   <h2>OVERVIEW</h2>
+                  {/* <div className={classes.RichWrapper} ref={imgRef} id="rich">
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.body}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
+                  </div> */}
                   <div className={classes.DescriptionWrapper}>
-                    <p>{casestudy && casestudy.overviewdescriptionfirst}</p>
-                    <p>{casestudy && casestudy.overviewdescriptionsecond}</p>
+                    {/* <p>{casestudy && casestudy.overviewdescriptionfirst}</p>
+                    <p>{casestudy && casestudy.overviewdescriptionsecond}</p> */}
+                    {casestudy && (
+                      <PortableText
+                        value={casestudy && casestudy.blockcontentoverview}
+                        components={myPortableTextComponentsOverview}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
@@ -551,10 +582,16 @@ const CaseCmsHero = ({ casestudy, categories }) => {
             </div>
             <div className={classes.ContentWrapperChallenge}>
               <div className={classes.ContentWrapper}>
-                <h2>OVERVIEW</h2>
+                <h2>THE CHALLENGE</h2>
                 <div className={classes.DescriptionWrapper}>
-                  <p>{casestudy && casestudy.challengedescriptionfirst}</p>
-                  <p>{casestudy && casestudy.challengedescriptionsecond}</p>
+                  {/* <p>{casestudy && casestudy.challengedescriptionfirst}</p>
+                  <p>{casestudy && casestudy.challengedescriptionsecond}</p> */}
+                  {casestudy && (
+                    <PortableText
+                      value={casestudy && casestudy.blockcontentchallenge}
+                      components={myPortableTextComponentsOverview}
+                    />
+                  )}
                 </div>
               </div>
             </div>
