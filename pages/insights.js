@@ -1,10 +1,12 @@
 import InsightsPage from "../components/Pages/InsightsPage";
 import { getClient } from "../lib/sanity.server";
 import groq from "groq";
+import SEO from "../components/SEO/Seo";
 
 export default function Inisghts({ insights }) {
   return (
     <>
+      <SEO title="Insights"></SEO>
       <InsightsPage insights={insights} />
     </>
   );

@@ -1,11 +1,12 @@
 import groq from "groq";
 import InsightsCmsPage from "../../components/Pages/InsightsCmsPage";
 import { getClient } from "../../lib/sanity.server";
+import SEO from "../../components/SEO/Seo";
 
 export default function InisghtsCms({ insight, insights }) {
-  console.log(insight);
   return (
     <>
+      <SEO title={insight.title}></SEO>
       <InsightsCmsPage insights={insights} insight={insight} />
     </>
   );

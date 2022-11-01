@@ -1,8 +1,10 @@
 import ContactPage from "../components/Pages/ContactPage";
+import SEO from "../components/SEO/Seo";
 
 export default function Contact({ data }) {
   return (
     <>
+      <SEO title="Contact"></SEO>
       <ContactPage data={data} />
     </>
   );

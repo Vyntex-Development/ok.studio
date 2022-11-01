@@ -1,10 +1,12 @@
 import AboutPage from "../components/Pages/AboutPage";
 import { getClient } from "../lib/sanity.server";
 import groq from "groq";
+import SEO from "../components/SEO/Seo";
 
 export default function About({ casestudies, services, data }) {
   return (
     <>
+      <SEO title="About"></SEO>
       <AboutPage casestudies={casestudies} services={services} data={data} />
     </>
   );

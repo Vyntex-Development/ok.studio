@@ -1,10 +1,12 @@
 import CaseStudiesPage from "../components/Pages/CaseStudiesPage";
 import { getClient } from "../lib/sanity.server";
 import groq from "groq";
+import SEO from "../components/SEO/Seo";
 
 export default function Case({ insights, casestudies, services }) {
   return (
     <>
+      <SEO title="Services"></SEO>
       <CaseStudiesPage
         insights={insights}
         casestudies={casestudies}
