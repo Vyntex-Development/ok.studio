@@ -6,7 +6,7 @@ import SEO from "../../components/SEO/SEO";
 export default function InisghtsCms({ insight, insights }) {
   return (
     <>
-      <SEO title={insight.title}></SEO>
+      <SEO title={insight && insight.title}></SEO>
       <InsightsCmsPage insights={insights} insight={insight} />
     </>
   );
