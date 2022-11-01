@@ -6,7 +6,7 @@ import SEO from "../../components/SEO/SEO";
 export default function InisghtsCms({ insight, insights }) {
   return (
     <>
-      <SEO title={insight && insight.title}></SEO>
+      <SEO title={insight && insight.metatitle}></SEO>
       <InsightsCmsPage insights={insights} insight={insight} />
     </>
   );
@@ -27,6 +27,11 @@ export async function getStaticProps({ params, preview = false }) {
   const query = groq`*[_type == "insights" && slug.current == $slug][0] {
     title,
     "username":author->username,
+    metatitle,
+    metadescription,
+    ogtitle,
+    ogdescription,
+    ogthumbnail,
     body,
     description,
     media,

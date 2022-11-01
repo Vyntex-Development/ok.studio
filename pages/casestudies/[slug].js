@@ -6,7 +6,7 @@ import SEO from "../../components/SEO/SEO";
 export default function CaseCms({ casestudy, casestudies }) {
   return (
     <>
-      <SEO title={casestudy && casestudy.title}></SEO>
+      <SEO title={casestudy && casestudy.metatitle}></SEO>
       <CaseCmsPage casestudy={casestudy} casestudies={casestudies} />
     </>
   );
@@ -30,6 +30,11 @@ export async function getStaticProps({ params, preview = false }) {
    "categories":categories[]->{title, tehnologyfirst, tehnologysecond, iconfirst, iconsecond},
     body,
     description,
+    metatitle,
+    metadescription,
+    ogtitle,
+    ogdescription,
+    ogthumbnail,
     media,
     tag,
     herolightfirst,

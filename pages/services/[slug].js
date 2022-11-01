@@ -6,7 +6,7 @@ import SEO from "../../components/SEO/SEO";
 export default function ServiceCms({ services, service, casestudies }) {
   return (
     <>
-      <SEO title={service && service.title}></SEO>
+      <SEO title={service && service.metatitle}></SEO>
       <ServicesCms
         service={service}
         services={services}
@@ -36,6 +36,11 @@ export async function getStaticProps({ params, preview = false }) {
     "casestudies":casestudies[]->{title,description,media,slug, _id},
     body,
     description,
+    metatitle,
+    metadescription,
+    ogtitle,
+    ogdescription,
+    ogthumbnail,
     overviewfirst,
     overviewsecond,
     media,
