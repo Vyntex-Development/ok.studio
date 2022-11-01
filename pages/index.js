@@ -1,7 +1,7 @@
 import HomePage from "../components/Pages/HomePage";
 import { getClient } from "../lib/sanity.server";
 import groq from "groq";
-import SEO from "../components/SEO/Seo";
+import SEO from "../components/SEO/SEO";
 
 export default function Home({ insights, casestudies, services, datahome }) {
   // console.log(data["homepageData"]["pageBuilder"][1]["servicesdescription"]);
