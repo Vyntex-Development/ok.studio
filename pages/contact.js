@@ -1,5 +1,5 @@
 import ContactPage from "../components/Pages/ContactPage";
-import SEO from "../components/SEO/Seo";
+import SEO from "../components/SEO/SEO";
 
 export default function Contact({ data }) {
   return (
