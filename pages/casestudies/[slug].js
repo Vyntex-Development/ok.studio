@@ -1,10 +1,12 @@
 import groq from "groq";
 import CaseCmsPage from "../../components/Pages/CaseCmsPage";
 import { getClient } from "../../lib/sanity.server";
+import SEO from "../../components/SEO/SEO";
 
 export default function CaseCms({ casestudy, casestudies }) {
   return (
     <>
+      <SEO title={casestudy && casestudy.title}></SEO>
       <CaseCmsPage casestudy={casestudy} casestudies={casestudies} />
     </>
   );

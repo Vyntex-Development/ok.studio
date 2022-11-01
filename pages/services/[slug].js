@@ -1,10 +1,12 @@
 import groq from "groq";
 import ServicesCms from "../../components/Pages/ServicesCms";
 import { getClient } from "../../lib/sanity.server";
+import SEO from "../../components/SEO/SEO";
 
 export default function ServiceCms({ services, service, casestudies }) {
   return (
     <>
+      <SEO title={service && service.title}></SEO>
       <ServicesCms
         service={service}
         services={services}
